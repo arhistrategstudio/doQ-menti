@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
@@ -21,6 +21,8 @@ export async function GET(req: NextRequest) {
     basePath = path.resolve(process.cwd(), '..', 'docs', 'euprava', 'obrasci', fajl);
   }
 
+  const isDownload = searchParams.get('download') === '1' || searchParams.get('download') === 'true';
+
   if (basePath && fs.existsSync(basePath)) {
     const fileBuffer = fs.readFileSync(basePath);
     const contentType = fajl.endsWith('.pdf')
@@ -33,10 +35,12 @@ export async function GET(req: NextRequest) {
       ? 'application/vnd.ms-excel'
       : 'application/octet-stream';
 
+    const disposition = isDownload ? 'attachment' : 'inline';
+
     return new NextResponse(fileBuffer, {
       headers: {
         'Content-Type': contentType,
-        'Content-Disposition': `attachment; filename="${encodeURIComponent(fajl)}"`,
+        'Content-Disposition': `${disposition}; filename="${encodeURIComponent(fajl)}"`,
       },
     });
   }

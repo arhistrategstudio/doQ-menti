@@ -347,7 +347,7 @@ function PopuniObrazacContent() {
                 </div>
                 {fajl && (
                   <a
-                    href={pdfUrl}
+                    href={`${pdfUrl}&download=1`}
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-400 hover:text-indigo-300"
                     download
                   >

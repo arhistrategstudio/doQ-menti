@@ -164,9 +164,10 @@ function ObrasciSadrzaj() {
                       </Link>
 
                       <a
-                        href={`/api/obrasci/preuzmi?izvor=${item.source}&kategorija=${encodeURIComponent(aktivnaKategorijaObj.name)}&fajl=${encodeURIComponent(item.file)}`}
+                        href={`/api/obrasci/preuzmi?izvor=${item.source}&kategorija=${encodeURIComponent(aktivnaKategorijaObj.name)}&fajl=${encodeURIComponent(item.file)}&download=1`}
                         className="inline-flex items-center gap-1.5 bg-white/5 hover:bg-white/10 text-slate-300 font-semibold text-xs px-3 py-2 rounded-lg transition-colors border border-white/10"
                         title="Preuzmite prazan originalni obrazac"
+                        download
                       >
                         <Download className="w-3.5 h-3.5" />
                         <span className="hidden sm:inline">Prazan</span>
