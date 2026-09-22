@@ -357,16 +357,26 @@ function PopuniObrazacContent() {
                   </a>
                 )}
               </div>
-              <div className="flex-1 bg-slate-50 relative">
-                {fajl ? (
+              <div className="flex-1 bg-[rgba(10,18,13,0.35)] relative">
+                {fajl && fajl.toLowerCase().endsWith(".pdf") ? (
                   <iframe 
                     src={pdfUrl + '#toolbar=0&navpanes=0'} 
                     className="w-full h-full border-none"
                     title="Prikaz originalnog dokumenta"
                   />
                 ) : (
-                  <div className="flex items-center justify-center h-full text-[rgba(248,244,238,0.5)] text-sm">
-                    Prikaz originalnog dokumenta nije dostupan
+                  <div className="flex flex-col items-center justify-center h-full text-center gap-4 p-6" style={{ color: "rgba(248,244,238,0.7)" }}>
+                    <FileText className="w-10 h-10" style={{ color: "#C9A84C" }} />
+                    <div className="text-sm max-w-xs">
+                      {fajl
+                        ? `Ovaj obrazac je u formatu ${fajl.split('.').pop()?.toUpperCase()} i ne moze da se prikaze u pregledu. Popunite formu levo pa preuzmite gotov PDF, ili skinite prazan original.`
+                        : "Prikaz originalnog dokumenta nije dostupan."}
+                    </div>
+                    {fajl && (
+                      <a href={`${pdfUrl}&download=1`} download className="inline-flex items-center gap-1.5 text-xs font-bold px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(201,168,76,0.15)", color: "#C9A84C", border: "1px solid rgba(201,168,76,0.35)" }}>
+                        <Download className="w-3.5 h-3.5" /> Preuzmi prazan original
+                      </a>
+                    )}
                   </div>
                 )}
               </div>
