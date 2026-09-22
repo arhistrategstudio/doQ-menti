@@ -67,9 +67,9 @@ export function KategorijeCombobox({ kategorije }: { kategorije: Kategorija[] })
         </div>
       )}
 
-      <div className="mt-4 grid grid-cols-2 gap-2">
+      <div className="mt-4 flex flex-col gap-2">
         {cipovi.map((kat) => (
-          <Link key={kat.name} href={href(kat.name)} className="w-full inline-flex items-center justify-between gap-2 px-3 py-2 rounded-lg text-xs font-semibold transition-all hover:opacity-90" style={{ backgroundColor: "rgba(201,168,76,0.16)", color: "#F8F4EE", border: "1px solid rgba(201,168,76,0.40)" }}>
+          <Link key={kat.name} href={href(kat.name)} className="w-full inline-flex items-center justify-between gap-2 px-4 py-4 rounded-xl text-sm font-semibold transition-all hover:opacity-90" style={{ backgroundColor: "rgba(201,168,76,0.16)", color: "#F8F4EE", border: "1px solid rgba(201,168,76,0.40)" }}>
             <span className="truncate">{kat.name}</span>
             <span className="shrink-0" style={{ color: "#C9A84C" }}>{kat.count}</span>
           </Link>
