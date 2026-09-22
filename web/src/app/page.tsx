@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ShieldCheck, Sparkles, Clock, Zap, ArrowRight, Search, Car, FileText, Home as HomeIcon, Briefcase, Plane, Coins } from "lucide-react";
+import { ShieldCheck, Sparkles, Clock, Zap, ArrowRight, Search, FileText, Home as HomeIcon, Briefcase, Plane, Coins } from "lucide-react";
 import { HomeAiAsistent } from "@/components/home/HomeAiAsistent";
 import { KategorijeCombobox } from "@/components/home/KategorijeCombobox";
 import katalog from "@/data/katalog-obrazaca.json";
@@ -27,8 +27,8 @@ export default function Home() {
               Svi obrasci
               <span className="text-xs font-normal opacity-70">({ukupnoObrazaca.toLocaleString("sr-RS")})</span>
             </Link>
-            <Link href="/ugovori/kupoprodaja-vozila" className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-lg transition-all" style={{ backgroundColor: "#C9A84C", color: "#1A3A2A" }}>
-              Popuni ugovor
+            <Link href="/obrasci" className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-lg transition-all" style={{ backgroundColor: "#C9A84C", color: "#1A3A2A" }}>
+              Popuni obrazac
               <ArrowRight className="w-4 h-4" />
             </Link>
           </nav>
@@ -63,13 +63,13 @@ export default function Home() {
             <p className="mt-1.5 text-sm" style={{ color: "rgba(248,244,238,0.72)" }}>{brojKategorija} kategorija · {ukupnoObrazaca.toLocaleString("sr-RS")} obrasca i ugovora</p>
             <div className="mt-3 h-px w-16" style={{ backgroundColor: "#C9A84C" }} />
 
-            <form action="/obrasci" method="GET" className="mt-6 relative">
+            <form action="/obrasci" method="GET" className="mt-14 relative">
               <Search className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#8A9A8C" }} />
               <input type="text" name="q" placeholder="Pretražite obrasce (npr. ugovor o zakupu, punomoćje...)" className="w-full text-sm pl-12 pr-24 py-4 rounded-xl border focus:ring-2 focus:outline-none transition-all shadow-sm placeholder:text-[#AEBAAE] backdrop-blur-sm" style={{ backgroundColor: "rgba(20,46,33,0.55)", color: "#F8F4EE", borderColor: "rgba(201,168,76,0.30)", outlineColor: "#C9A84C" }} />
               <button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-sm" style={{ backgroundColor: "#C9A84C", color: "#1A3A2A" }}>Traži</button>
             </form>
 
-            <div className="mt-6">
+            <div className="mt-5">
               <KategorijeCombobox kategorije={katalog as { name: string; count: number }[]} />
             </div>
           </div>
@@ -118,7 +118,6 @@ export default function Home() {
           </h2>
           <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {[
-              { icon: <Car className="w-4 h-4" />, label: "Kupoprodaja vozila", href: "/ugovori/kupoprodaja-vozila" },
               { icon: <FileText className="w-4 h-4" />, label: "Punomoćje", href: "/obrasci?q=punomo" },
               { icon: <HomeIcon className="w-4 h-4" />, label: "Ugovor o zakupu", href: "/obrasci?q=zakup" },
               { icon: <Briefcase className="w-4 h-4" />, label: "Ugovor o radu", href: "/obrasci?q=ugovor%20o%20radu" },
@@ -140,9 +139,16 @@ export default function Home() {
           <div>© {new Date().getFullYear()} <strong style={{ color: "#F8F4EE" }}>doQ-menti</strong>. Sva prava zadržana.</div>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             <Link href="/obrasci" className="hover:opacity-80 transition-opacity" style={{ color: "#C9A84C" }}>Katalog obrazaca</Link>
+            <Link href="/pravno#uslovi" className="hover:opacity-80 transition-opacity" style={{ color: "#C9A84C" }}>Uslovi korišćenja</Link>
+            <Link href="/pravno#privatnost" className="hover:opacity-80 transition-opacity" style={{ color: "#C9A84C" }}>Politika privatnosti</Link>
+            <Link href="/pravno#placanje" className="hover:opacity-80 transition-opacity" style={{ color: "#C9A84C" }}>Plaćanje i reklamacije</Link>
+            <Link href="/pravno#kolacici" className="hover:opacity-80 transition-opacity" style={{ color: "#C9A84C" }}>Kolačići</Link>
             <span>Pravno usklađeno sa zakonima RS</span>
             <span>IPS QR · Kartično · SMS plaćanje</span>
           </div>
+        </div>
+        <div className="max-w-7xl mx-auto mt-4 text-[11px] leading-relaxed" style={{ color: "rgba(248,244,238,0.4)" }}>
+          Pružalac usluge: [naziv privrednog subjekta] · MB [•] · PIB [•] · [sedište] · kontakt: [email]. Cene su iskazane u dinarima (RSD) sa uključenim PDV-om. Plaćanjem prihvatate Uslove korišćenja i Politiku privatnosti; reklamacije i pravo na odustanak opisani su u odeljku „Plaćanje i reklamacije".
         </div>
       </footer>
     </div>

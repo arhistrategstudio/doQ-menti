@@ -19,8 +19,17 @@ export function KategorijeCombobox({ kategorije }: { kategorije: Kategorija[] })
     return kategorije.filter((k) => k.name.toLowerCase().includes(q));
   }, [query, kategorije]);
 
+  const ZELJENE = [
+    "Radni odnosi",
+    "Zarade i naknade",
+    "Godišnji odmori i odsustva",
+    "Porez na dohodak građana",
+    "Obrasci prijava podataka za matičnu evidenciju PIO",
+    "Sudski i drugi postupci pred državnom organom",
+    "Saobraćaj i putevi",
+  ];
   const cipovi = useMemo(
-    () => [...kategorije].sort((a, b) => b.count - a.count).slice(0, 8),
+    () => ZELJENE.map((n) => kategorije.find((kk) => kk.name === n)).filter(Boolean) as Kategorija[],
     [kategorije]
   );
 
@@ -67,7 +76,7 @@ export function KategorijeCombobox({ kategorije }: { kategorije: Kategorija[] })
         </div>
       )}
 
-      <div className="mt-4 flex flex-col gap-2">
+      <div className="mt-5 flex flex-col gap-2">
         {cipovi.map((kat) => (
           <Link key={kat.name} href={href(kat.name)} className="w-full inline-flex items-center justify-between gap-2 px-4 py-4 rounded-xl text-sm font-semibold transition-all hover:opacity-90" style={{ backgroundColor: "rgba(201,168,76,0.16)", color: "#F8F4EE", border: "1px solid rgba(201,168,76,0.40)" }}>
             <span className="truncate">{kat.name}</span>
