@@ -35,3 +35,6 @@ Thumbs.db
 # Large downloaded sample forms (keep indexes and catalog markdown/json, ignore binary dumps if needed or keep)
 # docs/obrasci-paragraf/**/*.doc
 # docs/obrasci-paragraf/**/*.pdf
+
+# Local Netlify folder
+.netlify

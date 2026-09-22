@@ -17,17 +17,27 @@ const ukupnoObrazaca = (katalog as { count: number }[]).reduce(
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#F8F4EE", color: "#1C1C1E" }}>
+    <div className="relative min-h-screen flex flex-col" style={{ color: "#1C1C1E" }}>
+
+      {/* ─── POZADINA CELE APLIKACIJE (fiksna, od vrha do footera) ────────── */}
+      <div
+        className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/background-doc.jpg')" }}
+      />
+      <div
+        className="fixed inset-0 -z-10"
+        style={{ background: "linear-gradient(180deg, rgba(12,20,15,0.82) 0%, rgba(12,20,15,0.72) 45%, rgba(12,20,15,0.88) 100%)" }}
+      />
 
       {/* ─── HEADER ─────────────────────────────────────────────────────── */}
       <header
-        className="sticky top-0 z-40 border-b"
-        style={{ backgroundColor: "#1A3A2A", borderColor: "#14302200" }}
+        className="sticky top-0 z-40 border-b backdrop-blur-md"
+        style={{ backgroundColor: "rgba(26,58,42,0.55)", borderColor: "rgba(201,168,76,0.15)" }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 sm:h-28 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-extrabold text-2xl tracking-tight" style={{ color: "#F8F4EE" }}>
-            <img src="/logo.jpg" alt="Logo" className="w-8 h-8 rounded-full border border-gray-600" />
+          <Link href="/" className="flex items-center gap-3 font-extrabold text-3xl sm:text-4xl tracking-tight" style={{ color: "#F8F4EE" }}>
+            <img src="/logo.png" alt="Logo" className="w-20 h-20 sm:w-24 sm:h-24 object-contain" />
             <span>do<span style={{ color: "#C9A84C" }}>Q</span>-menti</span>
           </Link>
 
@@ -54,22 +64,11 @@ export default function Home() {
       </header>
 
       {/* ─── HERO ────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden">
-        {/* Pozadinska slika */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/background-doc.jpg')" }}
-        />
-        {/* Tamni overlay */}
-        <div
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(180deg, rgba(12,20,15,0.74) 0%, rgba(12,20,15,0.52) 45%, rgba(12,20,15,0.78) 100%)" }}
-        />
-
+      <section className="relative">
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-40 lg:pt-48 pb-16 sm:pb-24 text-center">
           {/* Badge */}
           <div
-            className="inline-flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-full text-sm font-normal mb-6"
+            className="inline-flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-full text-sm font-normal mb-6 float-slow"
             style={{ backgroundColor: "rgba(201,168,76,0.15)", color: "#C9A84C", border: "1px solid rgba(201,168,76,0.35)" }}
           >
             <ShieldCheck className="w-3.5 h-3.5" />
@@ -120,11 +119,11 @@ export default function Home() {
               { icon: <ShieldCheck className="w-4 h-4" />, title: "Pravna sigurnost", sub: "Po Zakonu o obligacijama" },
               { icon: <Sparkles className="w-4 h-4" />, title: "Pametni Auto-Fill", sub: "Unesite jednom, koristite svuda" },
               { icon: <Zap className="w-4 h-4" />, title: "3 načina plaćanja", sub: "IPS QR · Kartice · SMS" },
-            ].map((item) => (
+            ].map((item, i) => (
               <div
                 key={item.title}
-                className="flex flex-col items-start p-3 rounded-lg text-left"
-                style={{ backgroundColor: "rgba(248,244,238,0.07)", border: "1px solid rgba(248,244,238,0.12)" }}
+                className="flex flex-col items-start p-3 rounded-lg text-left float-slow"
+                style={{ backgroundColor: "rgba(248,244,238,0.07)", border: "1px solid rgba(248,244,238,0.12)", animationDelay: `${i * 0.6}s` }}
               >
                 <div style={{ color: "#C9A84C" }} className="mb-1.5">{item.icon}</div>
                 <div className="font-bold text-xs" style={{ color: "#F8F4EE" }}>{item.title}</div>
@@ -138,10 +137,10 @@ export default function Home() {
       {/* ─── KATEGORIJE ──────────────────────────────────────────────────── */}
       <section className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         <div className="mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight" style={{ color: "#1A3A2A" }}>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight" style={{ color: "#F8F4EE" }}>
             Kategorije dokumenata
           </h2>
-          <p className="mt-2 text-sm" style={{ color: "#5C6B5E" }}>
+          <p className="mt-2 text-sm" style={{ color: "rgba(248,244,238,0.65)" }}>
             {(katalog as { name: string }[]).length} kategorija · {ukupnoObrazaca.toLocaleString("sr-RS")} obrasca i ugovora
           </p>
           <div className="mt-4 h-px w-16" style={{ backgroundColor: "#C9A84C" }} />
@@ -152,18 +151,18 @@ export default function Home() {
             <Link
               key={kat.name}
               href={slugKategorije(kat.name)}
-              className="group flex items-center justify-between gap-3 px-5 py-4 rounded-lg border transition-all duration-150"
+              className="group flex items-center justify-between gap-3 px-5 py-4 rounded-lg border backdrop-blur-sm transition-all duration-150"
               style={{
-                backgroundColor: "#FFFFFF",
-                borderColor: "#E2D9CB",
-                color: "#1C1C1E",
+                backgroundColor: "rgba(248,244,238,0.07)",
+                borderColor: "rgba(248,244,238,0.15)",
+                color: "#F8F4EE",
               }}
             >
               <div className="flex flex-col min-w-0">
-                <span className="text-sm font-semibold leading-snug truncate group-hover:underline" style={{ color: "#1A3A2A" }}>
+                <span className="text-sm font-semibold leading-snug truncate group-hover:underline" style={{ color: "#F8F4EE" }}>
                   {kat.name}
                 </span>
-                <span className="text-xs mt-0.5" style={{ color: "#8A9A8C" }}>
+                <span className="text-xs mt-0.5" style={{ color: "rgba(248,244,238,0.55)" }}>
                   {kat.count} {kat.count === 1 ? "obrazac" : kat.count < 5 ? "obrasca" : "obrazaca"}
                 </span>
               </div>
@@ -194,8 +193,8 @@ export default function Home() {
 
       {/* ─── FOOTER ──────────────────────────────────────────────────────── */}
       <footer
-        className="border-t py-8 px-4 sm:px-6"
-        style={{ backgroundColor: "#1A3A2A", borderColor: "rgba(201,168,76,0.2)" }}
+        className="border-t py-8 px-4 sm:px-6 backdrop-blur-md"
+        style={{ backgroundColor: "rgba(26,58,42,0.55)", borderColor: "rgba(201,168,76,0.2)" }}
       >
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs" style={{ color: "rgba(248,244,238,0.55)" }}>
           <div>
