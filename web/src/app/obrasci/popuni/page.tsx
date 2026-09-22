@@ -103,16 +103,18 @@ function PopuniObrazacContent() {
   const pdfUrl = `/api/obrasci/preuzmi?izvor=${izvor}&kategorija=${encodeURIComponent(kategorija)}&fajl=${encodeURIComponent(fajl)}`;
 
   return (
-    <div className="min-h-screen bg-[#F8F4EE] text-slate-900 pb-20">
+    <div className="relative min-h-screen pb-20" style={{ color: "#F8F4EE" }}>
+      <div className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/background-doc.jpg')" }} />
+      <div className="fixed inset-0 -z-10" style={{ background: "linear-gradient(180deg, rgba(10,18,13,0.90) 0%, rgba(10,18,13,0.86) 50%, rgba(10,18,13,0.94) 100%)" }} />
       {/* Header */}
-      <header className="bg-[#1A3A2A] border-b border-[#C9A84C]/20 sticky top-0 z-30 shadow-xs">
+      <header className="bg-[rgba(26,58,42,0.55)] backdrop-blur-md border-b border-[#C9A84C]/20 sticky top-0 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Link href="/" className="font-extrabold text-xl tracking-tight text-[#F8F4EE] flex items-center gap-2">
-              <img src="/logo.jpg" alt="Logo" className="w-8 h-8 rounded-full border border-gray-600" />
+              <img src="/logo.png" alt="Logo" className="h-10 w-auto object-contain" />
               <span>do<span className="text-[#C9A84C]">Q</span>-menti</span>
             </Link>
-            <span className="text-slate-500 hidden sm:inline">/</span>
+            <span className="text-[rgba(248,244,238,0.6)] hidden sm:inline">/</span>
             <Link href="/obrasci" className="hidden sm:inline text-xs sm:text-sm font-semibold text-slate-300 hover:text-[#C9A84C]">
               Obrasci
             </Link>
@@ -168,11 +170,11 @@ function PopuniObrazacContent() {
       </div>
 
       {/* Mobile Tabovi */}
-      <div className="sm:hidden flex border-b border-[#C9A84C]/20 bg-white sticky top-16 z-20">
+      <div className="sm:hidden flex border-b border-[#C9A84C]/20 bg-[rgba(20,46,33,0.85)] backdrop-blur-md sticky top-16 z-20">
         <button
           onClick={() => setAktivniTab('formular')}
           className={`flex-1 py-3 text-sm font-bold text-center border-b-2 transition-colors ${
-            aktivniTab === 'formular' ? 'border-[#C9A84C] text-[#1A3A2A]' : 'border-transparent text-slate-500'
+            aktivniTab === 'formular' ? 'border-[#C9A84C] text-[#1A3A2A]' : 'border-transparent text-[rgba(248,244,238,0.6)]'
           }`}
         >
           Formular
@@ -180,7 +182,7 @@ function PopuniObrazacContent() {
         <button
           onClick={() => setAktivniTab('pregled')}
           className={`flex-1 py-3 text-sm font-bold text-center border-b-2 transition-colors ${
-            aktivniTab === 'pregled' ? 'border-[#C9A84C] text-[#1A3A2A]' : 'border-transparent text-slate-500'
+            aktivniTab === 'pregled' ? 'border-[#C9A84C] text-[#1A3A2A]' : 'border-transparent text-[rgba(248,244,238,0.6)]'
           }`}
         >
           Originalni dokument
@@ -196,7 +198,7 @@ function PopuniObrazacContent() {
           
           {/* Sekcija 1: Organ */}
           <div>
-            <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-2">
+            <label className="block text-xs font-bold text-[#F8F4EE] uppercase tracking-wider mb-2">
               Nadležni organ / Ustanova kojoj se podnosi
             </label>
             <input
@@ -205,17 +207,17 @@ function PopuniObrazacContent() {
               value={formData.organKomeSePodnosi}
               onChange={handleChange}
               placeholder="Npr. Ministarstvo unutrašnjih poslova RS / Poreska uprava / Opštinska uprava"
-              className="w-full text-sm px-4 py-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
+              className="w-full text-sm px-4 py-2.5 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-xl focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
             />
           </div>
 
           {/* Sekcija 2: Podaci o podnosiocu */}
-          <div className="pt-4 border-t border-slate-100">
+          <div className="pt-4 border-t border-[rgba(248,244,238,0.12)]">
             <div className="flex items-center justify-between mb-4">
-              <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider">
+              <label className="block text-xs font-bold text-[#F8F4EE] uppercase tracking-wider">
                 Podaci o podnosiocu (Auto-Fill)
               </label>
-              <span className="text-[11px] text-blue-600 bg-blue-50 px-2 py-0.5 rounded font-medium flex items-center gap-1">
+              <span className="text-[11px] text-[#C9A84C] bg-[rgba(201,168,76,0.15)] px-2 py-0.5 rounded font-medium flex items-center gap-1">
                 <Sparkles className="w-3 h-3" />
                 Učitano iz vašeg profila
               </span>
@@ -223,70 +225,70 @@ function PopuniObrazacContent() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1">Ime i prezime / Naziv *</label>
+                <label className="block text-xs font-semibold text-[rgba(248,244,238,0.85)] mb-1">Ime i prezime / Naziv *</label>
                 <input
                   type="text"
                   name="podnosilacIme"
                   value={formData.podnosilacIme}
                   onChange={handleChange}
                   placeholder="Petar Petrović"
-                  className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
+                  className="w-full text-sm px-3 py-2 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1">Grad / Mesto *</label>
+                <label className="block text-xs font-semibold text-[rgba(248,244,238,0.85)] mb-1">Grad / Mesto *</label>
                 <input
                   type="text"
                   name="podnosilacMesto"
                   value={formData.podnosilacMesto}
                   onChange={handleChange}
                   placeholder="Beograd"
-                  className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
+                  className="w-full text-sm px-3 py-2 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1">Ulica i broj *</label>
+                <label className="block text-xs font-semibold text-[rgba(248,244,238,0.85)] mb-1">Ulica i broj *</label>
                 <input
                   type="text"
                   name="podnosilacAdresa"
                   value={formData.podnosilacAdresa}
                   onChange={handleChange}
                   placeholder="Knez Mihailova 10"
-                  className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
+                  className="w-full text-sm px-3 py-2 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1">Kontakt telefon</label>
+                <label className="block text-xs font-semibold text-[rgba(248,244,238,0.85)] mb-1">Kontakt telefon</label>
                 <input
                   type="text"
                   name="podnosilacTelefon"
                   value={formData.podnosilacTelefon}
                   onChange={handleChange}
                   placeholder="064/1234567"
-                  className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
+                  className="w-full text-sm px-3 py-2 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
                 />
               </div>
             </div>
           </div>
 
           {/* Sekcija 3: Sadržina zahteva */}
-          <div className="pt-4 border-t border-slate-100 space-y-4">
+          <div className="pt-4 border-t border-[rgba(248,244,238,0.12)] space-y-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">Predmet zahteva / Prijave *</label>
+              <label className="block text-xs font-semibold text-[rgba(248,244,238,0.85)] mb-1">Predmet zahteva / Prijave *</label>
               <input
                 type="text"
                 name="predmetZahteva"
                 value={formData.predmetZahteva}
                 onChange={handleChange}
-                className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden font-medium"
+                className="w-full text-sm px-3 py-2 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden font-medium"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center justify-between">
+              <label className="block text-xs font-semibold text-[rgba(248,244,238,0.85)] mb-1 flex items-center justify-between">
                 <span>Obrazloženje / Tekst zahteva *</span>
               </label>
               <textarea
@@ -295,7 +297,7 @@ function PopuniObrazacContent() {
                 value={formData.obrazlozenje}
                 onChange={handleChange}
                 placeholder="Unesite detalje i obrazloženje zahteva koji podnosite..."
-                className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
+                className="w-full text-sm px-3 py-2 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
               />
               <AiAsistentOdredbe 
                 trenutniUnos={formData.obrazlozenje}
@@ -305,21 +307,21 @@ function PopuniObrazacContent() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">Prilozi uz zahtev (opciono)</label>
+              <label className="block text-xs font-semibold text-[rgba(248,244,238,0.85)] mb-1">Prilozi uz zahtev (opciono)</label>
               <textarea
                 name="prilozi"
                 rows={2}
                 value={formData.prilozi}
                 onChange={handleChange}
                 placeholder="Npr. 1. Očitana lična karta, 2. Dokaz o uplati takse, 3. Uverenje..."
-                className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
+                className="w-full text-sm px-3 py-2 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
               />
             </div>
           </div>
 
           {/* Dugmad na dnu */}
-          <div className="pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="text-xs text-slate-500">
+          <div className="pt-6 border-t border-[rgba(248,244,238,0.12)] flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-xs text-[rgba(248,244,238,0.6)]">
               Izbor pisma: <strong>{pismo === 'cirilica' ? 'Ćirilica' : 'Latinica'}</strong>
             </div>
 
@@ -339,16 +341,16 @@ function PopuniObrazacContent() {
 
           {/* DESNA STRANA: Prikaz originalnog dokumenta */}
           <div className={`w-full sm:w-1/2 lg:w-7/12 ${aktivniTab === 'pregled' ? 'block' : 'hidden sm:block'}`}>
-            <div className="bg-white rounded-xl border border-slate-200 shadow-lg overflow-hidden h-[800px] flex flex-col">
-              <div className="bg-slate-100 px-4 py-3 border-b border-slate-200 flex items-center justify-between">
-                <div className="flex items-center gap-2 text-sm font-bold text-slate-700">
+            <div className="bg-[rgba(20,46,33,0.45)] backdrop-blur-sm rounded-xl border border-[rgba(201,168,76,0.25)] shadow-lg overflow-hidden h-[800px] flex flex-col">
+              <div className="bg-[rgba(20,46,33,0.6)] px-4 py-3 border-b border-[rgba(201,168,76,0.2)] flex items-center justify-between">
+                <div className="flex items-center gap-2 text-sm font-bold text-[rgba(248,244,238,0.85)]">
                   <FileText className="w-4 h-4 text-[#C9A84C]" />
                   <span>Originalni izgled dokumenta</span>
                 </div>
                 {fajl && (
                   <a
                     href={`${pdfUrl}&download=1`}
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#C9A84C] hover:opacity-80"
                     download
                   >
                     <Download className="w-3.5 h-3.5" /> Skini prazan
@@ -363,7 +365,7 @@ function PopuniObrazacContent() {
                     title="Prikaz originalnog dokumenta"
                   />
                 ) : (
-                  <div className="flex items-center justify-center h-full text-slate-400 text-sm">
+                  <div className="flex items-center justify-center h-full text-[rgba(248,244,238,0.5)] text-sm">
                     Prikaz originalnog dokumenta nije dostupan
                   </div>
                 )}
@@ -388,7 +390,7 @@ function PopuniObrazacContent() {
 
 export default function PopuniObrazacPage() {
   return (
-    <Suspense fallback={<div className="p-8 text-center text-sm text-slate-500">Učitavanje forme...</div>}>
+    <Suspense fallback={<div className="p-8 text-center text-sm text-[rgba(248,244,238,0.6)]">Učitavanje forme...</div>}>
       <PopuniObrazacContent />
     </Suspense>
   );

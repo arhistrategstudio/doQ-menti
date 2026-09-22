@@ -116,7 +116,7 @@ export default function Home() {
           <h2 className="text-center text-[20px] leading-7 font-semibold tracking-normal" style={{ color: "rgba(248,244,238,0.55)" }}>
             Najčešće korišćeni obrasci
           </h2>
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
             {[
               { icon: <FileText className="w-4 h-4" />, label: "Punomoćje", href: "/obrasci?q=punomo" },
               { icon: <HomeIcon className="w-4 h-4" />, label: "Ugovor o zakupu", href: "/obrasci?q=zakup" },
