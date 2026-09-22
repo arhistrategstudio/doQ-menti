@@ -1,12 +1,14 @@
 ﻿'use client';
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { Download, CheckCircle2, ShieldCheck, HelpCircle } from 'lucide-react';
 import { popuniSablon } from '@/lib/sabloni';
 import { SADRZAJ_KUPOPRODAJA_VOZILA } from '@/sabloni/kupoprodaja-vozila/sadrzaj';
 import { Pismo } from '@/lib/pismo';
 import { FormaPolja } from '@/components/ugovori/kupoprodaja/FormaPolja';
 import { SablonPreview } from '@/components/ugovori/kupoprodaja/SablonPreview';
+import { PlacanjeModal } from '@/components/placanje/PlacanjeModal';
 
 const SABLON_TEKST = `
 <div class="ugovor-papir font-serif text-gray-900 leading-relaxed text-sm">
@@ -117,6 +119,7 @@ export default function KupoprodajaVozilaPage() {
   const [pismo, setPismo] = useState<Pismo>('latinica');
   const [generisemPdf, setGenerisemPdf] = useState(false);
   const [aktivniTab, setAktivniTab] = useState<'forma' | 'pregled'>('forma');
+  const [otvorenPlacanjeModal, setOtvorenPlacanjeModal] = useState(false);
 
   const danasDatum = new Date().toISOString().split('T')[0];
 
@@ -169,7 +172,7 @@ export default function KupoprodajaVozilaPage() {
     }
   }, [formData, pismo]);
 
-  const preuzmiPdf = async () => {
+  const preuzmiPdfDirektno = async () => {
     try {
       setGenerisemPdf(true);
       const res = await fetch('/api/pdf/kupoprodaja-vozila', {
@@ -201,6 +204,7 @@ export default function KupoprodajaVozilaPage() {
       alert('Došlo je do greške pri preuzimanju dokumenta.');
     } finally {
       setGenerisemPdf(false);
+      setOtvorenPlacanjeModal(false);
     }
   };
 
@@ -210,11 +214,11 @@ export default function KupoprodajaVozilaPage() {
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <a href="/" className="font-extrabold text-xl tracking-tight text-blue-600 flex items-center gap-1.5">
+            <Link href="/" className="font-extrabold text-xl tracking-tight text-blue-600 flex items-center gap-1.5">
               <span>do<span className="text-indigo-600">Q</span>-menti</span>
-            </a>
+            </Link>
             <span className="text-slate-300">/</span>
-            <span className="text-xs sm:text-sm font-semibold text-slate-700 truncate max-w-[200px] sm:max-w-md">
+            <span className="text-xs sm:text-sm font-semibold text-slate-700 truncate max-w-[180px] sm:max-w-md">
               Kupoprodaja vozila
             </span>
           </div>
@@ -243,12 +247,11 @@ export default function KupoprodajaVozilaPage() {
             </div>
 
             <button
-              onClick={preuzmiPdf}
-              disabled={generisemPdf}
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium text-xs sm:text-sm px-4 py-2 rounded-lg shadow-sm transition-all disabled:opacity-50"
+              onClick={() => setOtvorenPlacanjeModal(true)}
+              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium text-xs sm:text-sm px-4 py-2 rounded-lg shadow-sm transition-all"
             >
               <Download className="w-4 h-4" />
-              <span>{generisemPdf ? 'Generisanje...' : 'Preuzmi PDF (149 RSD)'}</span>
+              <span>Preuzmi PDF (149 RSD)</span>
             </button>
           </div>
         </div>
@@ -290,12 +293,18 @@ export default function KupoprodajaVozilaPage() {
         </div>
       </div>
 
-      {/* Glavni radni prostor (Forma + Živi pregled) */}
+      {/* Glavni radni prostor */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* LEVO: Forma */}
           <div className={`lg:col-span-6 ${aktivniTab === 'pregled' ? 'hidden lg:block' : 'block'}`}>
-            <FormaPolja formData={formData} onChange={handleChange} />
+            <FormaPolja 
+              formData={formData} 
+              onChange={handleChange}
+              onPosebneOdredbeChange={(tekst) => {
+                setFormData((prev) => ({ ...prev, posebneOdredbe: tekst }));
+              }}
+            />
           </div>
 
           {/* DESNO: Živi pregled */}
@@ -304,7 +313,7 @@ export default function KupoprodajaVozilaPage() {
               previewHtml={previewHtml} 
               pismo={pismo} 
               generisemPdf={generisemPdf} 
-              onPreuzmiPdf={preuzmiPdf} 
+              onPreuzmiPdf={() => setOtvorenPlacanjeModal(true)} 
             />
           </div>
         </div>
@@ -348,6 +357,16 @@ export default function KupoprodajaVozilaPage() {
         </div>
 
       </div>
+
+      {/* Modal za izbor načina plaćanja */}
+      {otvorenPlacanjeModal && (
+        <PlacanjeModal
+          dokumentNaziv={SADRZAJ_KUPOPRODAJA_VOZILA.naziv}
+          iznosRsd={SADRZAJ_KUPOPRODAJA_VOZILA.cenaRsd}
+          onZatvori={() => setOtvorenPlacanjeModal(false)}
+          onZavrseno={preuzmiPdfDirektno}
+        />
+      )}
     </div>
   );
 }

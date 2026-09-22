@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { 
   FileText, ShieldCheck, Car, Key, Sparkles, 
-  ArrowRight, Download, CheckCircle, Clock, Zap
+  ArrowRight, Download, CheckCircle, Clock, Zap,
+  Folder, Layers
 } from "lucide-react";
 
 export default function Home() {
@@ -20,7 +21,14 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <Link
+              href="/obrasci"
+              className="text-xs sm:text-sm font-semibold text-slate-700 hover:text-blue-600 flex items-center gap-1.5 transition-colors"
+            >
+              <Folder className="w-4 h-4 text-blue-600" />
+              <span>Svi obrasci (2.294)</span>
+            </Link>
             <Link
               href="/ugovori/kupoprodaja-vozila"
               className="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm px-4 py-2 rounded-lg shadow-sm transition-all"
@@ -45,7 +53,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Generišite zvanične dokumente sa automatskim ispisom iznosa slovima, proverom JMBG/VIN broja, izborom ćirilice ili latinice i trenutnim preuzimanjem u PDF formatu.
+            Generišite zvanične dokumente sa automatskim ispisom iznosa slovima, proverom JMBG/VIN broja, izborom ćirilice ili latinice, AI asistencijom i trenutnim preuzimanjem u PDF formatu.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -55,6 +63,13 @@ export default function Home() {
             >
               <Car className="w-5 h-5" />
               <span>Ugovor o kupoprodaji vozila (149 RSD)</span>
+            </Link>
+            <Link
+              href="/obrasci"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-800 font-bold text-sm px-6 py-3.5 rounded-xl shadow-xs border border-slate-300 transition-all"
+            >
+              <Folder className="w-5 h-5 text-blue-600" />
+              <span>Katalog svih obrazaca (67 kategorija)</span>
             </Link>
           </div>
 
@@ -77,8 +92,8 @@ export default function Home() {
             </div>
             <div className="bg-white p-4 rounded-xl border border-slate-200/80 shadow-xs">
               <Zap className="w-5 h-5 text-amber-600 mb-2" />
-              <div className="font-bold text-xs text-slate-900">Bez registracije</div>
-              <div className="text-xs text-slate-500 mt-0.5">Popunite i preuzmite PDF</div>
+              <div className="font-bold text-xs text-slate-900">3 načina plaćanja</div>
+              <div className="text-xs text-slate-500 mt-0.5">IPS NBS QR, Kartice, SMS</div>
             </div>
           </div>
         </div>
@@ -86,11 +101,18 @@ export default function Home() {
 
       {/* Katalog dokumenata */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
             <h2 className="text-2xl font-bold text-slate-900">Dostupni obrasci i ugovori</h2>
             <p className="text-sm text-slate-500 mt-1">Izaberite dokument za popunjavanje i generisanje</p>
           </div>
+          <Link
+            href="/obrasci"
+            className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-700 bg-blue-50 px-3.5 py-2 rounded-lg border border-blue-200 transition-colors self-start sm:self-auto"
+          >
+            <Layers className="w-4 h-4" />
+            <span>Pogledaj svih 2.294 obrasca</span>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -105,7 +127,7 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-lg text-slate-900">Ugovor o kupoprodaji vozila</h3>
               <p className="text-xs text-slate-600 mt-2 leading-relaxed">
-                Zvanični ugovor za prenos vlasništva nad automobilom ili motociklom, sa rokom prenosa od 30 dana i članom o isplati.
+                Zvanični ugovor za prenos vlasništva nad automobilom ili motociklom, sa rokom prenosa od 30 dana, ispisom cene slovima i AI asistencijom.
               </p>
               <div className="mt-4 flex items-center gap-2 text-xs text-slate-500 font-medium">
                 <CheckCircle className="w-4 h-4 text-emerald-600" />
@@ -171,8 +193,9 @@ export default function Home() {
             © {new Date().getFullYear()} <strong className="text-slate-800">doQ-menti</strong>. Sva prava zadržana.
           </div>
           <div className="flex gap-6">
+            <Link href="/obrasci" className="hover:text-blue-600 transition-colors">Katalog obrazaca</Link>
             <span>Pravno usklađeno sa zakonima RS</span>
-            <span>Bez čuvanja osetljivih podataka</span>
+            <span>Bezbedno IPS/Kartično/SMS plaćanje</span>
           </div>
         </div>
       </footer>

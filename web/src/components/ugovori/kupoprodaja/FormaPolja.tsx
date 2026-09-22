@@ -3,13 +3,15 @@
 import React from 'react';
 import { FileText, User, UserCheck, Car, DollarSign, Sparkles } from 'lucide-react';
 import { validirajJMBG, validirajVIN, validirajRegistarskuOznaku } from '@/lib/validacija';
+import { AiAsistentOdredbe } from '@/components/ai/AiAsistentOdredbe';
 
 interface Props {
   formData: any;
   onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => void;
+  onPosebneOdredbeChange?: (tekst: string) => void;
 }
 
-export function FormaPolja({ formData, onChange }: Props) {
+export function FormaPolja({ formData, onChange, onPosebneOdredbeChange }: Props) {
   const jmbgProdavacOk = !formData.prodavacJmbg || validirajJMBG(formData.prodavacJmbg);
   const jmbgKupacOk = !formData.kupacJmbg || validirajJMBG(formData.kupacJmbg);
   const vinOk = !formData.voziloBrojSasije || validirajVIN(formData.voziloBrojSasije);
@@ -98,6 +100,7 @@ export function FormaPolja({ formData, onChange }: Props) {
               <input
                 type="text"
                 maxLength={13}
+                inputMode="numeric"
                 name="prodavacJmbg"
                 value={formData.prodavacJmbg}
                 onChange={onChange}
@@ -200,6 +203,7 @@ export function FormaPolja({ formData, onChange }: Props) {
               <input
                 type="text"
                 maxLength={13}
+                inputMode="numeric"
                 name="kupacJmbg"
                 value={formData.kupacJmbg}
                 onChange={onChange}
@@ -296,7 +300,7 @@ export function FormaPolja({ formData, onChange }: Props) {
                 value={formData.voziloBrojMotora}
                 onChange={onChange}
                 placeholder="CXX123456"
-                className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden font-mono"
+                className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden font-mono uppercase"
               />
             </div>
           </div>
@@ -307,6 +311,7 @@ export function FormaPolja({ formData, onChange }: Props) {
               <input
                 type="text"
                 maxLength={4}
+                inputMode="numeric"
                 name="voziloGodina"
                 value={formData.voziloGodina}
                 onChange={onChange}
@@ -318,6 +323,7 @@ export function FormaPolja({ formData, onChange }: Props) {
               <label className="block text-xs font-semibold text-slate-700 mb-1">Zapremina (cm³) *</label>
               <input
                 type="text"
+                inputMode="numeric"
                 name="voziloKubikaza"
                 value={formData.voziloKubikaza}
                 onChange={onChange}
@@ -329,6 +335,7 @@ export function FormaPolja({ formData, onChange }: Props) {
               <label className="block text-xs font-semibold text-slate-700 mb-1">Snaga (kW) *</label>
               <input
                 type="text"
+                inputMode="numeric"
                 name="voziloSnagaKw"
                 value={formData.voziloSnagaKw}
                 onChange={onChange}
@@ -377,6 +384,7 @@ export function FormaPolja({ formData, onChange }: Props) {
               <label className="block text-xs font-semibold text-slate-700 mb-1">Kupoprodajna cena *</label>
               <input
                 type="number"
+                inputMode="numeric"
                 name="cenaIznos"
                 value={formData.cenaIznos || ''}
                 onChange={onChange}
@@ -429,14 +437,14 @@ export function FormaPolja({ formData, onChange }: Props) {
         </div>
       </div>
 
-      {/* 6. Posebne odredbe */}
+      {/* 6. Posebne odredbe sa AI */}
       <div className="bg-white rounded-xl border border-slate-200 p-5 shadow-xs">
         <div className="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
           <div className="flex items-center gap-2 font-bold text-slate-800 text-base">
             <Sparkles className="w-5 h-5 text-indigo-600" />
             <span>6. Posebne odredbe (opciono)</span>
           </div>
-          <span className="text-xs text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded font-medium">AI asistencija</span>
+          <span className="text-xs text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded font-bold">AI pametna asistencija</span>
         </div>
         <div>
           <textarea
@@ -447,9 +455,16 @@ export function FormaPolja({ formData, onChange }: Props) {
             placeholder="Npr. Uz vozilo se predaje set zimskih točkova, servisna knjiga i dva originalna ključa..."
             className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
           />
-          <p className="text-xs text-slate-500 mt-1.5">
-            Dodatne napomene biće uvrštene kao poseban član ugovora.
-          </p>
+
+          {/* AI Asistent za odredbe */}
+          <AiAsistentOdredbe
+            trenutniUnos={formData.posebneOdredbe}
+            onPrimeni={(noviTekst) => {
+              if (onPosebneOdredbeChange) {
+                onPosebneOdredbeChange(noviTekst);
+              }
+            }}
+          />
         </div>
       </div>
     </div>
