@@ -209,41 +209,39 @@ export default function KupoprodajaVozilaPage() {
   };
 
   return (
-    <div className="min-h-screen pb-20" style={{ backgroundColor: "#F8F4EE", color: "#1C1C1E" }}>
+    <div className="min-h-screen pb-20 bg-[#0E1015] text-slate-300">
       {/* Header */}
-      <header className="sticky top-0 z-30 border-b" style={{ backgroundColor: "#1A3A2A", borderColor: "rgba(201,168,76,0.2)" }}>
+      <header className="sticky top-0 z-30 border-b border-white/[0.05] bg-[#0E1015]/70 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Link href="/" className="font-extrabold text-xl tracking-tight flex items-center gap-2" style={{ color: "#F8F4EE" }}>
-              <img src="/logo.jpg" alt="Logo" className="w-8 h-8 rounded-full border border-gray-600" />
-              <span>do<span style={{ color: "#C9A84C" }}>Q</span>-menti</span>
+          <div className="flex items-center gap-2.5">
+            <Link href="/" className="font-bold text-xl tracking-tight flex items-center gap-2.5 text-white">
+              <img src="/logo.jpg" alt="doQ-menti" className="w-9 h-9 rounded-lg shadow-lg shadow-indigo-500/20" />
+              <span>doQ-menti</span>
             </Link>
-            <span style={{ color: "rgba(248,244,238,0.3)" }}>/</span>
-            <span className="text-xs sm:text-sm font-medium truncate max-w-[180px] sm:max-w-md" style={{ color: "rgba(248,244,238,0.7)" }}>
+            <span className="text-white/20">/</span>
+            <span className="text-xs sm:text-sm font-medium truncate max-w-[180px] sm:max-w-md text-slate-400">
               Kupoprodaja vozila
             </span>
           </div>
 
           <div className="flex items-center gap-3">
             {/* Pismo toggle */}
-            <div className="inline-flex items-center p-1 rounded-lg text-xs font-medium" style={{ backgroundColor: "rgba(248,244,238,0.1)", border: "1px solid rgba(248,244,238,0.15)" }}>
+            <div className="inline-flex items-center p-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10">
               <button
                 type="button"
                 onClick={() => setPismo('latinica')}
-                className="px-2.5 py-1 rounded-md transition-colors"
-                style={pismo === 'latinica'
-                  ? { backgroundColor: "#C9A84C", color: "#1A3A2A", fontWeight: 700 }
-                  : { color: "rgba(248,244,238,0.65)" }}
+                className={`px-2.5 py-1 rounded-md transition-colors ${
+                  pismo === 'latinica' ? 'bg-indigo-500 text-white font-bold' : 'text-slate-400'
+                }`}
               >
                 Latinica
               </button>
               <button
                 type="button"
                 onClick={() => setPismo('cirilica')}
-                className="px-2.5 py-1 rounded-md transition-colors"
-                style={pismo === 'cirilica'
-                  ? { backgroundColor: "#C9A84C", color: "#1A3A2A", fontWeight: 700 }
-                  : { color: "rgba(248,244,238,0.65)" }}
+                className={`px-2.5 py-1 rounded-md transition-colors ${
+                  pismo === 'cirilica' ? 'bg-indigo-500 text-white font-bold' : 'text-slate-400'
+                }`}
               >
                 Ћирилица
               </button>
@@ -251,8 +249,7 @@ export default function KupoprodajaVozilaPage() {
 
             <button
               onClick={() => setOtvorenPlacanjeModal(true)}
-              className="inline-flex items-center gap-2 font-bold text-xs sm:text-sm px-4 py-2 rounded-lg transition-all"
-              style={{ backgroundColor: "#C9A84C", color: "#1A3A2A" }}
+              className="inline-flex items-center gap-2 font-semibold text-xs sm:text-sm px-4 py-2 rounded-lg bg-indigo-500 hover:bg-indigo-400 text-white shadow-lg shadow-indigo-500/25 transition-all"
             >
               <Download className="w-4 h-4" />
               <span>Preuzmi PDF (149 RSD)</span>
@@ -262,45 +259,37 @@ export default function KupoprodajaVozilaPage() {
       </header>
 
       {/* Hero opis + Tab Switcher */}
-      <div className="border-b py-6 px-4 sm:px-6" style={{ backgroundColor: "#FFFFFF", borderColor: "#E2D9CB" }}>
+      <div className="border-b border-white/5 py-6 px-4 sm:px-6 bg-[#0E1015]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-              <div
-                className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-xs font-semibold mb-2 uppercase tracking-wider"
-                style={{ backgroundColor: "rgba(26,58,42,0.08)", color: "#1A3A2A", border: "1px solid rgba(26,58,42,0.15)" }}
-              >
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium mb-2 bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
                 <ShieldCheck className="w-3.5 h-3.5" />
                 Pravno usklađeno (Zakon o obligacionim odnosima)
               </div>
-              <h1 className="text-2xl sm:text-3xl font-bold" style={{ color: "#1A3A2A" }}>
+              <h1 className="text-2xl sm:text-3xl font-extrabold text-white">
                 {SADRZAJ_KUPOPRODAJA_VOZILA.naziv}
               </h1>
-              <p className="text-sm mt-1 max-w-3xl" style={{ color: "#5C6B5E" }}>
+              <p className="text-sm mt-1 max-w-3xl text-slate-400">
                 {SADRZAJ_KUPOPRODAJA_VOZILA.kratakOpis} Rok za prenos vlasništva i porez je 30 dana.
               </p>
             </div>
 
             {/* Mobile Tab Switcher */}
-            <div
-              className="flex lg:hidden p-1 rounded-lg text-xs font-medium"
-              style={{ backgroundColor: "#F0EBE2", border: "1px solid #E2D9CB" }}
-            >
+            <div className="flex lg:hidden p-1 rounded-lg text-xs font-medium bg-[#15171E] border border-white/5">
               <button
                 onClick={() => setAktivniTab('forma')}
-                className="flex-1 py-2 px-4 rounded-md transition-all font-semibold"
-                style={aktivniTab === 'forma'
-                  ? { backgroundColor: "#1A3A2A", color: "#F8F4EE" }
-                  : { color: "#5C6B5E" }}
+                className={`flex-1 py-2 px-4 rounded-md transition-all font-semibold ${
+                  aktivniTab === 'forma' ? 'bg-indigo-500 text-white' : 'text-slate-400'
+                }`}
               >
                 Formular
               </button>
               <button
                 onClick={() => setAktivniTab('pregled')}
-                className="flex-1 py-2 px-4 rounded-md transition-all font-semibold"
-                style={aktivniTab === 'pregled'
-                  ? { backgroundColor: "#1A3A2A", color: "#F8F4EE" }
-                  : { color: "#5C6B5E" }}
+                className={`flex-1 py-2 px-4 rounded-md transition-all font-semibold ${
+                  aktivniTab === 'pregled' ? 'bg-indigo-500 text-white' : 'text-slate-400'
+                }`}
               >
                 Živi pregled
               </button>
@@ -335,21 +324,21 @@ export default function KupoprodajaVozilaPage() {
         </div>
 
         {/* UPUTSTVO I FAQ SEKCIJA */}
-        <div className="mt-16 pt-10 border-t border-slate-200 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="mt-16 pt-10 border-t border-white/5 grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
-            <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-emerald-400" />
               Šta raditi nakon popunjavanja ugovora?
             </h2>
             <div className="space-y-4">
               {SADRZAJ_KUPOPRODAJA_VOZILA.uputstvo.map((korak) => (
-                <div key={korak.korak} className="flex items-start gap-3 bg-white p-3.5 rounded-lg border border-slate-200">
-                  <div className="w-6 h-6 rounded-full bg-blue-100 text-blue-700 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                <div key={korak.korak} className="flex items-start gap-3 bg-[#15171E] p-3.5 rounded-xl border border-white/5">
+                  <div className="w-6 h-6 rounded-full bg-indigo-500/10 text-indigo-400 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 border border-indigo-500/20">
                     {korak.korak}
                   </div>
                   <div>
-                    <h3 className="text-xs font-bold text-slate-900">{korak.naslov}</h3>
-                    <p className="text-xs text-slate-600 mt-0.5">{korak.opis}</p>
+                    <h3 className="text-xs font-bold text-slate-200">{korak.naslov}</h3>
+                    <p className="text-xs text-slate-400 mt-0.5">{korak.opis}</p>
                   </div>
                 </div>
               ))}
@@ -357,15 +346,15 @@ export default function KupoprodajaVozilaPage() {
           </div>
 
           <div>
-            <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <HelpCircle className="w-5 h-5 text-indigo-600" />
+            <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-indigo-400" />
               Najčešća pitanja i pravni saveti
             </h2>
             <div className="space-y-3">
               {SADRZAJ_KUPOPRODAJA_VOZILA.faq.map((item, idx) => (
-                <div key={idx} className="bg-white p-4 rounded-lg border border-slate-200">
-                  <h3 className="text-xs font-bold text-slate-900 mb-1">{item.pitanje}</h3>
-                  <p className="text-xs text-slate-600">{item.odgovor}</p>
+                <div key={idx} className="bg-[#15171E] p-4 rounded-xl border border-white/5">
+                  <h3 className="text-xs font-bold text-slate-200 mb-1">{item.pitanje}</h3>
+                  <p className="text-xs text-slate-400">{item.odgovor}</p>
                 </div>
               ))}
             </div>

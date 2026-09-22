@@ -17,8 +17,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0E1015] text-slate-300 selection:bg-indigo-500/30 selection:text-indigo-200 font-sans flex flex-col relative overflow-hidden">
       
-      {/* ─── BACKGROUND GRID & GLOWS ──────────────────────────────────── */}
+      {/* ─── BACKGROUND IMAGE & GRID & GLOWS ─────────────────────────── */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden flex justify-center z-0">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 opacity-[0.15] bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/bg-documents.jpg')" }}
+        ></div>
         {/* Subtle Grid */}
         <div 
           className="absolute inset-0 opacity-[0.03]" 
@@ -37,12 +42,8 @@ export default function Home() {
       {/* ─── HEADER (Glassmorphic) ────────────────────────────────────── */}
       <header className="sticky top-0 z-50 border-b border-white/[0.05] bg-[#0E1015]/70 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-white group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 p-0.5 shadow-lg shadow-indigo-500/20 group-hover:shadow-indigo-500/40 transition-all">
-              <div className="w-full h-full bg-[#0E1015] rounded-md flex items-center justify-center">
-                <FileText className="w-4 h-4 text-indigo-400" />
-              </div>
-            </div>
+          <Link href="/" className="flex items-center gap-2.5 font-bold text-xl tracking-tight text-white group">
+            <img src="/logo.jpg" alt="doQ-menti" className="w-9 h-9 rounded-lg shadow-lg shadow-indigo-500/20 group-hover:shadow-indigo-500/40 transition-all" />
             <span>doQ-menti</span>
           </Link>
 
