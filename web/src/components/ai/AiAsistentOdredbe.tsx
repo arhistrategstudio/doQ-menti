@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { Sparkles, Wand2, Check, RefreshCw } from 'lucide-react';
@@ -6,9 +6,10 @@ import { Sparkles, Wand2, Check, RefreshCw } from 'lucide-react';
 interface Props {
   trenutniUnos: string;
   onPrimeni: (tekst: string) => void;
+  kontekst?: string;
 }
 
-export function AiAsistentOdredbe({ trenutniUnos, onPrimeni }: Props) {
+export function AiAsistentOdredbe({ trenutniUnos, onPrimeni, kontekst = '' }: Props) {
   const [ucitava, setUcitava] = useState(false);
   const [predlozi, setPredlozi] = useState<string[]>([]);
   const [prikaziPredloge, setPrikaziPredloge] = useState(false);
@@ -20,7 +21,7 @@ export function AiAsistentOdredbe({ trenutniUnos, onPrimeni }: Props) {
       const res = await fetch('/api/ai/asistencija', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ tip: 'predlog_odredbi_vozilo' }),
+        body: JSON.stringify({ tip: 'predlog_odredbi', kontekst }),
       });
       const data = await res.json();
       setPredlozi(data.predlozi || []);
@@ -41,6 +42,7 @@ export function AiAsistentOdredbe({ trenutniUnos, onPrimeni }: Props) {
         body: JSON.stringify({
           tip: 'strukturisi_odredbe',
           unos: trenutniUnos,
+          kontekst
         }),
       });
       const data = await res.json();

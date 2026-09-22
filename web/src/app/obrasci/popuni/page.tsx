@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
@@ -8,7 +8,7 @@ import {
   Sparkles, CheckCircle2, Building2, User, MapPin, Phone, Mail
 } from 'lucide-react';
 import { Pismo } from '@/lib/pismo';
-import { PlacanjeModal } from '@/components/placanje/PlacanjeModal';
+import { AiAsistentOdredbe } from '@/components/ai/AiAsistentOdredbe';
 
 function PopuniObrazacContent() {
   const searchParams = useSearchParams();
@@ -20,6 +20,7 @@ function PopuniObrazacContent() {
   const [pismo, setPismo] = useState<Pismo>('latinica');
   const [generisem, setGenerisem] = useState(false);
   const [otvorenPlacanjeModal, setOtvorenPlacanjeModal] = useState(false);
+  const [aktivniTab, setAktivniTab] = useState<'formular' | 'pregled'>('formular');
 
   const [formData, setFormData] = useState({
     podnosilacIme: '',
@@ -98,29 +99,32 @@ function PopuniObrazacContent() {
     }
   };
 
+  const pdfUrl = `/api/obrasci/preuzmi?izvor=${izvor}&kategorija=${encodeURIComponent(kategorija)}&fajl=${encodeURIComponent(fajl)}`;
+
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 pb-20">
+    <div className="min-h-screen bg-[#F8F4EE] text-slate-900 pb-20">
       {/* Header */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
+      <header className="bg-[#1A3A2A] border-b border-[#C9A84C]/20 sticky top-0 z-30 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <Link href="/" className="font-extrabold text-xl tracking-tight text-blue-600 flex items-center gap-1.5">
-              <span>do<span className="text-indigo-600">Q</span>-menti</span>
+          <div className="flex items-center space-x-2">
+            <Link href="/" className="font-extrabold text-xl tracking-tight text-[#F8F4EE] flex items-center gap-2">
+              <img src="/logo.jpg" alt="Logo" className="w-8 h-8 rounded-full border border-gray-600" />
+              <span>do<span className="text-[#C9A84C]">Q</span>-menti</span>
             </Link>
-            <span className="text-slate-300">/</span>
-            <Link href="/obrasci" className="text-xs sm:text-sm font-semibold text-slate-600 hover:text-blue-600">
+            <span className="text-slate-500 hidden sm:inline">/</span>
+            <Link href="/obrasci" className="hidden sm:inline text-xs sm:text-sm font-semibold text-slate-300 hover:text-[#C9A84C]">
               Obrasci
             </Link>
           </div>
 
           <div className="flex items-center gap-3">
             {/* Pismo */}
-            <div className="inline-flex items-center p-1 bg-slate-100 rounded-lg border border-slate-200 text-xs font-medium">
+            <div className="inline-flex items-center p-1 bg-white/10 rounded-lg border border-white/20 text-xs font-medium">
               <button
                 type="button"
                 onClick={() => setPismo('latinica')}
                 className={`px-2.5 py-1 rounded-md transition-colors ${
-                  pismo === 'latinica' ? 'bg-white text-blue-600 shadow-xs font-bold' : 'text-slate-600'
+                  pismo === 'latinica' ? 'bg-[#C9A84C] text-[#1A3A2A] shadow-xs font-bold' : 'text-slate-300'
                 }`}
               >
                 Latinica
@@ -129,53 +133,65 @@ function PopuniObrazacContent() {
                 type="button"
                 onClick={() => setPismo('cirilica')}
                 className={`px-2.5 py-1 rounded-md transition-colors ${
-                  pismo === 'cirilica' ? 'bg-white text-blue-600 shadow-xs font-bold' : 'text-slate-600'
+                  pismo === 'cirilica' ? 'bg-[#C9A84C] text-[#1A3A2A] shadow-xs font-bold' : 'text-slate-300'
                 }`}
               >
                 Ћирилица
               </button>
             </div>
-
-            {/* Dugme za preuzimanje originalnog praznog obrasca */}
-            {fajl && (
-              <a
-                href={`/api/obrasci/preuzmi?izvor=${izvor}&kategorija=${encodeURIComponent(kategorija)}&fajl=${encodeURIComponent(fajl)}`}
-                className="inline-flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs px-3 py-2 rounded-lg transition-colors border border-slate-300"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>Skini prazan original</span>
-              </a>
-            )}
           </div>
         </div>
       </header>
 
       {/* Hero */}
-      <div className="bg-gradient-to-b from-blue-50/70 to-transparent py-8 px-4 sm:px-6 border-b border-slate-200/60">
-        <div className="max-w-4xl mx-auto">
+      <div className="bg-gradient-to-b from-[#1A3A2A] to-[#142E21] py-8 px-4 sm:px-6 border-b border-[#C9A84C]/20 text-[#F8F4EE]">
+        <div className="max-w-7xl mx-auto">
           <Link
             href="/obrasci"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:underline mb-3"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#C9A84C] hover:underline mb-3"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>Nazad na katalog obrazaca</span>
           </Link>
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold mb-2">
-            <Building2 className="w-3.5 h-3.5 text-blue-600" />
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#C9A84C]/20 text-[#C9A84C] text-xs font-semibold mb-2 border border-[#C9A84C]/30">
+            <Building2 className="w-3.5 h-3.5" />
             {kategorija}
           </div>
-          <h1 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-tight">
+          <h1 className="text-xl sm:text-2xl font-extrabold leading-tight mb-1">
             {naziv}
           </h1>
-          <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Popunite podatke u online formi i preuzmite čist, uredno formatiran zvanični PDF ili preuzmite prazan originalni obrazac.
+          <p className="text-xs sm:text-sm text-slate-300">
+            Popunite formu uz AI Asistenta i preuzmite PDF, ili pregledajte originalni izgled dokumenta.
           </p>
         </div>
       </div>
 
+      {/* Mobile Tabovi */}
+      <div className="sm:hidden flex border-b border-[#C9A84C]/20 bg-white sticky top-16 z-20">
+        <button
+          onClick={() => setAktivniTab('formular')}
+          className={`flex-1 py-3 text-sm font-bold text-center border-b-2 transition-colors ${
+            aktivniTab === 'formular' ? 'border-[#C9A84C] text-[#1A3A2A]' : 'border-transparent text-slate-500'
+          }`}
+        >
+          Formular
+        </button>
+        <button
+          onClick={() => setAktivniTab('pregled')}
+          className={`flex-1 py-3 text-sm font-bold text-center border-b-2 transition-colors ${
+            aktivniTab === 'pregled' ? 'border-[#C9A84C] text-[#1A3A2A]' : 'border-transparent text-slate-500'
+          }`}
+        >
+          Originalni dokument
+        </button>
+      </div>
+
       {/* Glavni radni prostor */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 mt-8">
-        <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-6 pb-24">
+        <div className="flex flex-col sm:flex-row gap-6">
+          
+          {/* LEVA STRANA: Forma */}
+          <div className={`w-full sm:w-1/2 lg:w-5/12 space-y-6 ${aktivniTab === 'formular' ? 'block' : 'hidden sm:block'}`}>
           
           {/* Sekcija 1: Organ */}
           <div>
@@ -269,14 +285,21 @@ function PopuniObrazacContent() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">Obrazloženje / Tekst zahteva *</label>
+              <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center justify-between">
+                <span>Obrazloženje / Tekst zahteva *</span>
+              </label>
               <textarea
                 name="obrazlozenje"
                 rows={5}
                 value={formData.obrazlozenje}
                 onChange={handleChange}
                 placeholder="Unesite detalje i obrazloženje zahteva koji podnosite..."
-                className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
+                className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
+              />
+              <AiAsistentOdredbe 
+                trenutniUnos={formData.obrazlozenje}
+                onPrimeni={(tekst) => setFormData(prev => ({...prev, obrazlozenje: tekst}))}
+                kontekst={naziv}
               />
             </div>
 
@@ -288,7 +311,7 @@ function PopuniObrazacContent() {
                 value={formData.prilozi}
                 onChange={handleChange}
                 placeholder="Npr. 1. Očitana lična karta, 2. Dokaz o uplati takse, 3. Uverenje..."
-                className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
+                className="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
               />
             </div>
           </div>
@@ -303,11 +326,48 @@ function PopuniObrazacContent() {
               <button
                 onClick={() => setOtvorenPlacanjeModal(true)}
                 disabled={generisem}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm px-6 py-3 rounded-xl shadow-md transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#C9A84C] hover:bg-[#D5B65F] text-[#1A3A2A] font-bold text-sm px-6 py-3 rounded-xl shadow-md transition-all"
               >
                 <Download className="w-4 h-4" />
                 <span>{generisem ? 'Generisanje...' : 'Preuzmi popunjen PDF (149 RSD)'}</span>
               </button>
+            </div>
+          </div>
+
+          </div>
+          </div>
+
+          {/* DESNA STRANA: Prikaz originalnog dokumenta */}
+          <div className={`w-full sm:w-1/2 lg:w-7/12 ${aktivniTab === 'pregled' ? 'block' : 'hidden sm:block'}`}>
+            <div className="bg-white rounded-xl border border-slate-200 shadow-lg overflow-hidden h-[800px] flex flex-col">
+              <div className="bg-slate-100 px-4 py-3 border-b border-slate-200 flex items-center justify-between">
+                <div className="flex items-center gap-2 text-sm font-bold text-slate-700">
+                  <FileText className="w-4 h-4 text-[#C9A84C]" />
+                  <span>Originalni izgled dokumenta</span>
+                </div>
+                {fajl && (
+                  <a
+                    href={pdfUrl}
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700"
+                    download
+                  >
+                    <Download className="w-3.5 h-3.5" /> Skini prazan
+                  </a>
+                )}
+              </div>
+              <div className="flex-1 bg-slate-50 relative">
+                {fajl ? (
+                  <iframe 
+                    src={pdfUrl + '#toolbar=0&navpanes=0'} 
+                    className="w-full h-full border-none"
+                    title="Prikaz originalnog dokumenta"
+                  />
+                ) : (
+                  <div className="flex items-center justify-center h-full text-slate-400 text-sm">
+                    Prikaz originalnog dokumenta nije dostupan
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 
