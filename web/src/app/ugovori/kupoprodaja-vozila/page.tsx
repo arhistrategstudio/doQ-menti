@@ -214,8 +214,9 @@ export default function KupoprodajaVozilaPage() {
       <header className="sticky top-0 z-30 border-b" style={{ backgroundColor: "#1A3A2A", borderColor: "rgba(201,168,76,0.2)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Link href="/" className="font-extrabold text-xl tracking-tight" style={{ color: "#F8F4EE" }}>
-              do<span style={{ color: "#C9A84C" }}>Q</span>-menti
+            <Link href="/" className="font-extrabold text-xl tracking-tight flex items-center gap-2" style={{ color: "#F8F4EE" }}>
+              <img src="/logo.jpg" alt="Logo" className="w-8 h-8 rounded-full border border-gray-600" />
+              <span>do<span style={{ color: "#C9A84C" }}>Q</span>-menti</span>
             </Link>
             <span style={{ color: "rgba(248,244,238,0.3)" }}>/</span>
             <span className="text-xs sm:text-sm font-medium truncate max-w-[180px] sm:max-w-md" style={{ color: "rgba(248,244,238,0.7)" }}>

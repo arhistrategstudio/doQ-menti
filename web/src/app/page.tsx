@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ShieldCheck, Sparkles, Clock, Zap, ArrowRight, ChevronRight } from "lucide-react";
+import { ShieldCheck, Sparkles, Clock, Zap, ArrowRight, ChevronRight, Search } from "lucide-react";
 import { HomeAiAsistent } from "@/components/home/HomeAiAsistent";
 import katalog from "@/data/katalog-obrazaca.json";
 
@@ -26,8 +26,9 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1 font-extrabold text-2xl tracking-tight" style={{ color: "#F8F4EE" }}>
-            do<span style={{ color: "#C9A84C" }}>Q</span>-menti
+          <Link href="/" className="flex items-center gap-2 font-extrabold text-2xl tracking-tight" style={{ color: "#F8F4EE" }}>
+            <img src="/logo.jpg" alt="Logo" className="w-8 h-8 rounded-full border border-gray-600" />
+            <span>do<span style={{ color: "#C9A84C" }}>Q</span>-menti</span>
           </Link>
 
           {/* Nav */}
@@ -87,6 +88,25 @@ export default function Home() {
           <p className="mt-5 text-sm sm:text-base max-w-xl mx-auto leading-relaxed" style={{ color: "rgba(248,244,238,0.75)" }}>
             Popunite ugovor ili obrazac online uz pametni AI auto-fill i trenutno preuzimanje — ili skinite čist prazan fajl.
           </p>
+
+          {/* Pretraga dokumenata na početnoj strani */}
+          <form action="/obrasci" method="GET" className="mt-8 max-w-2xl mx-auto relative">
+            <Search className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#8A9A8C" }} />
+            <input
+              type="text"
+              name="q"
+              placeholder="Pretražite 2.294 obrasca i dokumenta (npr. ugovor o zakupu, punomoćje...)"
+              className="w-full text-sm pl-12 pr-24 py-4 rounded-xl border-none focus:ring-2 focus:outline-hidden transition-all shadow-lg"
+              style={{ backgroundColor: "#F8F4EE", color: "#1C1C1E", outlineColor: "#C9A84C" }}
+            />
+            <button
+              type="submit"
+              className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-sm"
+              style={{ backgroundColor: "#C9A84C", color: "#1A3A2A" }}
+            >
+              Traži
+            </button>
+          </form>
 
           {/* AI Asistent */}
           <div className="mt-10 text-left max-w-2xl mx-auto">
