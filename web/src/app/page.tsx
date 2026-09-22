@@ -110,6 +110,20 @@ export default function Home() {
         </div>
       </section>
 
+      {/* POVERENJE / LOGO TRAKA */}
+      <section className="w-full">
+        <div className="max-w-[1224px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <h2 className="text-center text-[20px] leading-7 font-semibold tracking-normal" style={{ color: "rgba(248,244,238,0.45)" }}>
+            Pouzdano i usklađeno sa zakonima Republike Srbije
+          </h2>
+          <div className="mt-6 grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div key={i} data-placeholder="logo" className="h-8 rounded-md shimmer" />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="border-t py-8 px-4 sm:px-6 backdrop-blur-md" style={{ backgroundColor: "rgba(26,58,42,0.55)", borderColor: "rgba(201,168,76,0.2)" }}>
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs" style={{ color: "rgba(248,244,238,0.55)" }}>
