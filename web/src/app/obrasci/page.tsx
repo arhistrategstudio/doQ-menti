@@ -49,59 +49,61 @@ function ObrasciSadrzaj() {
   }, [izabranaKategorija]);
 
   return (
-    <div className="min-h-screen pb-20 bg-[#0E1015] text-slate-300">
+    <div className="min-h-screen pb-20" style={{ backgroundColor: "#F8F4EE", color: "#1C1C1E" }}>
       {/* Header */}
-      <header className="sticky top-0 z-30 border-b border-white/[0.05] bg-[#0E1015]/70 backdrop-blur-md">
+      <header className="sticky top-0 z-30 border-b" style={{ backgroundColor: "#1A3A2A", borderColor: "rgba(201,168,76,0.2)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <Link href="/" className="font-bold text-xl tracking-tight flex items-center gap-2.5 text-white">
-              <img src="/logo.jpg" alt="doQ-menti" className="w-9 h-9 rounded-lg shadow-lg shadow-indigo-500/20" />
-              <span>doQ-menti</span>
+          <div className="flex items-center gap-2">
+            <Link href="/" className="font-extrabold text-xl tracking-tight flex items-center gap-2" style={{ color: "#F8F4EE" }}>
+              <img src="/logo.jpg" alt="Logo" className="w-8 h-8 rounded-full border border-gray-600" />
+              <span>do<span style={{ color: "#C9A84C" }}>Q</span>-menti</span>
             </Link>
-            <span className="text-white/20">/</span>
-            <span className="text-xs sm:text-sm font-medium truncate max-w-[180px] sm:max-w-md text-slate-400">
-              Katalog (2.294)
+            <span style={{ color: "rgba(248,244,238,0.3)" }}>/</span>
+            <span className="text-xs sm:text-sm font-medium truncate max-w-[180px] sm:max-w-md" style={{ color: "rgba(248,244,238,0.7)" }}>
+              Katalog svih obrazaca (2.294)
             </span>
           </div>
 
           <Link
             href="/"
-            className="text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
+            className="text-xs font-semibold transition-colors hover:opacity-80"
+            style={{ color: "#C9A84C" }}
           >
-            ← Početna
+            ← Nazad na početnu
           </Link>
         </div>
       </header>
 
       {/* Hero i Pretraga */}
-      <div className="py-10 px-4 sm:px-6 border-b border-white/5">
+      <div className="py-10 px-4 sm:px-6 border-b" style={{ backgroundColor: "#FFFFFF", borderColor: "#E2D9CB" }}>
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-medium text-indigo-300">
+          <div
+            className="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-semibold uppercase tracking-wider"
+            style={{ backgroundColor: "rgba(26,58,42,0.08)", color: "#1A3A2A", border: "1px solid rgba(26,58,42,0.15)" }}
+          >
             <Layers className="w-3.5 h-3.5" />
             67 kategorija • 2.294 zvanična obrasca
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-white">
-            Katalog svih obrazaca
+          <h1 className="text-2xl sm:text-3xl font-bold" style={{ color: "#1A3A2A" }}>
+            Katalog svih preuzetih i državnih obrazaca
           </h1>
-          <p className="text-xs sm:text-sm max-w-2xl mx-auto text-slate-400">
-            Popunite obrazac online sa AI auto-fill ili preuzmite prazan originalni fajl.
+          <p className="text-xs sm:text-sm max-w-2xl mx-auto" style={{ color: "#5C6B5E" }}>
+            Izaberite opciju: popunite obrazac online u aplikaciji sa automatskim ispisom ili preuzmite čist, prazan originalni fajl.
           </p>
 
-          <div className="relative max-w-2xl mx-auto mt-6 group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl blur-sm opacity-10 group-hover:opacity-30 transition duration-500"></div>
-            <div className="relative flex items-center bg-[#15171E] border border-white/10 rounded-xl overflow-hidden">
-              <Search className="w-5 h-5 ml-4 text-slate-500" />
-              <input
-                type="text"
-                value={pretraga}
-                onChange={(e) => {
-                  setPretraga(e.target.value);
-                  setIzabranaKategorija(null);
-                }}
-                placeholder="Pretražite obrazac po nazivu..."
-                className="w-full bg-transparent text-sm text-white px-4 py-3.5 focus:outline-hidden placeholder-slate-500 font-medium"
-              />
-            </div>
+          <div className="relative max-w-2xl mx-auto mt-6">
+            <Search className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#8A9A8C" }} />
+            <input
+              type="text"
+              value={pretraga}
+              onChange={(e) => {
+                setPretraga(e.target.value);
+                setIzabranaKategorija(null);
+              }}
+              placeholder="Pretražite obrazac po nazivu (npr. ugovor o radu, PPI-4, prebivalište, saglasnost...)"
+              className="w-full text-sm pl-12 pr-4 py-3.5 rounded-2xl border focus:ring-2 focus:outline-hidden transition-all"
+              style={{ backgroundColor: "#F8F4EE", borderColor: "#E2D9CB", color: "#1C1C1E", outlineColor: "#C9A84C" }}
+            />
           </div>
         </div>
       </div>
@@ -114,58 +116,59 @@ function ObrasciSadrzaj() {
             <div className="flex items-center justify-between">
               <button
                 onClick={() => setIzabranaKategorija(null)}
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-400 hover:text-indigo-300 bg-indigo-500/10 px-3 py-1.5 rounded-lg border border-indigo-500/20 transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-700 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200 transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
                 <span>Sve kategorije</span>
               </button>
               <div className="text-xs text-slate-500">
-                Ukupno: <strong className="text-slate-300">{aktivnaKategorijaObj.items.length}</strong>
+                Ukupno obrazaca: <strong>{aktivnaKategorijaObj.items.length}</strong>
               </div>
             </div>
 
-            <div className="bg-[#15171E] rounded-2xl border border-white/5 p-6">
-              <div className="flex items-center gap-3 pb-4 border-b border-white/5 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+            <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-xs">
+              <div className="flex items-center gap-3 pb-4 border-b border-slate-100 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center">
                   <Folder className="w-5 h-5" />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-white">{aktivnaKategorijaObj.name}</h2>
-                  <p className="text-xs text-slate-500">Popunite online ili preuzmite prazan</p>
+                  <h2 className="text-xl font-bold text-slate-900">{aktivnaKategorijaObj.name}</h2>
+                  <p className="text-xs text-slate-500">Izaberite popunjavanje ili preuzimanje praznog obrasca</p>
                 </div>
               </div>
 
-              <div className="divide-y divide-white/5">
+              <div className="divide-y divide-slate-100">
                 {aktivnaKategorijaObj.items.map((item: any, idx: number) => (
                   <div
                     key={idx}
-                    className="py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-white/[0.02] px-3 rounded-xl transition-colors"
+                    className="py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-slate-50/80 px-3 rounded-xl transition-colors"
                   >
                     <div className="flex items-start gap-3">
-                      <FileText className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
+                      <FileText className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                       <div>
-                        <div className="text-xs sm:text-sm font-bold text-slate-200 leading-snug">{item.title}</div>
+                        <div className="text-xs sm:text-sm font-bold text-slate-900 leading-snug">{item.title}</div>
                         <div className="text-[11px] text-slate-500 mt-1 flex items-center gap-2">
-                          <span className="font-mono bg-white/5 px-1.5 py-0.5 rounded text-slate-400 font-semibold">
+                          <span className="font-mono bg-slate-100 px-1.5 py-0.5 rounded text-slate-600 font-semibold">
                             {item.file.split('.').pop()?.toUpperCase()}
                           </span>
-                          <span>{item.source}</span>
+                          <span>Izvor: {item.source}</span>
                         </div>
                       </div>
                     </div>
 
+                    {/* Dve opcije za svaki obrazac: Popuni ili Preuzmi prazan */}
                     <div className="flex items-center gap-2 shrink-0 self-end md:self-auto">
                       <Link
                         href={`/obrasci/popuni?naziv=${encodeURIComponent(item.title)}&kategorija=${encodeURIComponent(aktivnaKategorijaObj.name)}&fajl=${encodeURIComponent(item.file)}&izvor=${item.source}`}
-                        className="inline-flex items-center gap-1.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-xs px-3.5 py-2 rounded-lg transition-colors shadow-lg shadow-indigo-500/20"
+                        className="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs px-3.5 py-2 rounded-lg transition-colors shadow-xs"
                       >
                         <Edit3 className="w-3.5 h-3.5" />
-                        <span>Popuni</span>
+                        <span>Popuni online</span>
                       </Link>
 
                       <a
                         href={`/api/obrasci/preuzmi?izvor=${item.source}&kategorija=${encodeURIComponent(aktivnaKategorijaObj.name)}&fajl=${encodeURIComponent(item.file)}&download=1`}
-                        className="inline-flex items-center gap-1.5 bg-white/5 hover:bg-white/10 text-slate-300 font-semibold text-xs px-3 py-2 rounded-lg transition-colors border border-white/10"
+                        className="inline-flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs px-3 py-2 rounded-lg transition-colors border border-slate-200"
                         title="Preuzmite prazan originalni obrazac"
                         download
                       >
@@ -185,22 +188,21 @@ function ObrasciSadrzaj() {
                 <div
                   key={kat.name}
                   onClick={() => setIzabranaKategorija(kat.name)}
-                  className="bg-[#13151A] rounded-xl border border-white/5 p-5 hover:border-indigo-500/50 hover:bg-[#1A1D24] transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden"
+                  className="bg-white rounded-xl border border-slate-200/90 p-5 shadow-xs hover:shadow-md hover:border-blue-400 transition-all cursor-pointer flex flex-col justify-between group"
                 >
-                  <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex items-center gap-3">
-                      <div className="w-9 h-9 rounded-lg bg-white/5 text-slate-400 flex items-center justify-center group-hover:bg-indigo-500/10 group-hover:text-indigo-400 transition-colors">
+                      <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
                         <Folder className="w-4 h-4" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-sm text-slate-200 line-clamp-1 group-hover:text-white transition-colors">
+                        <h3 className="font-bold text-sm text-slate-900 line-clamp-1 group-hover:text-blue-600 transition-colors">
                           {kat.name}
                         </h3>
-                        <span className="text-[10px] font-mono text-slate-500">{kat.count} docs</span>
+                        <span className="text-xs text-slate-500">{kat.count} obrazaca</span>
                       </div>
                     </div>
-                    <ChevronRight className="w-4 h-4 text-slate-600 group-hover:text-indigo-400 group-hover:translate-x-0.5 transition-all" />
+                    <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition-all" />
                   </div>
                 </div>
               ))}
