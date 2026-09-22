@@ -58,18 +58,18 @@ export default function Home() {
         {/* Pozadinska slika */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/bg-documents.jpg')" }}
+          style={{ backgroundImage: "url('/background-doc.jpg')" }}
         />
         {/* Tamni overlay */}
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(135deg, rgba(26,58,42,0.93) 0%, rgba(26,58,42,0.80) 60%, rgba(20,40,30,0.70) 100%)" }}
+          style={{ background: "linear-gradient(180deg, rgba(12,20,15,0.74) 0%, rgba(12,20,15,0.52) 45%, rgba(12,20,15,0.78) 100%)" }}
         />
 
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-40 lg:pt-48 pb-16 sm:pb-24 text-center">
           {/* Badge */}
           <div
-            className="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-semibold mb-6 uppercase tracking-wider"
+            className="inline-flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-full text-sm font-normal mb-6"
             style={{ backgroundColor: "rgba(201,168,76,0.15)", color: "#C9A84C", border: "1px solid rgba(201,168,76,0.35)" }}
           >
             <ShieldCheck className="w-3.5 h-3.5" />
@@ -77,7 +77,7 @@ export default function Home() {
           </div>
 
           <h1
-            className="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight"
+            className="text-[2.25rem] sm:text-[3rem] lg:text-[3.75rem] font-semibold tracking-normal leading-[1.05]"
             style={{ color: "#F8F4EE" }}
           >
             Pravni dokumenti i obrasci

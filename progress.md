@@ -5,7 +5,7 @@
 
 ## Sledeći korak
 
-**Faza 3.1 & 1.3** – Izrada sledećeg MVP šablona „Punomoćje” (Faza 3.1) i/ili prvi deploy na Vercel (Faza 1.3).
+**Faza 3.1 & 1.3** – Izrada sledećeg MVP šablona „Punomoćje” (Faza 3.1) i/ili prvi deploy na Vercel (Faza 1.3), pošto je UI/UX redizajn završen.
 
 ## Plan po fazama
 
@@ -64,6 +64,8 @@
 
 ## Dnevnik (najnovije gore)
 
+- **22.09.2026** – Restilizovan hero blok na početnoj strani (`web/src/app/page.tsx`) prema trigger.dev referenci: nova pozadinska slika `background-doc.jpg`, tamniji gradient overlay, veći gornji razmak (`pt-28 sm:pt-40 lg:pt-48`), veći naslov (do ~60px, weight 600) i pill-oblik badge-a. Tekst, linkovi i kartice nepromenjeni. `npm run build` prošao bez grešaka, vizuelno potvrđeno u browseru.
+- **22.09.2026** – Završen kompletan UI/UX redizajn aplikacije (Opcija B). Primenjena nova, profesionalna kolor paleta (Forest Green i Gold). Redizajnirana početna strana sa hero sekcijom (pozadinska slika legalne/administrativne tematike) i gridom svih kategorija. Poboljšan i ujednačen dizajn zaglavlja i mobilnog tab switch-a na stranicama `/obrasci` i `/ugovori/kupoprodaja-vozila`. Promene su uspešno commit-ovane na git (`main` grana).
 - **22.09.2026** – Dodat AI pametni asistent na početnu stranu (`HomeAiAsistent`) koji pamti osnovne podatke korisnika (ime, grad, adresa, telefon, email - bez JMBG-a) u lokalnoj memoriji pregledača za automatsko popunjavanje svih formi. Omogućeno i online popunjavanje svih obrazaca (`/obrasci/popuni`) uz generisanje PDF-a kao i skidanje praznog originala.
 - **22.09.2026** – Povezani SVI preuzeti obrasci i kategorije iz foldera `docs/` u web aplikaciju (`/obrasci` sa pretragom i preuzimanjem svih 2.294 obrasca u 67 kategorija). Implementirana AI pametna asistencija za posebne odredbe i 3 načina plaćanja (1. NBS IPS QR, 2. Platne kartice, 3. SMS plaćanje). `npm run build` uspešno prošao sa 10 ruta.
 - **22.09.2026** – Završena Faza 2.5 i 2.6: Izrađen `lib/pdf` generatorski modul sa punom podrškom za srpske karaktere (latinica i ćirilica) i vodenim žigom, kreirana serverska API ruta `/api/pdf/kupoprodaja-vozila`, implementirana kompletna interaktivna stranica sa formularom, validacijom polja (JMBG, VIN, tablice) i živim pregledom dokumenta u realnom vremenu (`/ugovori/kupoprodaja-vozila`), kao i nova moderna početna strana (`/`). `npm run build` uspešno generiše sve rute.
