@@ -1,0 +1,130 @@
+[
+  {
+    "kategorija": "Lična dokumenta i prebivalište",
+    "naziv": "Obrazac 1 - Prijava i odjava prebivališta i prijava promene adrese stana",
+    "fajl": "Obrazac_1_Prijava_odjava_prebivalista.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Lična dokumenta i prebivalište\\Obrazac_1_Prijava_odjava_prebivalista.pdf",
+    "url": "http://www.mup.gov.rs/wps/wcm/connect/9123fe58-3cfc-40ad-be00-1c3905cf75eb/Obrazac+1+-+Prijava-odjava+prebivalista+i+promena+adrese.pdf?MOD=AJPERES&CVID=m0j4w9b",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Lična dokumenta i prebivalište",
+    "naziv": "Obrazac 2 - Prijava i odjava boravišta",
+    "fajl": "Obrazac_2_Prijava_odjava_boravista.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Lična dokumenta i prebivalište\\Obrazac_2_Prijava_odjava_boravista.pdf",
+    "url": "http://www.mup.gov.rs/wps/wcm/connect/10e6a8e8-69aa-448f-aa1c-99c53641b9d4/Obrazac+2+-+Prijava-odjava+boravista.pdf?MOD=AJPERES&CVID=m0j4z4M",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Lična dokumenta i prebivalište",
+    "naziv": "Saglasnost vlasnika stana za prijavu prebivališta / boravišta",
+    "fajl": "Saglasnost_stanodavca_prijava_prebivalista.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Lična dokumenta i prebivalište\\Saglasnost_stanodavca_prijava_prebivalista.pdf",
+    "url": "http://www.mup.gov.rs/wps/wcm/connect/f448c5ca-3b32-4467-89ca-a2283da70557/Saglasnost_stanodavca_prebivaliste.pdf?MOD=AJPERES",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Matične knjige",
+    "naziv": "Obrazac U-2 A - Zahtev za izdavanje izvoda iz matične knjige rođenih",
+    "fajl": "Zahtev_izvod_maticna_knjiga_rodjenih_U2A.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Matične knjige\\Zahtev_izvod_maticna_knjiga_rodjenih_U2A.pdf",
+    "url": "http://mduls.gov.rs/wp-content/uploads/2021/04/Zahtev-izvod-rodjeni-U-2-A.pdf",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Matične knjige",
+    "naziv": "Obrazac U-2 B - Zahtev za izdavanje izvoda iz matične knjige venčanih",
+    "fajl": "Zahtev_izvod_maticna_knjiga_vencanih_U2B.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Matične knjige\\Zahtev_izvod_maticna_knjiga_vencanih_U2B.pdf",
+    "url": "http://mduls.gov.rs/wp-content/uploads/2021/04/Zahtev-izvod-vencani-U-2-B.pdf",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Matične knjige",
+    "naziv": "Obrazac U-2 V - Zahtev za izdavanje izvoda iz matične knjige umrlih",
+    "fajl": "Zahtev_izvod_maticna_knjiga_umrlih_U2V.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Matične knjige\\Zahtev_izvod_maticna_knjiga_umrlih_U2V.pdf",
+    "url": "http://mduls.gov.rs/wp-content/uploads/2021/04/Zahtev-izvod-umrli-U-2-V.pdf",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Matične knjige",
+    "naziv": "Obrazac U-2 G - Zahtev za izdavanje uverenja o državljanstvu",
+    "fajl": "Zahtev_uverenje_o_drzavljanstvu_U2G.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Matične knjige\\Zahtev_uverenje_o_drzavljanstvu_U2G.pdf",
+    "url": "http://mduls.gov.rs/wp-content/uploads/2021/04/Zahtev-uverenje-drzavljanstvo-U-2-G.pdf",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Vozila i saobraćaj",
+    "naziv": "Zahtev za registraciju i izdavanje saobraćajne dozvole i registarskih tablica",
+    "fajl": "Zahtev_za_registraciju_vozila.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Vozila i saobraćaj\\Zahtev_za_registraciju_vozila.pdf",
+    "url": "http://www.mup.gov.rs/wps/wcm/connect/c5457ef6-829d-4876-92d6-0b8bb0761614/Zahtev_za_registraciju_vozila.pdf?MOD=AJPERES",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Vozila i saobraćaj",
+    "naziv": "Zahtev za izdavanje / produženje vozačke dozvole",
+    "fajl": "Zahtev_za_izdavanje_vozacke_dozvole.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Vozila i saobraćaj\\Zahtev_za_izdavanje_vozacke_dozvole.pdf",
+    "url": "http://www.mup.gov.rs/wps/wcm/connect/b123a123/Zahtev_za_izdavanje_vozacke_dozvole.pdf?MOD=AJPERES",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Oružje",
+    "naziv": "Zahtev za nabavljanje oružja fizičkih lica (Obrazac 1)",
+    "fajl": "Zahtev_za_nabavljanje_oruzja_fizicka_lica.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Oružje\\Zahtev_za_nabavljanje_oruzja_fizicka_lica.pdf",
+    "url": "http://www.mup.gov.rs/wps/wcm/connect/1d82e88a-dfad-424a-b5e0-9ef28bafe04d/Zahtev+za+nabavljanje+oruzja.pdf?MOD=AJPERES",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Oružje",
+    "naziv": "Zahtev za registraciju oružja i izdavanje oružnog lista",
+    "fajl": "Zahtev_za_registraciju_oruzja.pdf",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Oružje\\Zahtev_za_registraciju_oruzja.pdf",
+    "url": "http://www.mup.gov.rs/wps/wcm/connect/3f12e88a-dfad-424a-b5e0-9ef28bafe04d/Zahtev+za+registraciju+oruzja.pdf?MOD=AJPERES",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Poverenik i Zaštitnik građana",
+    "naziv": "Obrazac 1 - Zahtev za pristup informacijama od javnog značaja",
+    "fajl": "Zahtev_za_pristup_informacijama_od_javnog_znacaja.doc",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Poverenik i Zaštitnik građana\\Zahtev_za_pristup_informacijama_od_javnog_znacaja.doc",
+    "url": "https://www.poverenik.rs/images/stories/doc/obrasci/obrazac_zahteva.doc",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Poverenik i Zaštitnik građana",
+    "naziv": "Obrazac 2 - Žalba protiv odluke organa vlasti (kad je organ odbio zahtev)",
+    "fajl": "Zalba_povereniku_protiv_odluke_organa_vlasti.doc",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Poverenik i Zaštitnik građana\\Zalba_povereniku_protiv_odluke_organa_vlasti.doc",
+    "url": "https://www.poverenik.rs/images/stories/doc/obrasci/obrazac_zalbe_protiv_odluke.doc",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Poverenik i Zaštitnik građana",
+    "naziv": "Obrazac 3 - Žalba zbog ćutanja uprave (kad organ nije odgovorio u roku)",
+    "fajl": "Zalba_povereniku_zbog_cutanja_uprave.doc",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Poverenik i Zaštitnik građana\\Zalba_povereniku_zbog_cutanja_uprave.doc",
+    "url": "https://www.poverenik.rs/images/stories/doc/obrasci/obrazac_zalbe_zbog_cutanja_organa.doc",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Poverenik i Zaštitnik građana",
+    "naziv": "Obrazac pritužbe Zaštitniku građana (Ombudsman)",
+    "fajl": "Prituzba_Zastitniku_gradjana_ombudsman.doc",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Poverenik i Zaštitnik građana\\Prituzba_Zastitniku_gradjana_ombudsman.doc",
+    "url": "https://www.ombudsman.rs/attachments/article/125/Obrazac_prituzbe_Zastitniku_gradjana.doc",
+    "status": "greska: HTTP Error 404: Not Found"
+  },
+  {
+    "kategorija": "Zaštita ravnopravnosti",
+    "naziv": "Obrazac pritužbe Povereniku za zaštitu ravnopravnosti",
+    "fajl": "Prituzba_Povereniku_za_zastitu_ravnopravnosti.doc",
+    "putanja": "C:\\Users\\Biserka\\OneDrive\\Desktop\\Projects\\Dokumenti\\docs\\obrasci-mup-drzavni\\Zaštita ravnopravnosti\\Prituzba_Povereniku_za_zastitu_ravnopravnosti.doc",
+    "url": "https://ravnopravnost.gov.rs/wp-content/uploads/2021/05/Obrazac-prituzbe-Povereniku-za-zastitu-ravnopravnosti.doc",
+    "status": "preuzeto"
+  }
+]

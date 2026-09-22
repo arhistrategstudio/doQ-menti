@@ -1,0 +1,3058 @@
+ <!DOCTYPE HTML>
+<html lang="sr-RS">
+<head>
+<script type="text/javascript">
+(function(){
+window["loaderConfig"] = "/TSPD/?type=20";
+})();
+
+</script>
+
+<script type="text/javascript" src="/TSPD/?type=18"></script>
+
+<APM_DO_NOT_TOUCH>
+
+<script type="text/javascript">
+(function(){
+window.ehe=!!window.ehe;try{(function(){(function(){})();var lj=32;try{var Lj,zj,sj=l(17)?1:0,zL=l(239)?1:0,ZL=l(409)?0:1,sL=l(841)?0:1,SL=l(307)?1:0;for(var _j=(l(1E3),0);_j<zj;++_j)sj+=(l(653),2),zL+=l(261)?2:1,ZL+=l(710)?1:2,sL+=l(211)?2:1,SL+=(l(420),3);Lj=sj+zL+ZL+sL+SL;window.ol===Lj&&(window.ol=++Lj)}catch(jJ){window.ol=Lj}var LJ=!0;function Z(J){var L=arguments.length,z=[];for(var S=1;S<L;++S)z.push(arguments[S]-J);return String.fromCharCode.apply(String,z)}
+function oJ(J){var L=14;!J||document[O(L,132,119,129,119,112,119,122,119,130,135,97,130,111,130,115)]&&document[O(L,132,119,129,119,112,119,122,119,130,135,97,130,111,130,115)]!==s(68616527652,L)||(LJ=!1);return LJ}function O(J){var L=arguments.length,z=[],S=1;while(S<L)z[S-1]=arguments[S++]-J;return String.fromCharCode.apply(String,z)}function _J(){}oJ(window[_J[s(1086822,lj)]]===_J);oJ(typeof ie9rgb4!==s(1242178186167,lj));
+oJ(RegExp("\x3c")[s(1372173,lj)](function(){return"\x3c"})&!RegExp(s(42857,lj))[s(1372173,lj)](function(){return"'x3'+'d';"}));
+var iJ=window[Z(lj,129,148,148,129,131,136,101,150,133,142,148)]||RegExp(O(lj,141,143,130,137,156,129,142,132,146,143,137,132),s(-14,lj))[s(1372173,lj)](window["\x6e\x61vi\x67a\x74\x6f\x72"]["\x75\x73e\x72A\x67\x65\x6et"]),IJ=+new Date+(l(493)?463470:6E5),Jl,ll,zl,Zl=window[O(lj,147,133,148,116,137,141,133,143,149,148)],sl=iJ?l(610)?20053:3E4:l(18)?6E3:6045;
+document[O(lj,129,132,132,101,150,133,142,148,108,137,147,148,133,142,133,146)]&&document[O(lj,129,132,132,101,150,133,142,148,108,137,147,148,133,142,133,146)](O(lj,150,137,147,137,130,137,140,137,148,153,131,136,129,142,135,133),function(J){var L=10;document[O(L,128,115,125,115,108,115,118,115,126,131,93,126,107,126,111)]&&(document[Z(L,128,115,125,115,108,115,118,115,126,131,93,126,107,126,111)]===O(L,114,115,110,110,111,120)&&J[O(L,115,125,94,124,127,125,126,111,110)]?zl=!0:document[Z(L,128,115,
+125,115,108,115,118,115,126,131,93,126,107,126,111)]===s(68616527656,L)&&(Jl=+new Date,zl=!1,_l()))});function s(J,L){J+=L;return J.toString(36)}function _l(){if(!document[Z(70,183,187,171,184,191,153,171,178,171,169,186,181,184)])return!0;var J=+new Date;if(J>IJ&&(l(167)?6E5:840777)>J-Jl)return oJ(!1);var L=oJ(ll&&!zl&&Jl+sl<J);Jl=J;ll||(ll=!0,Zl(function(){ll=!1},l(196)?1:0));return L}_l();var il=[l(411)?24924074:17795081,l(874)?2147483647:27611931586,l(959)?936387176:1558153217];
+function lL(J){var L=90;J=typeof J===s(1743045586,L)?J:J[O(L,206,201,173,206,204,195,200,193)](l(298)?36:50);var z=window[J];if(!z||!z[Z(L,206,201,173,206,204,195,200,193)])return;var S=""+z;window[J]=function(J,L){ll=!1;return z(J,L)};window[J][O(L,206,201,173,206,204,195,200,193)]=function(){return S}}for(var LL=(l(893),0);LL<il[s(1294399173,lj)];++LL)lL(il[LL]);oJ(!1!==window[s(18738,lj)]);window.OJ=window.OJ||{};window.OJ.ZI_="081fb1a8ff16e800995bbd9270dc054afb5ac272b1b0c0b851f74a39e4087f92b7b113b0c7b99e767d99740ac839ca3053ad42f48764fb9f61b6d8c0dc40c20855cd50efbf27c7d7394d4a6532a977a363c410e6c091cf9d3c4cc7dd4372316006da5007bacc3702d9ae7e8faac18f8892295e037770e793344eb84b0638bb2682db542a60fda03d9039924b8e06873c30469b912eec0d0209d40dab2da3ac548acc07c4fcd44d6975d450a1a7c6f32a7c14c4289fd3b08f3bd5f1eb32840180788daa6c06f6e0e2470a79cd4a32df4dbdce166a114ddb26edd66b1ad13c20c8a51fcff7299cbacdd1ca5b3e0d255d5e";
+function oL(J){var L=+new Date,z;!document[O(46,159,163,147,160,167,129,147,154,147,145,162,157,160,111,154,154)]||L>IJ&&(l(961)?384786:6E5)>L-Jl?z=oJ(!1):(z=oJ(ll&&!zl&&Jl+sl<L),Jl=L,ll||(ll=!0,Zl(function(){ll=!1},l(351)?1:0)));return!(arguments[J]^z)}function l(J){return 361>J}
+(function(){var J=/(\A([0-9a-f]{1,4}:){1,6}(:[0-9a-f]{1,4}){1,1}\Z)|(\A(([0-9a-f]{1,4}:){1,7}|:):\Z)|(\A:(:[0-9a-f]{1,4}){1,7}\Z)/ig,L=document.getElementsByTagName("head")[0],z=[];L&&(L=L.innerHTML.slice(0,1E3));while(L=J.exec(""))z.push(L)})();})();}catch(x){}finally{ie9rgb4=void(0);};function ie9rgb4(a,b){return a>>b>>0};
+
+})();
+
+</script>
+</APM_DO_NOT_TOUCH>
+
+<script type="text/javascript" src="/TSPD/08d458e5bfab2000b27f1fba78f9f6b63b788e43fc1f8298e1f36716b4ba3f3b2bb758fd0d106352?type=17"></script>
+
+<meta charset="UTF-8"/>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://ravnopravnost.gov.rs/xmlrpc.php" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Favicon -->
+<!--<link rel="shortcut icon" href="" type="image/x-icon"/>-->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<link rel="alternate" hreflang="sr" href="http://ravnopravnost.gov.rs/" />
+<link rel="alternate" hreflang="en" href="http://ravnopravnost.gov.rs/en/" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="sr" href="https://ravnopravnost.gov.rs" />
+<link rel="alternate" hreflang="lat" href="https://ravnopravnost.gov.rs/rs/" />
+<link rel="alternate" hreflang="en" href="https://ravnopravnost.gov.rs/en/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v14.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Насловна &bull; Повереник за заштиту равноправности</title>
+	<meta name="description" content="Повереник за заштиту равноправности је самосталан, независан државни орган, са задатком заштите равноправности и спречавања свих облика дискриминације." />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://ravnopravnost.gov.rs/" />
+	<meta property="og:locale" content="sr_RS" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Насловна &bull; Повереник за заштиту равноправности" />
+	<meta property="og:description" content="Повереник за заштиту равноправности је самосталан, независан државни орган, са задатком заштите равноправности и спречавања свих облика дискриминације." />
+	<meta property="og:url" content="https://ravnopravnost.gov.rs/" />
+	<meta property="og:site_name" content="Повереник за заштиту равноправности" />
+	<meta property="article:publisher" content="https://www.facebook.com/poverenikzazastituravnopravnosti/" />
+	<meta property="article:modified_time" content="2026-09-11T07:05:45+00:00" />
+	<meta property="og:image" content="https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125-300x220.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@ravnopravnostRS" />
+	<meta name="twitter:site" content="@ravnopravnostRS" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ravnopravnost.gov.rs/#website","url":"https://ravnopravnost.gov.rs/","name":"\u041f\u043e\u0432\u0435\u0440\u0435\u043d\u0438\u043a \u0437\u0430 \u0437\u0430\u0448\u0442\u0438\u0442\u0443 \u0440\u0430\u0432\u043d\u043e\u043f\u0440\u0430\u0432\u043d\u043e\u0441\u0442\u0438","description":"","potentialAction":[{"@type":"SearchAction","target":"https://ravnopravnost.gov.rs/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"sr-RS"},{"@type":"ImageObject","@id":"https://ravnopravnost.gov.rs/#primaryimage","inLanguage":"sr-RS","url":"https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125.png","width":800,"height":586},{"@type":"WebPage","@id":"https://ravnopravnost.gov.rs/#webpage","url":"https://ravnopravnost.gov.rs/","name":"\u041d\u0430\u0441\u043b\u043e\u0432\u043d\u0430 &bull; \u041f\u043e\u0432\u0435\u0440\u0435\u043d\u0438\u043a \u0437\u0430 \u0437\u0430\u0448\u0442\u0438\u0442\u0443 \u0440\u0430\u0432\u043d\u043e\u043f\u0440\u0430\u0432\u043d\u043e\u0441\u0442\u0438","isPartOf":{"@id":"https://ravnopravnost.gov.rs/#website"},"primaryImageOfPage":{"@id":"https://ravnopravnost.gov.rs/#primaryimage"},"datePublished":"2016-07-16T13:17:31+00:00","dateModified":"2026-09-11T07:05:45+00:00","description":"\u041f\u043e\u0432\u0435\u0440\u0435\u043d\u0438\u043a \u0437\u0430 \u0437\u0430\u0448\u0442\u0438\u0442\u0443 \u0440\u0430\u0432\u043d\u043e\u043f\u0440\u0430\u0432\u043d\u043e\u0441\u0442\u0438 \u0458\u0435 \u0441\u0430\u043c\u043e\u0441\u0442\u0430\u043b\u0430\u043d, \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0430\u043d \u0434\u0440\u0436\u0430\u0432\u043d\u0438 \u043e\u0440\u0433\u0430\u043d, \u0441\u0430 \u0437\u0430\u0434\u0430\u0442\u043a\u043e\u043c \u0437\u0430\u0448\u0442\u0438\u0442\u0435 \u0440\u0430\u0432\u043d\u043e\u043f\u0440\u0430\u0432\u043d\u043e\u0441\u0442\u0438 \u0438 \u0441\u043f\u0440\u0435\u0447\u0430\u0432\u0430\u045a\u0430 \u0441\u0432\u0438\u0445 \u043e\u0431\u043b\u0438\u043a\u0430 \u0434\u0438\u0441\u043a\u0440\u0438\u043c\u0438\u043d\u0430\u0446\u0438\u0458\u0435.","inLanguage":"sr-RS","potentialAction":[{"@type":"ReadAction","target":["https://ravnopravnost.gov.rs/"]}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Повереник за заштиту равноправности &raquo; довод" href="https://ravnopravnost.gov.rs/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Повереник за заштиту равноправности &raquo; довод коментара" href="https://ravnopravnost.gov.rs/comments/feed/" />
+<link rel='stylesheet' id='otw_grid_manager-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/widgetize-pages-light/include/otw_components/otw_grid_manager/css/otw-grid.css' type='text/css' media='all' />
+<link rel='stylesheet' id='general_foundicons-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/widgetize-pages-light/include/otw_components/otw_shortcode/css/general_foundicons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='social_foundicons-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/widgetize-pages-light/include/otw_components/otw_shortcode/css/social_foundicons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='otw_shortocde-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/widgetize-pages-light/include/otw_components/otw_shortcode/css/otw_shortcode.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pmb_common-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/print-my-blog/assets/styles/pmb-common.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://ravnopravnost.gov.rs/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pmb-select2-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/print-my-blog/assets/styles/libs/select2.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pmb-jquery-ui-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/print-my-blog/assets/styles/libs/jquery-ui/jquery-ui.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pmb-setup-page-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/print-my-blog/assets/styles/setup-page.css' type='text/css' media='all' />
+<link rel='stylesheet' id='magic-liquidizer-table-style-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/magic-liquidizer-responsive-table/idcss/ml-responsive-table.css' type='text/css' media='all' />
+<link rel='stylesheet' id='SFSImainCss-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/ultimate-social-media-icons/css/sfsi-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-horizontal-list-0-css'  href='//ravnopravnost.gov.rs/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.css' type='text/css' media='all' />
+<style id='wpml-legacy-horizontal-list-0-inline-css' type='text/css'>
+.wpml-ls-statics-shortcode_actions{background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#cdcdcd;}.wpml-ls-statics-shortcode_actions a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions a:hover,.wpml-ls-statics-shortcode_actions a:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}
+</style>
+<link rel='stylesheet' id='wpml-tm-admin-bar-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/wpml-translation-management/res/css/admin-bar-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='gathercssplugins-css-css'  href='https://ravnopravnost.gov.rs/wp-content/themes/gather/css/plugins/plugins.css' type='text/css' media='all' />
+<link rel='stylesheet' id='awesome-cdn-stylesheet-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='gatheranimate-css-css'  href='https://ravnopravnost.gov.rs/wp-content/themes/gather/css/plugins/animate.css' type='text/css' media='all' />
+<link rel='stylesheet' id='gathertheme-style-css'  href='https://ravnopravnost.gov.rs/wp-content/themes/gather-child/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='gathercustom-style-css'  href='https://ravnopravnost.gov.rs/wp-content/themes/gather-child/css/custom.css' type='text/css' media='all' />
+<style id='gathercustom-style-inline-css' type='text/css'>
+/*White bg*/ body,.pace .pace-progress{background:#ffffff}footer.page-footer{background:#ffffff}.navbar-default{background:#ffffff}/*Grey*/ body,.timeline-content h2{color:#5c5c5c}.nav-pills>li>a{color:#C2C2C2}.form-control:focus{border-color:#C2C2C2}.navbar-default .navbar-nav>li>a{color:#818181}.slick-prev:before,.slick-next:before{color:#C2C2C2}/* green *-----*/ ::-moz-selection{background:#1f57a1;color:#FFF}::selection{background:#1f57a1;color:#FFF}.header,.sub-header{color:#FFF;background-color:#1f57a1}/*color*/ a,a:hover,a:focus,.speaker-info p,.highlighted-plan .price,.highlighted-plan .plan-name,a.popup-video:hover i{color:#1f57a1}.benefit-item .benefit-icon i{color:#1f57a1}/*background*/ .timeline::before{background:#1f57a1}.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.current-menu-parent>a,.navbar-default .navbar-nav>.current-menu-parent>a:focus,.navbar-default .navbar-nav>.current-menu-parent>a:hover{color:#ffffff;background-color:#1f57a1}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#333333}/*border*/ .post-wrap .sticky,.timeline-bullet,.highlighted-plan{border-color:#1f57a1}/*background color*/ .nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover,.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{background-color:#1f57a1}/* BUTTONS-------*/ .btn-default{color:#1f57a1;border-color:#FFF}.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active{background-color:transparent;border-color:#FFF;color:#FFF}.btn-primary{background-color:#5c5c5c}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active{background-color:#3b3b3b}.btn-success{background-color:#1f57a1;border-color:#1f57a1}.btn-success:hover,.btn-success:focus,.btn-success:active,.btn-success.active{background-color:#FFF;border-color:#1f57a1;color:#1f57a1}.btn-outline{color:#8C8C8C;border-color:#CACACA}.btn-outline:hover,.btn-outline:focus,.btn-outline:active,.btn-outline.active{background-color:transparent;border-color:#818181;color:#8C8C8C}.vc_tta-tabs.vc_tta-tabs-position-top:not([class*="vc_tta-gap"]):not(.vc_tta-o-no-fill) .vc_tta-tab.vc_active>a{color:#FFF!important;background-color:#1f57a1!important}.vc_tta-panel.vc_active .vc_tta-panel-heading .vc_tta-panel-title a,.vc_tta.vc_general .vc_tta-panel-title:hover a{color:#1f57a1!important}
+@charset "utf-8";
+/* CSS Document */
+
+::selection {
+    background: #fa7a23;
+    color: #FFF;
+}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic-ext,latin-ext');
+.wpcf7-form-control-wrap + div {
+    display:none;
+}
+body {font-weight:normal;}
+h6 {
+    font-weight:bold !important;
+}
+
+#text_icl-8, #text_icl-9, #text_icl-10 {
+    width:100%;
+}
+.btn-block > .vc_general.vc_btn3 {
+    display:block;
+}
+
+.vc_btn3.vc_btn3-color-primary, .vc_btn3.vc_btn3-color-primary.vc_btn3-style-flat {
+background-color: #00AEEF !important;    
+}
+
+#htmlmap_posts {
+    text-align:left;
+}
+.no-padding {
+    padding:0 !important;
+}
+
+#navbar {
+    margin: 0 0 0 0;
+} 
+
+.navbar-brand {
+    margin-top:-129px;
+}
+
+.navbar-collapse:before {
+    display:inline;
+}
+a {color:#1c6d8c;}
+a:visited {
+    color:#1c6d8c;
+}
+a:hover {
+    color:#00aeef;
+}
+
+.rpwe-summary {
+    margin-top: 5px;
+    display: inline !important;
+    margin-left: 5px;
+}
+
+/*#menu-mainmenu-cirilica {
+    text-align:center;
+}*/
+/*Header*/
+ 
+.header {
+	position: relative;
+	padding: 0;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	margin-top:170px !important;
+	background-color: transparent !important;
+ }
+
+ 
+#header_logo {
+    float: left;
+    width: 320px;
+}
+
+#header_logo .logo_link {
+    display: block;
+    /*height: 95px;*/
+    height: 101px;
+    width: 320px;
+}
+
+#header_logo .logo_link.sr-RS {
+    /*background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATEAAABfCAMAAAC3MgDEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjc4NDUyREI5MzhBMDExRTI5NEM5REI4MTA3MDNGODE5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc4NDUyREJBMzhBMDExRTI5NEM5REI4MTA3MDNGODE5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Nzg0NTJEQjczOEEwMTFFMjk0QzlEQjgxMDcwM0Y4MTkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Nzg0NTJEQjgzOEEwMTFFMjk0QzlEQjgxMDcwM0Y4MTkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6VKgp6AAAAw1BMVEUAAAAAru8cP5Uj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') no-repeat;
+*/
+background:url('/wp-content/themes/gather/images/poverenik-za-zastitu-ravnopravnosti-logo-cir.png') no-repeat;
+}
+
+#header_logo .logo_link.sr-YU {
+    /*background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATEAAABfCAMAAAC3MgDEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjc4NDUyREI5MzhBMDExRTI5NEM5REI4MTA3MDNGODE5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc4NDUyREJBMzhBMDExRTI5NEM5REI4MTA3MDNGODE5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Nzg0NTJEQjczOEEwMTFFMjk0QzlEQjgxMDcwM0Y4MTkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Nzg0NTJEQjgzOEEwMTFFMjk0QzlEQjgxMDcwM0Y4MTkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6VKgp6AAAAw1BMVEUAAAAAru8cP5Uj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') no-repeat;
+*/
+background:url('/wp-content/themes/gather-child/images/poverenik-za-zastitu-ravnopravnosti-logo-lat2.png') no-repeat;
+}
+
+#header_logo .logo_link.en-GB {
+    /*background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATEAAABfCAMAAAC3MgDEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjc4NDUyREI5MzhBMDExRTI5NEM5REI4MTA3MDNGODE5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc4NDUyREJBMzhBMDExRTI5NEM5REI4MTA3MDNGODE5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Nzg0NTJEQjczOEEwMTFFMjk0QzlEQjgxMDcwM0Y4MTkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Nzg0NTJEQjgzOEEwMTFFMjk0QzlEQjgxMDcwM0Y4MTkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6VKgp6AAAAw1BMVEUAAAAAru8cP5Uj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') no-repeat;
+*/
+background:url('/wp-content/themes/gather/images/commissioner-for-protection-of-equality.png') no-repeat;
+}
+
+#header_logo_single {
+    float: left;
+    width: 30px;
+    margin-right: 30px;
+    padding: 7px 7px 0px 5px;
+}
+
+#header_logo_single .logo_link {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+#header_logo_single .logo_link.sr-RS {
+    background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTlDMzg5NkU0OUNEMTFFNkFGRTdENkE1NDA5QkQzMTQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTlDMzg5NkQ0OUNEMTFFNkFGRTdENkE1NDA5QkQzMTQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUwRkQyMTUzNDlDQTExRTZBNjMzRDlBMUM4NUNCODBGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUwRkQyMTU0NDlDQTExRTZBNjMzRDlBMUM4NUNCODBGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+6xRKdAAABLtJREFUeNrMlmtsFFUUx/8zs+9Zui3QLtgutAW0lUIi8RURiQ/aQJQgNRFDDBV8NMTED2BriokxvoJ8qdEYNDFtDIJNDDXBSjRUqQlJbS1EUWxraVqR1ta27m53u6+ZO567O4tL2VkXpNGT/JJ9nHP/c+/c8xB8+yVkaUXErcRyoox4kPhWZ4joIfqyWSinToEpC7+HiVpiPWGd9d9mHW4a0U00Ex8SwUyLihn+u5/4gThKVKYRnW0CcTvxLvELsf1ahF8nThCrcG22mDhEfMxPNp1DuqPmzo/i+hhfZwWxjpjJtOPm6yiatDXEV7N3niq8h9iBubE7iHfSCfP0eBVza48Tj6UKFxMvETbMve0jLEnhBmLbbA9GWem0qcixq/FE0bJYVSU/G2PIiakQNQ3sSpeVxK7krT5O/ESM0eKiQ2Qw2zSBsjZ2dsQTCsaswm2FgzZJY2Y1BG1GlQK0YDFpvEIx79HnDgeYy6JQTBTKoFwSGnQWszt9XbZcNWjh+wuKIhQI5IB5eo7HhVv5B0nUINsZ1CjQ1Hs3zniXoWV4LcbDuXhieTtWu4ZQU/o1HJYYQhHRQ6ewlwn4wq6q7RZS/8RVhc/lTeiU78PPzgpsmmxFRaQHO33NuCl0EQqdbcAk0Uno1SZwQIRMkYoiofXCLTh4vhLfjK2ar8QcL+fLY9VmUYmOBN2fQlTry3IuRBrXfICqwnPF/ojULTN1J4NwbIPnKDpytgiQUI9YeBfUsBMW1ylafo8l9sdwja8J+yYasSQ0iqCF9OpVmGSZ4cSv5Wg4vR2np26ESYoi3+Y9ZHZMbtT44ZB5nKPPMYilveMrN7cMr0dVyTkgQqfEoB2eX42OvC1ANPImlODe+IXgYTFvNb25m6Ni3rr3F9VNnnRW4e2RZ3Bv4LvErd5xshZPdu5G92QZ3I4JFNi8D0gC28hIVNMrvwa+GfYQzKENNlMo/qPIrw4dX2Mupb+KEmih2sRdFVLQysECNZiZQr+5nB64E1s9HyWEjwzdgxnFiqXzRiEKGhcpyNAHliYWTLnkiUqwkHAYBJVAICdGFVPx4bPcRxJhbvufsEoxqNqlItZn2HuAMwqL+wmanmOeSD//PkhcNBDu+vsjBSjTht2JN/Q3rshRTTwgSOGefKs/Hp8UfmHqLZ70k7RUQ5q12vTenFV3gl5UTullTiFagor1WLnrN+xecRwsklpp6NmF+PvkbZBv/yligV4fmo1eWqYJpE0nbna67QN+N1pH78KzFV9C9SVObshakvrauy4/2qsbBLbqI8yAPoFwzptEtVsUhG0Heysx7rUpeWYVKj32a+4XufBaEm7X3zWvgt/r8WeJumx2zLvH4XSOlNOlC6z+I/2BRaE+f1FbwcIBrclVM/GjfXURIj6aVgSjJrOfcOttN+2OLUZPd+li012mHK+VJXYDRU5HNZWf8PMZRJP2tD6dphXOJ5ZknuY0fruXUXHho27IyaZ5HVkM4R9HZCdRaCTMu1gkUzRPIb5rTjxAkPhP4eyaJvUuA2Ety2bOdP6VifiP7H8hzFPLnkVM0o9ngXQVs5rZKI/5yx/WHfwGwTIxSvBKP0KE+cik34/fDWLsetm9bKD/S4ABAElxmnQmTuKwAAAAAElFTkSuQmCC')
+}
+#header_lang {
+    float: left;
+}
+
+#font-size {
+   float: left; 
+}
+
+#google-cs {
+   float: right; 
+   max-width: 280px;
+   margin-bottom: 5px;
+}
+
+#font-size ul{
+  list-style:none;
+  margin-left: 30px;
+  padding: 0 10px;
+  background-color:#32a9e6;
+  border-radius: 3px;
+line-height: 24px;
+margin-top: 10px;
+}
+
+#font-size ul>li {
+  margin-top: 5px;
+}
+
+#right-logo {
+   float:right; 
+}
+
+#right-logo > div {
+    float:left;
+    margin-bottom: 2px;
+}
+
+#right-logo > div > p > span {
+    font-size:0.8em !important;
+    display: block;
+    color: #000;
+    font-weight:300;
+}
+
+#right-logo > div > p > span > a {
+    color: #000;
+    font-weight:300;
+}
+
+#right-logo > div > p {
+    margin-bottom:0;
+    line-height: 1.5;
+}
+
+/*WPML*/
+
+#lang_sel_list  ul {
+    border-top:none !important;
+}
+
+#lang_sel_list {
+    text-transform:uppercase;
+    margin-top:10px;
+}
+
+#lang_sel_list ul a.lang_sel_other {
+    /*background:#fff;
+   color:#fa7a23 !important;
+    padding: 5px !important;
+    border:1px solid #fa7a23;
+     margin-right:5px !important;*/
+    background: #fff;
+    color: #005487 !important;
+    border: 1px solid #005487;
+    margin-right: 5px !important;
+    width: 30px;
+    height: 30px;
+    padding: 5px 0px 0px 5px !important;
+}
+
+#lang_sel_list a.lang_sel_sel {
+    /*background-color:#fa7a23 !important;
+    color:#fff !important;
+    padding:5px !important;
+    border: 1px solid #fa7a23; 
+    margin-right:5px !important;*/
+    background-color: #005487 !important;
+    color: #fff !important;
+    padding: 5px 5px !important;
+    border: 1px solid #005487;
+    margin-right: 5px !important;
+    width: 30px;
+    height: 30px;
+    /*margin-left: 10px;*/
+}
+
+/*#lang_sel_list a.lang_sel_sel:first-child {
+   margin-left: 10px; 
+}*/
+
+#lang_sel_list a, #lang_sel_list a:visited {
+    border-color: none !important;
+}
+/*Menu*/
+/*.navbar-nav > ul > li > a {
+    font-size: 1em;
+    font-weight: bold;
+}*/
+
+.navbar-nav>.active>a {
+    color: #FFF;
+    background-color: #005487 !important; 
+}
+.navbar-default , .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.current-menu-parent > a, .navbar-default .navbar-nav>.current-menu-parent > a:focus, .navbar-default .navbar-nav>.current-menu-parent > a:hover {
+    color: #FFF;
+    /*background-color: #00AEEF;*/
+}
+
+.navbar-default .navbar-nav >  li > a:hover {
+ color: #FFF;
+    background-color: #005487 !important; 
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.current-menu-parent > a, .navbar-default .navbar-nav>.current-menu-parent > a:focus, .navbar-default .navbar-nav>.current-menu-parent > a:hover {
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.current-menu-parent > a, .navbar-default .navbar-nav>.current-menu-parent > a:focus, .navbar-default .navbar-nav>.current-menu-parent > a:hover {
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li >a {
+    /*border-right: 1px solid #fff;*/
+    font-size: 0.9em;
+    font-weight: bold !important;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    border-radius: 0;
+    border: none;
+}
+.dropdown-menu {
+  background-color: #44739E;
+}
+
+.dropdown-menu > li > a{
+  color:#fff;
+  text-transform:uppercase;
+  font-size: 1em;
+  font-family: 'PT Sans', sans-serif;
+  /*font-weight: bold;*/
+}
+/*.front-button-1, .front-button-2 {
+    text-align:justify !important;
+    border:1px solid #FA7A23 !important;
+    vertical-align: middle;
+}
+
+.front-button-1 > img {
+    float:left;
+    margin-right:5px;
+}
+
+.front-button-2 > strong:before {
+    vertical-align: middle;
+    margin-right: 5px;
+    content:url('http://symbolgames.net/templates/ravnopravnost/images/tvoja_prava_orange.png');
+}
+
+.front-button-1:hover, .front-button-2:hover {
+  background-color: #FA7A23 !important;  
+  color:#fff !important;
+}
+
+.front-button-1 > strong:before {
+    vertical-align: middle;
+    margin-right: 5px;
+    content:url('http://zlatkomatic.com/wp-content/themes/gather-child/images/diskriminacija_ruka.png');
+}*/
+
+.widget_recent_entries > .widgettitle {
+    background:#263d96;
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:bold;
+    margin: 0 0 0 0 !important;
+    padding: 5px;
+    color:#fff;
+    text-align:center;
+}
+
+.widget_recent_entries > ul {
+    padding-left: 0;
+    box-shadow: 2px 2px 2px 2px #ddd;
+    list-style:none;
+}
+
+.widget_recent_entries > ul > li {
+    padding: 10px;
+    text-align: left;
+    padding: 5px 0 2px 5px;
+    box-shadow: 0px 1px 0px 0px #ddd;
+}
+
+.widget_recent_entries > ul > li > a {
+   color:#FA7A23;
+}
+
+.widget_recent_entries > ul > li:last-child {
+    box-shadow: none;
+}
+
+.vc_custom_1469694200033 {
+    /*box-shadow: 2px 2px 2px 2px #ddd;*/
+    min-height:430px;
+    padding-top:0 !important;
+}
+/*Smooth Slider*/
+
+div#smooth_slider_1.smooth_slider  {
+    border-top: none !important;
+    /*border-bottom: 1px solid #060E9F !important;*/
+    padding-top: 10px;
+    margin-top: -11px !important;
+}
+
+.sldr_title {
+    /*background:#263d96;*/
+    /*color:#fff !important;*/
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.smooth_slider .sldr_title {
+    margin: 0 0 0 0 !important;
+}
+
+#smooth_slider_1 {
+    /*box-shadow: 2px 2px 2px 2px #ddd;*/
+    /*border: 3px solid #060E9F !important;*/
+    padding-left: 0;
+    padding-right: 0px;
+    min-height: 430px !important;
+    /*background-color:#fafafa !important;*/
+}
+
+.first {
+        /*box-shadow: 2px 2px 2px 2px #ddd;*/
+       
+}
+
+.slider_thumbnail {
+    margin-right:0 !important;
+    /*border-top: none !important;*/
+}
+
+.smooth_slider .smooth_slideri{text-align:left !important; padding-left:5px;}
+
+.smooth_slider .smooth_slideri h2 {text-align:left !important; padding: 5px 0 5px 10px;} 
+
+.smooth_slider p.smooth_more {
+    display: inline-block !important;
+}
+
+.smooth_slider p.smooth_more a {
+       font-family: 'PT Sans', sans-serif !important; 
+}
+
+.smooth_slider span {
+    /*font-family: 'MinionPro-Regular,sans-serif' !important;*/
+        font-family: 'PT Sans', sans-serif !important; 
+    font-size: 1em !important;
+}
+/**/
+
+.otw-sidebar-1 > .otw-widget-1 > .widgettitle {text-align: center;
+    background-image: linear-gradient(to right, #ff9b07, #ef004f);
+    color: #fff;
+    font-size: 26px;
+    margin: 0px 0 10px 0;
+    padding: 19px 0;
+    text-transform: uppercase;
+}
+
+.otw-sidebar-2 > .otw-widget-1 > .widgettitle {text-align: center;
+    background-image: linear-gradient(to right, #ff9b07, #ef004f);
+    color: #fff;
+    font-size: 26px;
+    margin: 0px 0 10px 0;
+    padding: 19px 0;
+    text-transform: uppercase;
+}
+h2.widgettitle {text-align: center;
+    background-image: linear-gradient(to right, #ff9b07, #ef004f);
+    color: #fff;
+    font-size: 26px;
+    margin: 0px 0 10px 0;
+    padding: 19px 0;
+    text-transform: uppercase;
+}
+
+.otw-sidebar-2 > .otw-widget-1 > .widgettitle:after, .otw-sidebar-1 > .otw-widget-1 > .widgettitle:after {
+    /*font-family:fontAwesome;
+    content:"\00a0\f0da";
+    vertical-align: middle;*/
+}
+
+.otw-sidebar-1 > .otw-widget-1 > .rpwe-block > ul > li  .rpwe-time {
+    color:#005487 !important;
+    font-size: 0.8em;
+}
+/*.otw-sidebar-1 > .otw-widget-1 > .rpwe-block > ul > li  .rpwe-time:before {
+    color:#fa7a23 !important;
+    vertical-align: middle;
+    margin-right: 5px;
+    content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NDY5Nzg2MTU0QzkxMUU2QTQzNUI4NzhDODFCNzA4RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NDY5Nzg2MDU0QzkxMUU2QTQzNUI4NzhDODFCNzA4RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU1MzdEOEI1MkE2NjExRTJBNEE2QTk3MDQ0MTlEQzE4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU1MzdEOEI2MkE2NjExRTJBNEE2QTk3MDQ0MTlEQzE4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+9+vD0AAAAGxJREFUeNrslFEKgDAMQ5PiPTyW5/OkFfwsiu3WCIL53ZY8QhjXbUeQIyc+XbBgmjVOQViRthRgE8ao1IJueoNQv/l3zS8Xs4igXWHusRaKqqFlf7iRsNfWMkrPu7ed5OyYIhNnrtz5GXIIMADF1w9E343LQAAAAABJRU5ErkJggg==')
+}*/
+
+.otw-sidebar-2 > .otw-widget-1 > .rpwe-block > ul > li  .rpwe-time {
+    color:#00adef !important;
+    font-size: 13px !important;
+}
+/*.otw-sidebar-2 > .otw-widget-1 > .rpwe-block > ul > li  .rpwe-title:before {
+    vertical-align: middle;
+    margin-right: 5px;
+    line-height:1;
+    content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAXCAYAAADpwXTaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NjIyRDgwMTJBNjYxMUUyQjVBN0FDOTAwMDJERkFBQiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NjIyRDgwMDJBNjYxMUUyQjVBN0FDOTAwMDJERkFBQiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVDNjdDQzk0NUQyQUUyMTFCNDVFRkU5RDBFRDUxNzc1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4QkYxNUY5QzRGNUUxMTFBNTVEQzVGNzk3ODk0RDk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7ViEygAAAR9JREFUeNqslYERgjAMRaELyAZ1A9lARuBcAJxAR2AEmUAdQA83YARGkAmoE2Bzl3r/uFJaNXc5Sklf0zQJcXQbIotc+FlGCzLuks9YzNgUrBnr6ANGGG3x5MU4Z97zEFiqVWqttPYwh2BvGMoz+kKEZcctjLNQWMPB7WC+tdimPjDy5KRVWTxCL1c+sBcbpjz+KWYteGOOug45HsI6y6IgWHxXicszCbbSBdYgivegn0pAfKRHlk/TiEAHE2cxCbZcgGHelQCiiytF4IXlAD0jWHePzsB6T9iG21MDc7UGNVibIXlVQAL33Biche4rdDz1D9hjWsPCUdguods7zvWzJhBW2eJsYJT5tSfoysnq7LTk9t6RJj1/n/2xvAUYAGHeQWZYqv40AAAAAElFTkSuQmCC')
+}*/
+
+.rpwe-title > a{
+    display:inline !important;
+}
+
+.rpwe-summary > a{
+    display:inline !important;
+}
+
+.rpwe-block li {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px !important;
+    padding-bottom: 0 !important;
+    list-style-type: none;
+}
+
+.first-stripe {
+    background:#f28b00;
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 2px;
+    width:25%;
+}
+
+.second-stripe {
+    background:#00aeed;
+    position: fixed;
+    top: 0;
+    left:25%;
+    height: 2px;
+    width:50%;
+}
+
+.third-stripe {
+    background:#f28b00;
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 2px;
+    width:25%;
+}
+
+
+
+.front-column-bottom {
+  box-shadow:2px 2px 2px 2px #ddd;
+  min-height:402px;
+}
+.front-column-bottom > p {
+  padding:10px;
+}
+
+.front-column-bottom a {
+  color:#fff;  
+  font-size:1.4em;
+  padding-left:40px;
+  margin:-10px;
+  display:block;
+  cursor:pointer;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2QjYwQTIyMTI0RTgxMUUyOTJEQUI3REM1QkU2RjFFNSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2QjYwQTIyMDI0RTgxMUUyOTJEQUI3REM1QkU2RjFFNSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM0NDc4MEY4MzYxQUUyMTE4Nzc2RTY4MEVGNTQ0QjhFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4QkYxNUY5QzRGNUUxMTFBNTVEQzVGNzk3ODk0RDk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ItinGAAAADhJREFUeNpi+PfvHwMQp5FIw9kghiAQ/yeRhrMZRl0w6oJRF4DZjGBTKABMUDqNRBrBptQLAAEGAOLKIGvdtb4SAAAAAElFTkSuQmCC') no-repeat 15px 50% #fa7a23;
+}
+
+.front-column-links > h3 {
+    color: #fa7a23;
+    border-bottom: 1px solid #fa7a23;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.front-column-links > ul {
+    list-style:none;
+    min-height: 176px;
+    padding-left: 5px;
+}
+.qmn_quiz_container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.bottom-links {
+    color:#333;
+    font-size:1.2em;
+    text-align:center;
+}
+
+.bottom-links:hover {
+    color:#263d96;
+}
+
+.margin-right-10 {
+    margin-right:10px;
+}
+
+.navbar-nav>.current-menu-parent>a, .navbar-default .navbar-nav>.current-menu-parent>a, .dropdown-menu>.active>a {
+    background-color: #005487;
+}
+/*.navbar-collapse:before {
+margin: 0px;
+}
+
+.navbar-fixed-top ~ .navbar-collapse:before {
+    background:none !important;
+}*/
+.single-post ~ nav.navbar-collapse:before {
+ background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTlDMzg5NkU0OUNEMTFFNkFGRTdENkE1NDA5QkQzMTQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTlDMzg5NkQ0OUNEMTFFNkFGRTdENkE1NDA5QkQzMTQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUwRkQyMTUzNDlDQTExRTZBNjMzRDlBMUM4NUNCODBGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUwRkQyMTU0NDlDQTExRTZBNjMzRDlBMUM4NUNCODBGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+6xRKdAAABLtJREFUeNrMlmtsFFUUx/8zs+9Zui3QLtgutAW0lUIi8RURiQ/aQJQgNRFDDBV8NMTED2BriokxvoJ8qdEYNDFtDIJNDDXBSjRUqQlJbS1EUWxraVqR1ta27m53u6+ZO567O4tL2VkXpNGT/JJ9nHP/c+/c8xB8+yVkaUXErcRyoox4kPhWZ4joIfqyWSinToEpC7+HiVpiPWGd9d9mHW4a0U00Ex8SwUyLihn+u5/4gThKVKYRnW0CcTvxLvELsf1ahF8nThCrcG22mDhEfMxPNp1DuqPmzo/i+hhfZwWxjpjJtOPm6yiatDXEV7N3niq8h9iBubE7iHfSCfP0eBVza48Tj6UKFxMvETbMve0jLEnhBmLbbA9GWem0qcixq/FE0bJYVSU/G2PIiakQNQ3sSpeVxK7krT5O/ESM0eKiQ2Qw2zSBsjZ2dsQTCsaswm2FgzZJY2Y1BG1GlQK0YDFpvEIx79HnDgeYy6JQTBTKoFwSGnQWszt9XbZcNWjh+wuKIhQI5IB5eo7HhVv5B0nUINsZ1CjQ1Hs3zniXoWV4LcbDuXhieTtWu4ZQU/o1HJYYQhHRQ6ewlwn4wq6q7RZS/8RVhc/lTeiU78PPzgpsmmxFRaQHO33NuCl0EQqdbcAk0Uno1SZwQIRMkYoiofXCLTh4vhLfjK2ar8QcL+fLY9VmUYmOBN2fQlTry3IuRBrXfICqwnPF/ojULTN1J4NwbIPnKDpytgiQUI9YeBfUsBMW1ylafo8l9sdwja8J+yYasSQ0iqCF9OpVmGSZ4cSv5Wg4vR2np26ESYoi3+Y9ZHZMbtT44ZB5nKPPMYilveMrN7cMr0dVyTkgQqfEoB2eX42OvC1ANPImlODe+IXgYTFvNb25m6Ni3rr3F9VNnnRW4e2RZ3Bv4LvErd5xshZPdu5G92QZ3I4JFNi8D0gC28hIVNMrvwa+GfYQzKENNlMo/qPIrw4dX2Mupb+KEmih2sRdFVLQysECNZiZQr+5nB64E1s9HyWEjwzdgxnFiqXzRiEKGhcpyNAHliYWTLnkiUqwkHAYBJVAICdGFVPx4bPcRxJhbvufsEoxqNqlItZn2HuAMwqL+wmanmOeSD//PkhcNBDu+vsjBSjTht2JN/Q3rshRTTwgSOGefKs/Hp8UfmHqLZ70k7RUQ5q12vTenFV3gl5UTullTiFagor1WLnrN+xecRwsklpp6NmF+PvkbZBv/yligV4fmo1eWqYJpE0nbna67QN+N1pH78KzFV9C9SVObshakvrauy4/2qsbBLbqI8yAPoFwzptEtVsUhG0Heysx7rUpeWYVKj32a+4XufBaEm7X3zWvgt/r8WeJumx2zLvH4XSOlNOlC6z+I/2BRaE+f1FbwcIBrclVM/GjfXURIj6aVgSjJrOfcOttN+2OLUZPd+li012mHK+VJXYDRU5HNZWf8PMZRJP2tD6dphXOJ5ZknuY0fruXUXHho27IyaZ5HVkM4R9HZCdRaCTMu1gkUzRPIb5rTjxAkPhP4eyaJvUuA2Ety2bOdP6VifiP7H8hzFPLnkVM0o9ngXQVs5rZKI/5yx/WHfwGwTIxSvBKP0KE+cik34/fDWLsetm9bKD/S4ABAElxmnQmTuKwAAAAAElFTkSuQmCC') no-repeat;
+ width:30px;
+height:30px;
+float: left;
+margin-right: 10px;
+}
+
+.title:after {
+    /*font-family: fontAwesome;
+    content: "\00a0\f0da";
+    vertical-align: middle;*/
+}
+
+.title {
+    border-bottom: 1px solid #f28b02;
+    color:#f28b02;
+}
+h2.title{border-bottom:none;}
+
+/*.title > a {
+    font-weight: 700;
+}*/
+
+.title > a:hover, .title > a:visited {
+  text-transform:none;
+  color:inherit;
+  /*font-weight: 700 !important;*/
+}
+
+ul.box_menu {
+    list-style:none;
+    position:relative;
+    padding-left:0;
+    margin-bottom: 5px !important;
+    overflow: hidden;
+    height:92px;
+}
+
+.box_menu li.item-1, .box_menu li.item-2, .box_menu li.item-3, .box_menu li.item-4, .box_menu li.item-5, .box_menu li.item-6 {
+    background-color:#fff;
+    /*border:1px solid #dedede;*/
+}
+
+.box_menu li:hover {
+    border:none !important;
+}
+
+.box_menu li:before {transition:left .2s ease-in-out, right .2s ease-in-out;}
+.box_menu li:after {content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: -100%;
+    z-index: 1;
+    transition:left .2s ease-in-out, right .2s ease-in-out;
+}
+.box_menu li:hover:after {left:0;background-color:#ff4d58;}
+
+.box_menu li:hover {
+    /*border:1px solid #d1d1d1;*/
+    
+}
+
+
+
+.box_menu li > a {
+    color: #3c3c3c;
+font-size: 1em;
+text-transform: uppercase;
+display: block;
+padding-top: 64px;
+font-weight: 600;
+text-align: center;
+}
+.box_menu li a:hover {text-decoration:none;}
+
+.box_menu li.item-1 {
+    background: url('/wp-content/themes/gather-child/images/diskriminacija2.png') no-repeat center top;
+}
+.box_menu li.item-2 {
+    background: url('/wp-content/themes/gather-child/images/podnesiprijavu2.png') no-repeat center top;
+}
+.box_menu li.item-3 {
+    background: url('/wp-content/themes/gather-child/images/izvestaj2.png') no-repeat center top;
+}
+.box_menu li.item-4 {
+    background: url('/wp-content/themes/gather-child/images/informator3.png') no-repeat center top;
+ 
+}
+.box_menu li.item-5 {
+    background: url('/wp-content/themes/gather-child/images/info2.png') no-repeat center top;
+}
+.box_menu li.item-6 {
+    background: url('/wp-content/themes/gather-child/images/privatnost2.png') no-repeat center top;
+}
+
+.box_menu li.item-1:hover {
+    background: url('/wp-content/themes/gather-child/images/diskriminacija2.png') no-repeat center top;
+}
+.box_menu li.item-2:hover {
+    background: url('/wp-content/themes/gather-child/images/podnesiprijavu2.png') no-repeat center top;
+}
+.box_menu li.item-3:hover {
+    background: url('/wp-content/themes/gather-child/images/izvestaj2.png') no-repeat center top;
+}
+.box_menu li.item-4:hover {
+    background: url('/wp-content/themes/gather-child/images/informator3.png') no-repeat center top;
+ 
+}
+.box_menu li.item-5:hover {
+    background: url('/wp-content/themes/gather-child/images/info2.png') no-repeat center top;
+}
+.box_menu li.item-6:hover {
+    background: url('/wp-content/themes/gather-child/images/privatnost2.png') no-repeat center top;
+}
+
+
+
+
+.item-1, .item-2, .item-3 {
+    /*border: 3px solid #1f57a1;*/
+    text-align: center;
+}
+
+.front-column-links-bottom > h3 {
+    font-size:1.3em;
+}
+
+.front-column-links-bottom > ul {
+    list-style:none;
+    padding-left:0;
+}
+
+.front-column-links-bottom > ul > li:before {
+    font-family:fontAwesome;
+    content:"\f073\00a0";
+}
+
+
+
+a.bread-link:visited, a.bread-home:visited, ul.breadcrumb > li > a:visited {
+    color:#fafafa;
+}
+
+.category-div {
+    min-height:100px;
+    line-height:100px;
+    /*box-shadow: 1px 1px 1px 2px #263d96;
+    margin-bottom: 25px;*/
+    text-align: center;
+}
+
+.instructions p {
+    line-height:1.25;
+    font-size:0.9em;
+}
+/*.category-div:first-of-type {
+    background-color:#00adef !important;
+}
+
+.category-div:nth-child(2n) {
+    background-color:#1f57a1;
+}
+
+.category-div:nth-child(2n + 1) {
+    background-color:#fa7a23;
+}*/
+
+.light-blue {
+    background:#00adef;
+}
+
+.orange {
+     background:#fa7a23;
+}
+
+.blue {
+     background:#1f57a1;
+}
+
+.category-div > a {
+    vertical-align:middle;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:1.2em;
+    color:#fff;
+    display: inline-block;
+  line-height: normal;      
+}
+
+.margin-right {
+    margin-right:10px;
+}
+
+.entry-image {
+    text-align: center;
+}
+
+.antidisk_propisi, .antidisk_zakoni, .antidisk_odredbe, .dok_uni_medj, .dok_sav_evr, .dok_evr_uni, .laws {
+    color:#fff;
+    margin: 0;
+}
+
+.antidisk_propisi:before {
+    content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAgCAYAAAAi7kmXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3QTc2M0MzMTkyMTcxMUUyODQ2Qzk4RThCQkFBNzE3RSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3QTc2M0MzMDkyMTcxMUUyODQ2Qzk4RThCQkFBNzE3RSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkEyODhBMUUwRTA4RkUyMTFCMDBEOTc5M0U4RUUwNDA2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4QkYxNUY5QzRGNUUxMTFBNTVEQzVGNzk3ODk0RDk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+8JC6VgAAAPZJREFUeNrslc0NgzAMhUPVe3PsrdkARmAERmCUsgEjMEK7Ad0g3aC99UgncAO4knFCfpB665OeZKJ8ip2YRACAYK6NB5g14DefI/iAArcUB3diKSXcssY5OKyA9rgj/5al2blqzKZCZ0njAuMj+oXW1qoGlMY9hNXyXe0gXmeaKoh4vbEka1dDOhhXHHx6gBuJLfDhAccGuK+BPp3wSL7pFik1ShLXKaAi+1BSsA+AOUk33yceh8aVZSo49nI5wdiDF89PzOW8AWJUuW6AGFVbelVgjV7wSuLGOEOrEKh9y25J9Q/+DOS9qsnzJvHO1Rgv5n4EGAA6sqPxiGl7UwAAAABJRU5ErkJggg==');
+vertical-align: middle;
+    margin-right: 10px;
+}
+
+.antidisk_zakoni:before {
+    content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBOEU5N0FBRTkyMTcxMUUyQjUwRDg0QjY3QUU2NjEyRSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBOEU5N0FBRDkyMTcxMUUyQjUwRDg0QjY3QUU2NjEyRSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkEyODhBMUUwRTA4RkUyMTFCMDBEOTc5M0U4RUUwNDA2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4QkYxNUY5QzRGNUUxMTFBNTVEQzVGNzk3ODk0RDk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+w+KNWQAAArpJREFUeNqslk+ITVEcx9993hhkeEYTGTUvZSHhiWKh3pMVCz07sTAkC6KJbM2QjY1GRqTUWNgplxBKPTs2DKZs0BAblHnmjfe8Ya7vqe8dP6dz/99ffbrnnnPu73v+/M7vHstxnIxmWT5PgTwogioYBONa313gLpjKxLCcoe4F+A7Kok6VbcMgfnKAX9MSbwNdWl2VA+jlIJT4HbAaWOBBHHHLsOzPuYybfL7rZvsWbtM18DqqeFZ7L4AWaA/47jN4BhqgE5zg6igbIOWo4ns58zGwI+DbuRzoe26HKzbMgRRYHmbQBu55DxgFH8B2cD/GVo4RdyB5xskgn54znw8mwDcuaRo2zolsDVp21bGDg3Ay6dkScMRP/CwjdoLCxZCOyyH67DYlIim+DVwGdbAS3AIXU5r5Rp6QA17iFp9LwQJwBWz2cdgZQVz5+whKpmhfB36IoKuHcBhF/Asz55Rp5mfAVZYnheMmj4qflQLa1VI/BTU9iF3xFeAmyx38sSgbAScT7vcGMMSZt0zis5hSc6xTM58DjoOdCcX/iLJKWkflntuceZN1dY6yIc6+OgmPNaeLDXnCZOtF+R545J6iLBOApWU5+WMZ0hxkRGxMgyc+wofBGy2458llPyc6/NdIWwMuGRzb4l/vZfvAIZZ/i/vCjLjNbGaRhigrKh55vhIiw7WJ8kI+X7pBnE0QSH3iqJmOYw+3xjW3j1qJPUnFSwbH0vrBQ/HepZ+AXALx6xx8jb9g3VYxqtcye7bzgrFoJtOpO1xMyqAfVA1t+51/9g6MgiZ4JerfJpl5hZmwYGhbBj6B5cwh8uQo+wVmx93zIu9tbmANaO3nmZRqHt+rXH8sznL3iqU7LcojIB/FVxTRPrVPjr+1gA260xTPOtHsYBi/Yfd8mrfP27yReJnK8xfAjTBO/wowAFz2HPW/aGw2AAAAAElFTkSuQmCC');
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.antidisk_odredbe:before {
+    content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4RTI0MEY1NTkyMTcxMUUyODUwOUM1NzcyQkIwMDg2OCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4RTI0MEY1NDkyMTcxMUUyODUwOUM1NzcyQkIwMDg2OCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkEyODhBMUUwRTA4RkUyMTFCMDBEOTc5M0U4RUUwNDA2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4QkYxNUY5QzRGNUUxMTFBNTVEQzVGNzk3ODk0RDk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+s91UZgAAAjdJREFUeNrMVr1OIlEUvnfAEdRkQLEyRLKVMVEpNFtCbSOdLW+gbyBvoJ2dy9bbGF9AChsLDY1RQ+Ji3GSNIs4oODD8XM8xg06uM8MdHYxfcnKBOXM+7vknxAMYY+sgKntDGSRDBgEwvMWckfWbLMHcoYrakgT1+rlNAdK0n4QRv7wlSlgW0FH9jGGEy04exUFkadYpYUCSgyqNJMgu3gikAJLHDPZig4qUBBxCRimlhUEWu7/uhRdz7GNQvbq5Fyv2/6ntiUlvd9l9s+OatUG7EoAjj5+3zzUSCtD7+GiwtjgxHJ9R5HcGGh1GTlRDP642K//q7fjPydDl8tTIAnoIYprrSwhApQWLwWjpoYVCwgGqzY8Pqz/GgtP1NtNPNaNy8diKAWcYVOOcnQ3MZD6RgtztsGeuOblD7zDl8LYB8vLVjoQHlk0SSNV3rc3qSh8xzdu09tJd7PqfZQgQEuJ+WrHOS9qb5HBsOnZlo0t2Sg8VrdWN2T2fjcjV1cTYuMv/0EDQtWXJLNRN19kkS2QmItdtb0SJ3oeMmJ7L91y69RkXDkm0IaiawsshYaqfJtbamWqMOjyLHt01dUHSrNAA/nNZe3KKH2Lvqh7evxbiTFBs0FztaWbGYsH+eh35tRY5uGlcWQqdKENSZSkWCsxF5SjG2cRvkKK5B6U4u2lr70zznd6pZ/59NHo90w45blPImMM7IdLEP4KcH0uUFxTJdwI145b2c/d0WSML1FzTlS+6oPYswABmJp6YfW7LJwAAAABJRU5ErkJggg==');
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.dok_uni_medj:before {
+    content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2OUUzREFCQzkyMkIxMUUyODgwQUVDMUY5N0VCOEExMiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2OUUzREFCQjkyMkIxMUUyODgwQUVDMUY5N0VCOEExMiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNBNDY1MDFFRDM4RkUyMTFCMDBEOTc5M0U4RUUwNDA2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4QkYxNUY5QzRGNUUxMTFBNTVEQzVGNzk3ODk0RDk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+zV2OhgAAAdBJREFUeNrEVu1xgzAMBa7/mw3KBrBB2KBsUI+QEcgGGYFuQDdwNjAb0A3IBK5999SqQqbpR4ru3p0t2+/JtvyRe++zL6wMaIE64F60XwJcwABMa2T5imAU6gKeQBrJLAgjdkDs1yCgGMwzxunCUVDBIWAOmFAugSHABPSAgY/aDxgzo7zg1sQiUbQOsCKA0n9YKQQsG+fBtSrYY7DBYCqTnVhARHhidYMxlpX7lCBF1QY4lGlmnrXx+gwfrx9Qdqytk4I1E3BsQOc/W+uXJn2d4KAAosZ7llpknEG2ka+GP9oMXyvybkCW8n4OPmrv4W/47ORyGRG5VWbsWWL5xFi+7HWBWb3iPNGhfmERcttd6WvAkYGzhIYp0DiIpXJYTm6T4svgmxSfY/WWlj4KVtibvRCsFMGUybZKCO6hURUJgjn7vakcd2wfjiLio+hL96hVZjclZn1c7HXiLDVXZuNa9jbaeU0t6e4PllTliIIjMvUssmxUnqu1p4zbKDL6DI2xYLfHsJLWROoUMacIymNFx84WuHYesMkXdHhUkiOVeZrPgoN+BBM0+k3u0tRrYW/xWmz2Hm7y4m/yp7n5r+2n/9KZ3Sbf+pfm//3zfhNgAAHDJq/obYhQAAAAAElFTkSuQmCC');
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.dok_sav_evr:before {
+    content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAfCAYAAACLSL/LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5MDNBNDIzMTkyMkIxMUUyQkFCMEI1MkQ2N0Y5MTVEQiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5MDNBNDIzMDkyMkIxMUUyQkFCMEI1MkQ2N0Y5MTVEQiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNBNDY1MDFFRDM4RkUyMTFCMDBEOTc5M0U4RUUwNDA2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4QkYxNUY5QzRGNUUxMTFBNTVEQzVGNzk3ODk0RDk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+8MEQFQAAAmxJREFUeNqsWMFNxTAMLYg72YBsQDYgTMC/c+mZU9kgYoKOkBE6ASoblA3KBvlnDsVFjmRM0h83jfT02/7WebEd+7XNsixNBRSgBQyAsPwfM6AHaKntGkIuQyY11vusZI6rX3ay4QAd4JZd/wKMgAmhAAbxBDjj8Vw0i2AV64qnhDd8gTc0PuuPDqXLEJLkjsGcO4SYSnhpZIRagccXtFlFzLDkXo9fGem4Gz0Lm9rwuq0hxkmtXnvDUDgysWM77oQe9WiDLiLUEuOkPAtFz7xDfxVZCLXpib1docyRipNr9MpWTlrmlReWn+Lk54nu8Vpf0RkM2zhmD7GeGBjQOzOeux2kngHfxGa3pyVZ1t8UITtIVkq8TMf73l45EiO2InQn4uVUnoqI2Y3k1AKFMSe6gyO5JibmE97SRM6YDBmf6Z0xHSxJk3iuStOhISud2MTjhZ00ZgjxFtUKN9BvT70BgXGHQmMgoiMAPCJkhMkqfXo8nlDyDIn71v8eCyVViza75qCkPwJ/PNsUtIpT5YQlz3u+gymxXD2aBdImJb+3no8K5V9ZuYZ4fmbiHVAe32GeSEfMTZWR0wbzcpXdr5hff6R1rNI6I+4UUw8lnlJkh6nEcx3ReG2ujmm8qS1QoOOFeqQxfC6zUENq37xVeGnyjYW7ZmDXuT6bETpRkKlIUCW9Uhe8+xkk1yWKsGcS2mXeP0PpLuceCYK2EUn0iclSL8ReYjsVrlBRbA0SCEwY2OWATwQtWWGJ2y2pd0stoUufCAz2rAc8/0jco0mfjeOM/bUv/hSQGZe+XRgsfBZwn/j/zBr41Bw0fgQYAMI6jTeYF0YpAAAAAElFTkSuQmCC');  vertical-align: middle;
+    margin-right: 10px;
+}
+
+.dok_evr_uni:before {
+    content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBNkJFRTZBOTkyMkIxMUUyQkU4REFBMjY0NzE5MjNENyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBNkJFRTZBODkyMkIxMUUyQkU4REFBMjY0NzE5MjNENyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNBNDY1MDFFRDM4RkUyMTFCMDBEOTc5M0U4RUUwNDA2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4QkYxNUY5QzRGNUUxMTFBNTVEQzVGNzk3ODk0RDk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+oDRkmAAAAYhJREFUeNrEVoFthDAMTF8dICOkG9ANGCGdoGxQugHdgBEYISNkBEbICGxAzf8FuVEgEOBr6SRQiA/bF8diHEeRgY4gc/amPgidFoRmfJgh6GBdAYs+b2LduuC9J0g8K4IN1jWhWvW48CcVwSISG0TSsnW+x38/RtY2pbTH5m5jfRQjVDkpndL1QXBiu70T3ljakyltM1WbUvT8/sqKXRK+CAPBQCBHrAQ+kSV7B5N/z+R+RmSSCcn5I+ZrOADf4jzzPn8Q4fQsXu5SfaLdxJPNExarUj5uEhwzYZ1sScdsOgXNXbU4J96aC85hw/x3An1yku2Q6vSZUPA9cehJpcpLlsn57PrNz/9+LNRFCl0kNBeQ2dhtUbK+12OUOCqWivXnARx/riez88LdAh9EG7uADS7P/sSUWvh0qZmGp3rvOKhzxkQJMoN0lBvJStSryCHkLa+OrDeRmdUxkRR7pzYNlYUtT+NnHEhVML+4takh1QN9NHIhki6SUrFWgtzW5liTqPds/BVgAMSgU265xWqKAAAAAElFTkSuQmCC'); vertical-align: middle;
+    margin-right: 10px;
+}
+
+.negative-margin-top {
+    margin-top:-77px !important;
+}
+
+ul.subcategory {
+    color:#fff;
+    list-style:none;
+    min-height:120px;
+    padding:15px;
+}
+
+li.cat-item {
+    width: 24%;
+    float: left;
+    position: relative;
+    /*min-height: 100px;*/
+    padding: 10px 5px 10px 5px;
+    box-shadow:1px 1px 1px 0px #777;
+    margin: 4px;
+     -webkit-transition: background-color 500ms ease;
+    -moz-transition: background-color 500ms ease;
+    -o-transition: background-color 500ms ease;
+    transition: background-color 500ms ease;
+    background-color: #dfdfdf;
+    text-align: center;
+    border-radius: 8px;
+}
+
+li.cat-item:nth-child(odd):hover {
+    background-color:#fff;
+}
+
+li.cat-item:nth-child(even):hover {
+    background-color:#fff;
+}
+li.cat-item > a {color:#1c6d8c;}
+li.cat-item:hover > a {
+    color:#68b9d8;
+}
+
+li.cat-item > a { 
+    text-transform:uppercase;
+    vertical-align: middle;
+    font-weight:bold;
+}
+
+.subcategory-row {
+
+    background:url('/wp-content/themes/gather-child/images/submenubg.png') no-repeat center #00adef;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#breadcrumbs a {
+    color:#555;
+}
+
+#breadcrumbs a:hover, #breadcrumbs a:visited {
+    color:#555;
+}
+
+/*GCS*/
+
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+    background: none !important;
+}
+
+.gcsc-branding-text, .gcsc-branding-text-name {
+    display:none !important;
+}
+
+img.gsc-branding-img, img.gsc-branding-img-noclear, img.gcsc-branding-img, img.gcsc-branding-img-noclear {
+    display: none !important;
+}
+.gsc-resultsHeader {
+    display: none !important;
+}
+
+.gsc-above-wrapper-area {
+    border-bottom: none !important;
+    padding: 0;
+}
+
+.gsc-result .gs-title {
+    height: initial !important;
+}
+
+.gsc-control-cse div {
+margin:0;
+}
+
+.gs-result table {
+    border:none !important;
+}
+
+.ml-responsive-table .ml-grid {
+    display: none;
+}
+
+.gs-title {
+   text-align:left; 
+}
+
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+    font-size: 1em !important;
+}
+
+a.gs-title:hover, a.gs-title:visited {
+   color:#263d96;
+}
+
+/*.cth-page {
+    text-align: center;
+}*/
+
+table.gsc-table-result > tbody > tr > td {
+    border-left:none !important;
+}
+
+td.gsc-result-info-container {
+    border:none !important;
+}
+
+table.gsc-above-wrapper-area-container {
+    border:none !important;
+}
+
+td.gsc-orderby-container {
+    border-left:none !important;
+}
+
+.gs-result a.gs-visibleUrl, .gs-result .gs-visibleUrl {
+  color:#fa7a23 !important;  
+}
+
+.btn {
+   border-radius: 34px;
+    margin: 0;
+    font-size: 16px;
+    padding: 8px 25px 8px 27px;
+}
+
+button[name="sa"] {
+    background: #32a9e6;
+    
+}
+
+button[name="sa"] > i {
+    color:#fff;
+}
+
+span.search-button {
+    padding:0;
+    border-radius:0;
+}
+
+span.search-button > button {
+    min-width:39px;
+    min-height:38px;
+    border: none;
+}
+.btn-primary {
+    background-color:#1f57a1;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color:#263d96;
+}
+
+input[name="q"] {
+    height:40px;
+    padding:10px;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #FA7A23;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+    padding: 5px 10px 5px 10px;
+    color: #FA7A23 !important;
+    border:1px solid #FA7A23;
+}
+
+.gcsc-branding, .gsc-above-wrapper-area {
+    display: none;
+}
+
+.gsc-webResult .gsc-result {
+    padding: 10px 0 0 0 !important;
+}
+
+.gsc-webResult {
+    border-top:1px solid #ddd !important;
+}
+
+.gsc-webResult:first-child {
+    border-top:1px solid #ddd !important;
+}
+
+div.gsc-webResult:first-of-type {
+    border-top: none !important;
+}
+
+.gsc-expansionArea > div.gsc-webResult:first-of-type {
+    border-top:1px solid #ddd !important;
+}
+/*Ovo je CSS za sortiranje*/
+
+.gsc-orderby-container {
+    display:none !important;
+}
+
+/*CSS za broj rezultata*/
+
+.gsc-result-info-container {
+    display:none !important;
+}
+
+/*Gallery Fix*/
+.blogsingleslider {
+    text-align: center;
+}
+
+.blogsingleslider .flex-control-paging li a {
+    border:1px solid #ddd;
+    width: 15px;
+    height: 15px;
+    background:#EDEDED;
+}
+
+.blogsingleslider .flex-control-paging li a.flex-active {
+    background:#aaa;
+}
+
+.blogsingleslider .flex-direction-nav a {
+    opacity:1;
+}
+
+
+#pf-ft {
+    display: none !important;
+    color: transparent !important;
+}
+
+#pf-src-url {
+    display: none !important;
+}
+
+.sfsi_widget {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+ul.pager {
+    margin-top:100px;
+}
+
+.banner, .banner-1, .banner-2, .banner-3 {
+   /*-webkit-filter: grayscale(1);
+    filter: grayscale(1);*/
+    overflow:hidden;
+    /*border:1px solid transparent;*/
+    border:1px solid #dedede;
+}
+
+.banner-1, .banner-2, .banner-3, .banner {
+    margin-top: 10px;
+}
+
+.banner-1:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    background-color:#ededed;
+    border: 1px solid #d1d1d1;
+}
+
+.banner-2:hover {
+    border: 1px solid #d1d1d1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    background-color:#ededed;
+}
+
+.banner-3:hover {
+    border: 1px solid #d1d1d1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    background-color:#ededed;
+    
+}
+
+.banner:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+   /* box-shadow:2px 2px 2px 2px #ddd;*/
+    background-color:#ededed;
+    border: 1px solid #d1d1d1;
+    /*margin-left:-15px;
+    margin-right:-15px;*/
+    
+   /*  border:1px solid #ddd;*/
+}
+
+.banner:hover > figure > a > img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.banner > figure > a > img {
+     /*-webkit-filter: grayscale(1);
+    filter: grayscale(1);*/
+    -moz-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+#accessibility {
+    /*margin-top: 10px;*/
+    margin-left: 0;
+}
+#acc-ser, #acc-lat, #acc-eng {
+    background: url('/wp-content/themes/gather-child/images/ease.png') no-repeat;
+    width:35px;
+    height:35px;
+    /*margin-top: 10px;*/
+    margin-left: 0;
+    float: left;
+    border:none !important;
+}
+/*.banner:hover > figure > a > img {
+     -moz-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}*/
+
+.otw-sidebar-5 > ul {
+    list-style:none;
+}
+
+.otw-sidebar-5 > ul > li {
+    text-align:left !important;
+}
+
+/*div#navbar.navbar-collapse.collapse {
+    
+}*/
+
+.rpwe-block li:last-child {
+    border-bottom:none;
+}
+
+.sitemap:before {
+    font-family:"fontAwesome";
+    content:"\f0e8\00a0";
+}
+
+.home:before {
+    font-family:"fontAwesome";
+    content:"\f015\00a0";
+}
+
+.contact:before {
+    font-family:"fontAwesome";
+    content:"\f007\00a0";
+}
+
+.first-stripe-separator {
+    background:#1f57a1;
+    float:left;
+    left:0;
+    height: 6px;
+    width:25%;
+}
+
+.second-stripe-separator {
+    background:#FA7A23;
+    left:25%;
+    float:left;
+    height: 6px;
+    width:50%;
+}
+
+.third-stripe-separator {
+    background:#00adef;
+    float:left;
+    right:0;
+    height: 6px;
+    width:25%;
+}
+
+.banner-bottom {
+    /*margin:10px;*/
+    overflow:hidden;
+/*border: 3px solid #005487;*/
+}
+
+.banner-bottom > a > img {
+    margin:10px;
+    border: 3px solid #005487;
+}
+
+.sidebar-links > h3 {
+    font-size:1.3em;
+    margin-top:5px;
+}
+
+.sidebar-links > ul {
+    list-style:none;
+    padding-left:0;
+}
+
+.sidebar-links > ul > li {
+    font-size:0.8em;
+}
+
+/*.sidebar-links > ul > li:before {
+    font-family:fontAwesome;
+    content:"\f073\00a0";
+}*/
+
+.wpcf7-form-control {
+    width:100%;
+}
+
+.wpcf7-submit {
+    max-width:50%;
+}
+
+.sub-header {
+    color: #333;
+    background: url('/wp-content/themes/gather-child/images/bg1.jpg') no-repeat;
+    background-position-x:center;
+    background-color: #cdcdcd !important;
+    padding: 160px 0 30px;
+    margin-top: 0px; 
+    box-shadow:0 0 2px #333;
+    
+}
+
+/*Quiz*/
+.qmn_mc_answer_wrap > input[type=radio] {
+width: 20px;
+height: 20px;
+}
+
+.quiz_begin {
+    display:none !important;
+}
+
+.otw-sidebar-5 {
+    display:inline-block !important;
+}
+
+.otw-sidebar-5 > ul {
+   padding-left: 5px;
+}
+
+small > a {
+    color:#777 !important;
+}
+#inofontresizer_widget-2 {
+        display: inline-block;
+    float: right;
+    margin-left: 5px;
+}
+
+/*--------------------------------*/
+
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
+    border-color:transparent !important;
+}
+
+.wpml-ls-statics-shortcode_actions {
+    background:none !important;
+}
+
+.wpml-ls-statics-shortcode_actions {
+    border:none !important;
+    padding:0;
+    margin-top:10px;
+}
+.wpml-ls-legacy-list-horizontal a {
+    display: block;
+text-decoration: none;
+text-transform: uppercase;
+padding: 3px 8px 4px 9px;
+margin-right:7px;
+line-height: 1;
+color:#fff;
+border:1px solid #333;
+background-color:#ccc;
+border-radius:3px;
+font-weight:700;
+font-size:18px;
+}
+.wpml-ls-legacy-list-horizontal a:hover {font-weight:700;}
+.wpml-ls-current-language > a {color: #f28b02;}
+.wpml-ls-legacy-list-horizontal a span {
+        vertical-align: initial;
+    font-size: 0.75em;
+    margin-left: -3px;
+}
+.vertikalno {
+	z-index: 4 !important;
+	padding-top:0px;
+	overflow:hidden;
+	margin-bottom:20px;
+	padding-left:0px;
+}
+
+.vertikalno ul li {
+        display: table-cell;
+    width: 100%;
+    float:left;
+    padding:7px 4px;
+    border-bottom:1px solid #dedede;
+    text-align:left;
+}
+.vertikalno ul li:hover {background-color:#ccc;}
+.vertikalno ul li a {text-transform:uppercase; font-family:'PT Sans', sans-serif; color:#666; text-decoration:none; font-weight:700;display:block; }
+
+@media screen and (max-width:767px) {
+.vertikalno ul li {
+        display: block;
+    width: 100%;
+}
+#google-cs {width:100%; max-width:100%;}}
+@media screen and (max-width: 1366px) {
+.menu {
+	width: 98% !important;
+	padding:0px;
+}
+}
+
+@media screen and (max-width: 1680px) and (min-width: 1367px){
+.menu {
+	padding:0px;
+}
+}
+
+.navbar-fixed-top
+{
+    padding:0 !important;
+
+}
+}
+.navbar {margin-bottom:10px;}
+@media (min-width: 768px){
+.navbar-right {float:left !important;}}
+@media (min-width: 1280px){
+.navbar-nav{margin-right:0px; margin-left:0px;}}
+.widget_nav_menu nav.navbar-default {background-color:#fff; border:none; box-shadow:none;}
+.widget_nav_menu nav.navbar-default ul li {border-bottom: 1px solid #dedede;}
+
+
+footer.page-footer {
+        border-top: 1px solid #fa7a23;
+    padding-top: 49px;
+    background-image: url(/wp-content/themes/gather-child/images/bottom2.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    /*background-image: url("/wp-content/uploads/2016/07/footerbg4.png");
+    background-repeat: repeat-x;
+    /*background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAAxCAYAAAA7k7SYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGOEJGMTVGOUM0RjVFMTExQTU1REM1Rjc5Nzg5NEQ5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5RThENTUyMTI3NUIxMUUyQjNDQUE0MUJFQTVCQTUyQSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5RThENTUyMDI3NUIxMUUyQjNDQUE0MUJFQTVCQTUyQSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM0NDc4MEY4MzYxQUUyMTE4Nzc2RTY4MEVGNTQ0QjhFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4QkYxNUY5QzRGNUUxMTFBNTVEQzVGNzk3ODk0RDk2Ii8+IDwvcmRmOkRlc2NyaXB0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') repeat-x 50% 0;*/
+}
+.bgleft {position: fixed; 
+text-align: right; left: 50%; height: 100%; width:500px; margin-left: -1070px; min-height:1000px;z-index:-1;
+background-image: url("/wp-content/themes/gather-child/images/bgleft3.jpg");
+background-repeat: no-repeat;
+}
+
+.bgright {
+position: fixed; right: 50%; margin-right: -1070px; width: 500px; text-align: left;z-index:-1;height:100%;
+background-image: url("/wp-content/themes/gather-child/images/bgright2.jpg");
+background-repeat: no-repeat
+    }
+    
+.btn-outline {
+    color:#1c6d8c;
+    border-color: #1c6d8c;
+}
+
+.btn-outline:hover { background-color:#ededed; border-color: #f18903;}
+a.btn-outline:hover { font-weight:bold; color: #f18903;}
+.right-logo-content {font-size:18px;}
+.olaksan {
+float: left;
+font-size: 16px !important;
+font-weight: bold;
+color: #fff;
+margin-right: 0px;
+padding: 0 8px 0 14px;
+line-height: 35px;
+border: none;
+background-color: #32a9e6;}
+.velicina {float: left;
+font-size: 16px !important;
+font-weight: bold;
+color: #fff;
+margin-right: 0px;
+padding: 1px 14px;
+line-height: 30px;
+background-color: #32a9e6;
+}
+
+.btnolaksan {margin-right:30px;}
+li.fontResizer a {color:#fff;}
+.page-title small p {color:#666;}
+.wpb_wrapper {margin-bottom:10px !important;}
+.social-icons {
+
+	padding-bottom: 20px;
+	padding-right:30px;
+
+}
+
+.social-icons a {
+
+	display: inline-block;
+
+	padding: 0 5px;
+
+}
+
+.social-icons a i {
+background-color: #32a9e6;
+    color:#fff !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    font-size: 20px;
+width: 35px;
+height: 35px;
+line-height: 35px;
+	color: rgba(0, 0, 0, 0.2);
+	text-align: center;
+	margin: 0;
+}
+
+.social-icons a:hover {
+	opacity: 0.8;
+}
+.banner-1, .banner-3 { box-shadow:0px 0px 2px #ddd;margin-bottom:10px !important;}
+.banner-2, .banner-4 {box-shadow:0px 0px 2px #ddd; margin-bottom:10px !important;}
+.banner-4 {margin-top:10px !important;}
+
+.sldr_title {
+    display: none;
+}
+
+.smooth_slider .smooth_slider_thumbnail {
+    min-height: 250px;
+    min-width: 400px;
+    margin-right: 10px !important;
+}
+
+#smooth_slider_1 {
+    min-width: 100% !important;
+}
+
+.printfriendly {
+    float: left;
+    margin-top: 10px;
+}
+
+
+[lang="sr-RS"] #en, [lang="sr-RS"] #yu {
+    display: none;
+}
+[lang="en-US"] #sr, [lang="en-US"] #yu {
+    display: none;
+}
+[lang="sr-YU"] #en, [lang="sr-YU"] #sr {
+    display: none;
+}
+/*.navbar-fixed-top {
+    padding-bottom: 15px !important;
+}*/
+/*.navbar-collapse.collapse {
+    padding-bottom: 15px;
+}*/
+.header_top-bg{background-image:none;}.header_bottom-bg{background-image:none;}.footer_bottom-bg{background-image:none;}
+</style>
+<link rel='stylesheet' id='pscrollbar-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/quadmenu/assets/frontend/pscrollbar/perfect-scrollbar.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='owlcarousel-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/quadmenu/assets/frontend/owlcarousel/owl.carousel.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='quadmenu-normalize-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/quadmenu/assets/frontend/css/quadmenu-normalize.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='quadmenu-widgets-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/quadmenu/assets/frontend/css/quadmenu-widgets.css' type='text/css' media='all' />
+<link rel='stylesheet' id='quadmenu-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/quadmenu/assets/frontend/css/quadmenu.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='quadmenu-locations-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/quadmenu/assets/frontend/css/quadmenu-locations.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://ravnopravnost.gov.rs/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-cththemes_options-css'  href='https://fonts.googleapis.com/css?family=PT+Sans%3A400&#038;subset=cyrillic-ext%2Ccyrillic' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-quadmenu_gather-child-css'  href='https://fonts.googleapis.com/css?family=PT+Sans%3A700&#038;subset=cyrillic-ext' type='text/css' media='all' />
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/font-resizer/js/jquery.cookie.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/font-resizer/js/jquery.fontsize.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/font-resizer/js/main.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var equalHeightColumnElements = {"element-groups":{"1":{"selector":".cat-item","breakpoint":768},"2":{"selector":".box-menu","breakpoint":768},"3":{"selector":".btn-block > .vc_general.vc_btn3","breakpoint":768},"4":{"selector":".box_menu li.same-height > a","breakpoint":768},"5":{"selector":".box_menu li.same-height-2 > a","breakpoint":768}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/equal-height-columns/public/js/equal-height-columns-public.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/magic-liquidizer-responsive-table/idjs/ml.responsive.table.min.js'></script>
+<link rel='https://api.w.org/' href='https://ravnopravnost.gov.rs/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ravnopravnost.gov.rs/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ravnopravnost.gov.rs/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.1" />
+<link rel='shortlink' href='https://ravnopravnost.gov.rs/' />
+<link rel="alternate" type="application/json+oembed" href="https://ravnopravnost.gov.rs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fravnopravnost.gov.rs%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://ravnopravnost.gov.rs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fravnopravnost.gov.rs%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.3.12 stt:1,65,50;" />
+<meta name="follow.it-verification-code-K0lobjRyejBpY2xXbzNPbHIrNzBESHlNdDBhOGNHWnc4akc0V1grZ2lPcmNPVDNITyszUDBsZ1dHNG9nK0dMeFd4UHovL251Y0hxQmswdmwzRXRneDV4RUpkaUVmMnpRdW5Wd2Fsb2RpNkE5NnJaUWpJK1l2YThRbXBZRi9CSzF8YngrZFNOUklqSGJNQkNzNVFMK0dWWDZaM2hvNThmbXU2TVlWRVBoVmR5TT0=" content="CyQcA43ad3yCCHryZM1g"/><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://ravnopravnost.gov.rs/wp-content/themes/gather/js/ie/respond.min.js"></script>
+	 <!-- Modernizr -->
+    <script src="https://ravnopravnost.gov.rs/wp-content/themes/gather/js/modernizr.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+    #quadmenu.quadmenu-default_theme {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+background: rgb(238,238,238); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    
+}
+ul.quadmenu-navbar-nav li a {font-weight:bold;text-transform:uppercase; font-size:14px; color:#333;}
+.quadmenu-text{text-transform:uppercase; font-size:14px; color:#333;}
+ul.quadmenu-navbar-nav li a:hover {background-color:#cfcfcf;}
+.quadmenu-caret {font-size:14px; color:#333;}
+#quadmenu.quadmenu-default_theme .quadmenu-navbar-nav li.quadmenu-has-link:hover {
+	background-color:#ccc !important;}
+	
+#quadmenu.quadmenu-default_theme .quadmenu-navbar-nav li.quadmenu-has-link.open{background-color:#ccc !important;}   
+    </style>
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://ravnopravnost.gov.rs/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="https://ravnopravnost.gov.rs/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><style type="text/css" title="dynamic-css" class="options-output">body{font-family:"PT Sans";font-weight:400;font-style:normal;}a{font-family:"PT Sans";font-weight:normal;font-style:normal;}a:hover{font-family:"PT Sans";font-weight:normal;font-style:normal;}p{font-family:"PT Sans";font-weight:normal;font-style:normal;}h1, h2, h3, h4, h5, h6{font-family:"PT Sans";font-weight:400;font-style:normal;}.navbar-default .navbar-nav > li > a{font-family:"PT Sans";font-weight:normal;font-style:normal;}</style><style type="text/css" data-type="vc_custom-css">.datumi {
+    display: none;
+}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1469182544634{margin-bottom: 10px !important;padding-top: 20px !important;padding-bottom: 10px !important;}.vc_custom_1469992789433{margin-top: 10px !important;padding-top: 10px !important;padding-bottom: 30px !important;}.vc_custom_1469960669156{margin-top: 10px !important;padding-top: 15px !important;padding-bottom: 15px !important;}.vc_custom_1469992883428{margin-top: 10px !important;padding-top: 30px !important;padding-bottom: 30px !important;}.vc_custom_1468436717499{padding-top: 30px !important;padding-bottom: 30px !important;}.vc_custom_1470068823664{margin-bottom: 5px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><style type="text/css" media="screen">
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	line-height: 1.3;
+	font-family: 'PT Sans', sans-serif;
+}
+.back_to_top, img {
+	vertical-align: middle;
+	border: 0
+}
+/*.navbar-default, body {
+	background: #000
+}*/
+a, body, h2, p {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'PT Sans', sans-serif;
+}
+.gather_sec .wpb_content_element, .gather_sec .wpb_row {
+	margin-bottom: 0!important
+}
+body, html {
+	overflow-x: hidden
+}
+body {
+	font-weight: 300;
+	position: relative;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #333;
+	
+	font-family: 'PT Sans', sans-serif;
+	 
+}
+
+
+@media (max-width:767px) {
+h2 {
+	font-size: 30px
+}
+}
+p {
+	line-height: 1.7
+}
+.navbar-default {
+	/*-webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,.05);*/
+	/*box-shadow: 0 2px 1px 0 rgba(0,0,0,.05);*/
+	padding: 15px 0
+}
+.preloader {
+	position: fixed;
+	width: 100%;
+	height: 2px;
+	z-index: 9999999
+}
+.back_to_top {
+	display: none;
+	color: #fff;
+	padding: 10px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	opacity: .3
+}
+
+.reveal-menu-hidden {
+	top: -100%
+}
+.background-opacity {
+	z-index: 0;
+	position: absolute;
+	background: rgba(0,0,0,.3);
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0
+}
+button, h2 {
+	color: inherit;
+	font-family: inherit
+}
+body, button, figure {
+	margin: 0
+}
+@-ms-viewport {
+width:device-width
+}
+.header .background-opacity {
+	background: rgba(0,0,0,0)
+}
+
+@media only screen and (max-width:992px) and (-webkit-min-device-pixel-ratio:2) {
+.header.parallax-bg {
+	background-attachment: scroll!important;
+	-webkit-background-size: cover;
+	background-position: center
+}
+}
+
+@media only screen and (max-width :992px) {
+nav a:after, nav a:before {
+	display: none!important
+}
+}
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+figure, nav, section {
+	display: block
+}
+a {
+	background-color: transparent;
+	color: #1c6d8c;
+	text-decoration: none
+}
+button {
+	font: inherit;
+	color: inherit;
+	overflow: visible;
+	text-transform: none;
+	-webkit-appearance: button
+}
+*, :after, :before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+html {
+	font-size: 10px
+}
+button {
+	font-size: inherit;
+	line-height: inherit
+}
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0
+}
+.container, .navbar-collapse {
+	padding-right: 15px;
+	padding-left: 15px
+}
+h2 {
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+	margin-top: 20px;
+	font-size: 30px
+}
+p {
+	margin: 0 0 10px
+}
+.container {
+	margin-right: auto;
+	margin-left: auto
+}
+.container>.navbar-collapse, .container>.navbar-header, .row {
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+@media (min-width:768px) {
+.container {
+	width: 750px
+}
+}
+
+@media (min-width:992px) {
+.container {
+	width: 970px
+}
+}
+
+@media (min-width:1200px) {
+.container {
+	width: 1170px
+}
+}
+.collapse {
+	display: none
+}
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 20px;
+	border: 1px solid transparent
+}
+div.widget_nav_menu .navbar {padding-top:0px;}
+.navbar-collapse {
+	overflow-x: visible;
+	-webkit-overflow-scrolling: touch;
+	border-top: 1px solid transparent;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.1)
+}
+.navbar-fixed-top .navbar-collapse {
+	max-height: 340px
+}
+
+@media (max-device-width:480px)and (orientation:landscape) {
+.navbar-fixed-top .navbar-collapse {
+	max-height: 200px
+}
+}
+
+@media (min-width:768px) {
+.navbar {
+	border-radius: 4px
+}
+.navbar-header {
+	float: left
+}
+.navbar-collapse {
+	width: auto;
+	border-top: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+.navbar-collapse.collapse {
+	display: block!important;
+	height: auto!important;
+	padding-bottom: 0;
+	overflow: visible!important
+}
+.navbar-fixed-top .navbar-collapse {
+	padding-right: 0;
+	padding-left: 0
+}
+.container>.navbar-collapse, .container>.navbar-header {
+	margin-right: 0;
+	margin-left: 0
+}
+.navbar-fixed-top {
+	border-radius: 0
+}
+}
+.navbar-fixed-top {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	top: 0;
+	border-width:0;
+}
+.navbar-brand {
+	float: left;
+	height: 50px;
+	padding: 15px;
+	font-size: 18px;
+	line-height: 20px
+}
+.navbar-brand>img {
+	display: block
+}
+.navbar-toggle {
+	background-image: none;
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	margin-top: 8px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 4px
+}
+.navbar-toggle .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px
+}
+.navbar-toggle .icon-bar+.icon-bar {
+	margin-top: 4px
+}
+
+@media (min-width:768px) {
+.navbar>.container .navbar-brand {
+	margin-left: -15px
+}
+.navbar-toggle {
+	display: none
+}
+}
+.navbar-default {
+	background-color: #fafafa;
+	background: url('/wp-content/themes/gather-child/images/bg1.jpg') no-repeat;
+	border-color: #d6d6d6;
+	background-position:center top;
+	padding-top:10px !important;
+}
+.navbar-default .navbar-brand {
+	color: #777
+}
+.navbar-default .navbar-toggle {
+	border-color: #ddd
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #888
+}
+.navbar-default .navbar-collapse {
+	border-color: #e7e7e7
+}
+.container:after, .container:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .row:after, .row:before {
+	display: table;
+	content: " "
+}
+.container:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .row:after {
+	clear: both
+}
+@-ms-viewport {
+width:device-width
+}
+button::-moz-focus-inner {
+padding:0;
+border:0
+}
+[class^=icon-]:before {
+	font-family: streamline!important;
+	font-style: normal!important;
+	font-weight: 400!important;
+	font-variant: normal!important;
+	text-transform: none!important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+@font-face {
+	font-family: streamline;
+	src: url(../../fonts/streamline.eot);
+	src: url(../../fonts/streamline.eot?#iefix) format("embedded-opentype"), url(../../fonts/streamline.woff) format("woff"), url(../../fonts/streamline.ttf) format("truetype"), url(../../fonts/streamline.svg#streamline) format("svg");
+	font-weight: 400;
+	font-style: normal
+}
+.header.parallax-bg, .parallax-bg {
+	min-height: 600px
+}
+.flex-caption {
+	background: #fff!important
+}
+.vc_custom_1464519586880 {
+	background: rgba(53,71,110,1) !important;/* Old Browsers */
+	background: -moz-linear-gradient(45deg, rgba(53,71,110,1) 0%, rgba(91,166,236,1) 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(53,71,110,1)), color-stop(100%, rgba(91,166,236,1))) !important;/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(45deg, rgba(53,71,110,1) 0%, rgba(91,166,236,1) 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, rgba(53,71,110,1) 0%, rgba(91,166,236,1) 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, rgba(53,71,110,1) 0%, rgba(91,166,236,1) 100%) !important;
+	/* IE 10+ */background: linear-gradient(45deg, rgba(53,71,110,1) 0%, rgba(91,166,236,1) 100%) !important;/* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35476e', endColorstr='#5ba6ec', GradientType=1 )!important;/* IE6-9 fallback on horizontal gradient */
+}
+</style>
+</head>
+
+<body class="home page-template page-template-homepage-onepage page-template-homepage-onepage-php page page-id-4534 animate-page wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive" data-spy="scroll" data-target="#navbar" data-offset="100">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81936835-1', 'auto');
+  ga('send', 'pageview');
+
+</script><!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="row">
+    <div class="first-stripe"> </div>
+    <div class="second-stripe"> </div>
+    <div class="third-stripe"> </div>
+  </div>
+  <div class="container">
+    <div id="header_logo">
+            <a href="/" class="logo_link sr-RS"></a>
+          </div>
+    <div id="right-logo">
+    
+    <div class="social-icons">
+
+    <a href="https://www.youtube.com/user/poverenik" target="_blank" class="wow zoomIn" data-wow-delay="0s"> <i class="fa fa-youtube"></i> </a>
+
+    <a href="https://twitter.com/ravnopravnostRS" target="_blank" class="wow zoomIn" data-wow-delay="0.2s"> <i class="fa fa-twitter"></i> </a>
+
+    <a href="https://www.facebook.com/poverenikzazastituravnopravnosti/" target="_blank" class="wow zoomIn" data-wow-delay="0.4s"> 
+
+    <i class="fa fa-facebook"></i> </a>
+
+    
+
+    <a href="https://www.instagram.com/poverenik_pzr/" target="_blank" class="wow zoomIn" data-wow-delay="0.6s" title="Instagram"> <i class="fa fa-instagram"></i> </a>
+
+</div>
+    
+    
+      <div class="right-logo-img" style="padding-right:20px;"> <img src="https://ravnopravnost.gov.rs/wp-content/themes/gather/images/grbsrbije.png" height="100" width="50" > </div>
+      <div class="right-logo-content">
+                        <p>
+                    <span>Повереник за заштиту равноправности</span> <span>Булевар краља Александра 84, Београд</span> <span>poverenik@ravnopravnost.gov.rs</span> <span>Заказивање пријема странака:</span> <span>011 243 80 20   &bull;  011 243 64 64</span>
+                  </p>
+      </div>
+    </div>
+    <div id="header_lang">
+      
+<div class="lang_sel_list_horizontal wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal" id="lang_sel_list">
+	<ul><li class="icl-sr wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-sr wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
+				<a href="https://ravnopravnost.gov.rs" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native">Ћир</span></a>
+			</li><li class="icl-rs wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-rs wpml-ls-item-legacy-list-horizontal">
+				<a href="https://ravnopravnost.gov.rs/rs/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native" lang="rs">Lat</span></a>
+			</li><li class="icl-en wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
+				<a href="https://ravnopravnost.gov.rs/en/" class="wpml-ls-link"><span class="wpml-ls-native icl_lang_sel_native" lang="en">Eng</span></a>
+			</li></ul>
+</div>
+          </div>
+      </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">
+      Toggle navigation      </span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="https://ravnopravnost.gov.rs/">
+                        </a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <nav id="quadmenu" class="quadmenu-default_theme quadmenu-v2.0.3 quadmenu-align-left quadmenu-divider-hide quadmenu-carets-show quadmenu-background-color quadmenu-mobile-shadow-show quadmenu-dropdown-shadow-show quadmenu-hover-ripple quadmenu-is-embed" data-template="embed" data-theme="default_theme" data-unwrap="0" data-breakpoint="768">
+  <div class="quadmenu-container">
+    <div id="quadmenu_0" class="quadmenu-navbar-collapse collapsed in">
+      <ul class="quadmenu-navbar-nav"><li id="menu-item-4397" class="quadmenu-item-4397 quadmenu-item quadmenu-item-object-custom current-menu-item current_page_item quadmenu-item-type-default quadmenu-item-level-0 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Насловна</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-6690" class="quadmenu-item-6690 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/propisi/" class="quadmenu-dropdown-toggle hoverintent">
+      <span class="quadmenu-item-content">
+                              <span class="quadmenu-caret"></span>
+                            <span class="quadmenu-text  hover t_1000">Прописи</span>
+                                            </span>
+    </a>
+            <div id="dropdown-6690" class="quadmenu_btt t_300 quadmenu-dropdown-menu">
+            <ul>
+        <li id="menu-item-6691" class="quadmenu-item-6691 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/propisi/propisi-republike-srbije/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Прописи Републике Србије</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-6692" class="quadmenu-item-6692 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/propisi/medjunarodni-dokumenti/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Међународни документи</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-6693" class="quadmenu-item-6693 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/propisi/odluke-sudova/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Одлуке судова</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-6694" class="quadmenu-item-6694 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/propisi/akti-poverenika/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Акти повереника</span>
+                                            </span>
+    </a>
+        </li>      </ul>
+    </div>
+    </li><li id="menu-item-7594" class="quadmenu-item-7594 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-has-children quadmenu-item-type-default quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/misljenja-i-preporuke/" class="quadmenu-dropdown-toggle hoverintent">
+      <span class="quadmenu-item-content">
+                              <span class="quadmenu-caret"></span>
+                            <span class="quadmenu-text  hover t_1000">Мишљења и <br />препоруке</span>
+                                            </span>
+    </a>
+            <div id="dropdown-7594" class="quadmenu_btt t_300 quadmenu-dropdown-menu">
+            <ul>
+        <li id="menu-item-4433" class="quadmenu-item-4433 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/misljenja-i-preporuke/misljenja-i-preporuke-u-postupku-po-prituzbama/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Мишљења и препоруке у поступку по притужбама</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4434" class="quadmenu-item-4434 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/misljenja-i-preporuke/preporuke-mere-organima-javne-vlasti/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Препоруке за остваривање равноправности</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4435" class="quadmenu-item-4435 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/misljenja-i-preporuke/zakonodavne-inicijative-i-misljenje-o-propisima/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Иницијативе за измену прописа и мишљења о прописима</span>
+                                            </span>
+    </a>
+        </li>      </ul>
+    </div>
+    </li><li id="menu-item-4402" class="quadmenu-item-4402 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-has-children quadmenu-item-type-default quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/izvestaji-i-publikacije/publikacije/" class="quadmenu-dropdown-toggle hoverintent">
+      <span class="quadmenu-item-content">
+                              <span class="quadmenu-caret"></span>
+                            <span class="quadmenu-text  hover t_1000">Извештаји и <br />публикације</span>
+                                            </span>
+    </a>
+            <div id="dropdown-4402" class="quadmenu_btt t_300 quadmenu-dropdown-menu">
+            <ul>
+        <li id="menu-item-5685" class="quadmenu-item-5685 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/izvestaji/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Извештаји</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-40993" class="quadmenu-item-40993 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/posebni-izvestaji/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Посебни извештаји</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-22357" class="quadmenu-item-22357 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/izvestaji-i-publikacije/publikacije/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Публикације</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4438" class="quadmenu-item-4438 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/izvestaji-i-publikacije/istrazivanja/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Истраживања</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-5418" class="quadmenu-item-5418 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/analiza-propisa-od-znacaja-za-pravni-polozaj-transpolnih-osoba/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Анализe</span>
+                                            </span>
+    </a>
+        </li>      </ul>
+    </div>
+    </li><li id="menu-item-8234" class="quadmenu-item-8234 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-has-children quadmenu-item-type-default quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/projekti/" class="quadmenu-dropdown-toggle hoverintent">
+      <span class="quadmenu-item-content">
+                              <span class="quadmenu-caret"></span>
+                            <span class="quadmenu-text  hover t_1000">Пројекти</span>
+                                            </span>
+    </a>
+            <div id="dropdown-8234" class="quadmenu_btt t_300 quadmenu-dropdown-menu">
+            <ul>
+        <li id="menu-item-4489" class="quadmenu-item-4489 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/projekti/projekti-poverenika/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Пројекти Повереника</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4490" class="quadmenu-item-4490 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/projekti/ucesce-na-projektima/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Учешће на пројектима</span>
+                                            </span>
+    </a>
+        </li>      </ul>
+    </div>
+    </li><li id="menu-item-4398" class="quadmenu-item-4398 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-has-children quadmenu-item-type-default quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/o-nama/" class="quadmenu-dropdown-toggle hoverintent">
+      <span class="quadmenu-item-content">
+                              <span class="quadmenu-caret"></span>
+                            <span class="quadmenu-text  hover t_1000">О нама</span>
+                                            </span>
+    </a>
+            <div id="dropdown-4398" class="quadmenu_btt t_300 quadmenu-dropdown-menu">
+            <ul>
+        <li id="menu-item-14137" class="quadmenu-item-14137 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/ko-smo-i-sta-radimo/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Ко смо и шта радимо</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-14144" class="quadmenu-item-14144 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/misija-i-vizija/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Мисија и визија</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4412" class="quadmenu-item-4412 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/o-nama/organizacija/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Организација</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4483" class="quadmenu-item-4483 quadmenu-item quadmenu-item-object-post quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/informator-o-radu/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Информатор о раду</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4486" class="quadmenu-item-4486 quadmenu-item quadmenu-item-object-post quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/javne-nabavke/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Јавне набавке</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-23787" class="quadmenu-item-23787 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/o-nama/konkursi/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Конкурси</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-42199" class="quadmenu-item-42199 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/oglasi/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Огласи</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-23255" class="quadmenu-item-23255 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/kontakt/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Контакт</span>
+                                            </span>
+    </a>
+        </li>      </ul>
+    </div>
+    </li><li id="menu-item-5384" class="quadmenu-item-5384 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/diskriminacija/" class="quadmenu-dropdown-toggle hoverintent">
+      <span class="quadmenu-item-content">
+                              <span class="quadmenu-caret"></span>
+                            <span class="quadmenu-text  hover t_1000">Дискриминација</span>
+                                            </span>
+    </a>
+            <div id="dropdown-5384" class="quadmenu_btt t_300 quadmenu-dropdown-menu">
+            <ul>
+        <li id="menu-item-5385" class="quadmenu-item-5385 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/diskriminacija/sta-je-diskriminacija/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Шта је дискриминација</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-5386" class="quadmenu-item-5386 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/diskriminacija/prituzba-zbog-diskriminacije/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Притужба због дискриминације</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-5387" class="quadmenu-item-5387 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/diskriminacija/postupanje-po-prituzbi/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Поступање по притужби</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-5388" class="quadmenu-item-5388 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/diskriminacija/medijacija/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Посредовање – постизање споразума</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-5389" class="quadmenu-item-5389 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/diskriminacija/gradjanskopravna-zastita-od-diskriminacije/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Грађанскоправна заштитa</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-5390" class="quadmenu-item-5390 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/diskriminacija/prekrsajnopravna-zastita-od-diskriminacije/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Прекршајноправна заштита</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-5391" class="quadmenu-item-5391 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/diskriminacija/krivicnopravna-zastita-od-diskriminacije/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Кривичноправна заштита</span>
+                                            </span>
+    </a>
+        </li>      </ul>
+    </div>
+    </li><li id="menu-item-33052" class="quadmenu-item-33052 quadmenu-item quadmenu-item-object-custom quadmenu-item-has-children quadmenu-item-type-default quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="#" class="quadmenu-dropdown-toggle hoverintent">
+      <span class="quadmenu-item-content">
+                              <span class="quadmenu-caret"></span>
+                            <span class="quadmenu-text  hover t_1000">Aктуелно</span>
+                                            </span>
+    </a>
+            <div id="dropdown-33052" class="quadmenu_btt t_300 quadmenu-dropdown-menu">
+            <ul>
+        <li id="menu-item-4441" class="quadmenu-item-4441 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/vesti/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Вести</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4437" class="quadmenu-item-4437 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/saopstenja/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Саопштења</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4436" class="quadmenu-item-4436 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/upozorenja/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Упозорења</span>
+                                            </span>
+    </a>
+        </li><li id="menu-item-4488" class="quadmenu-item-4488 quadmenu-item quadmenu-item-type-taxonomy quadmenu-item-object-category quadmenu-item-type-default quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">        <a  href="https://ravnopravnost.gov.rs/obavestenja/">
+      <span class="quadmenu-item-content">
+                                              <span class="quadmenu-text  hover t_1000">Обавештења</span>
+                                            </span>
+    </a>
+        </li>      </ul>
+    </div>
+    </li></ul>    </div>
+  </div>
+</nav>          </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+<div class="bgleft"></div>
+<div class="bgright"></div>
+
+
+	<div class="pf-content"><section id='top' class='gather_sec header'>
+    <div class="background-opacity"></div>
+    <div class="container">
+        <div class="row no-margin vc_row wpb_row ">
+            <div class="first wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1470068823664"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<div id="accessibility"><span class="olaksan">Олакшан приступ: </span><button id="acc-ser" class="btnolaksan"></button></div>
+<div class="velicina">Величина фонта: <div class="otw-sidebar otw-sidebar-5 otw-sidebar-vertical"><ul class="ct-font-resizer"><li class="fontResizer ct-font-resizer-element" style="text-align: center; font-weight: bold;"><a class="fontResizer_minus ct-font-resizer-minus" href="#" title="Смањи величину фонта" style="font-size: 0.7em;">A</a> <a class="fontResizer_reset ct-font-resizer-reset" href="#" title="Врати на почетну величину фонта">A</a> <a class="fontResizer_add ct-font-resizer-plus" href="#" title="Повећај величину фонта" style="font-size: 1.2em;">A</a> <input type="hidden" id="fontResizer_value" value="ownelement" /><input type="hidden" id="fontResizer_ownid" value="" /><input type="hidden" id="fontResizer_ownelement" value=".pf-content" /><input type="hidden" id="fontResizer_resizeSteps" value="1.6" /><input type="hidden" id="fontResizer_cookieTime" value="31" /><input type="hidden" id="fontResizer_maxFontsize" value="" /><input type="hidden" id="fontResizer_minFontsize" value="" /></li></ul></div></div>
+
+		</div>
+	</div>
+</div></div></div><div class="first wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<div class="otw-sidebar otw-sidebar-6 otw-sidebar-vertical"><div class="widget otw-widget-1 widget-first widget_text_icl">		<div class="textwidget"><form action="https://ravnopravnost.gov.rs/rezultati-pretrage" id="cse-search-box">
+<div class="col-sm-12 no-padding">
+<div class="input-group">
+  <input type="hidden" name="cx" value="017006988450108096551:yysrqu2rk_4" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input class="form-control" type="text" name="q" placeholder="Претрага..." />
+<span class="input-group-addon search-button">
+ <button type="submit" name="sa" value=""  title="Претрага"><i class="fa fa-search"></i> </button>
+</span>
+</div>
+</div>
+</form></div>
+		</div></div>
+
+		</div>
+	</div>
+</div></div></div>        </div>
+    </div>
+</section>
+<section  class='gather_sec vc_custom_1469182544634'>
+    <div class="container">
+        <div class="row no-margin vc_row wpb_row ">
+            <div class="first vertikalno wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_wp_custommenu wpb_content_element vertikalno"><div class="widget widget_nav_menu"><div class="menu-vertical-meni_cir-container"><ul id="menu-vertical-meni_cir" class="menu"><li id="menu-item-33024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33024"><a href="https://ravnopravnost.gov.rs/ko-smo-i-sta-radimo/">Ко смо и шта радимо</a></li>
+<li id="menu-item-33025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33025"><a href="https://ravnopravnost.gov.rs/diskriminacija/">Дискриминација</a></li>
+<li id="menu-item-33026" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33026"><a href="https://ravnopravnost.gov.rs/diskriminacija/prituzba-zbog-diskriminacije/">Поднеси Притужбу</a></li>
+<li id="menu-item-33027" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33027"><a href="https://ravnopravnost.gov.rs/informator-o-radu/">Информатор о раду</a></li>
+<li id="menu-item-33030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33030"><a href="https://ravnopravnost.gov.rs/oglasna-tabla/">Огласна табла</a></li>
+<li id="menu-item-33028" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33028"><a href="https://ravnopravnost.gov.rs/projekti/">Пројекти</a></li>
+<li id="menu-item-33029" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33029"><a href="https://ravnopravnost.gov.rs/ekvinet-equinet/">Еквинет (EQUINET)</a></li>
+<li id="menu-item-63178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63178"><a href="https://ravnopravnost.gov.rs/obavestenje-o-postupku-izdavanja-potvrde-o-nediskriminatornom-postupanju-lica/">Потврда</a></li>
+</ul></div></div></div></div></div></div><div class="first wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="title widgettitle">Актуелно</h2>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<script type="text/javascript">jQuery(document).ready(function() {
+		   		jQuery(".smooth_slider_fouc .smooth_slider").show();
+			});jQuery(document).ready(function() {
+		jQuery("#smooth_slider_1").smooth({ 
+			fx: "scrollHorz",
+			speed:"500",
+			timeout: 7000,pager: "#smooth_slider_1_nav", pagerAnchorBuilder: function(idx, slide) { 
+					return '<a class="sldr'+(idx+1)+' smooth_slider_nnav" href="#">'+(idx+1)+'</a>'; 
+				},pause: 1
+			,slideExpr: "div.smooth_slideri"
+		});
+		jQuery("#smooth_slider_1").touchwipe({
+			wipeLeft: function() {
+				jQuery("#smooth_slider_1").smooth("next");
+			},
+			wipeRight: function() {
+				jQuery("#smooth_slider_1").smooth("prev");
+			},
+			preventDefaultEvents: false
+		});jQuery("#smooth_slider_1").smoothSlider({
+					sliderWidth		:450,
+					sliderHeight		:250,
+					navArr			:0,
+					img_align		:"left"
+			});});</script><noscript><p><strong></strong></p></noscript><div id="smooth_slider_1" class="smooth_slider" style="max-width:450px;height:250px;min-height:250px;background-color:#ffffff;border:0px solid #dddddd;"><div class="sldr_title" style="font-family:Georgia, Arial, Helvetica, sans-serif;font-size:20px;font-weight:bold;font-style:normal;color:#000000;">Featured Posts</div> <div class="smooth_sliderb"><div class="smooth_slideri" style="max-width:450px;margin:0px 0px 0px 0px;">
+			<!-- smooth_slideri --><a href="https://ravnopravnost.gov.rs/politicka-borba-ne-sme-biti-izgovor-za-diskriminaciju/" title="ПОЛИТИЧКА БОРБА НЕ СМЕ БИТИ ИЗГОВОР ЗА ДИСКРИМИНАЦИЈУ"  ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/02/SAOPSTENJE.png" alt="" class="lazy lazy-hidden slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /><noscript><img src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/02/SAOPSTENJE.png" alt="" class="slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /></noscript></a><h2 style="clear:none;line-height:17px;font-family:Trebuchet MS;font-size:14px;font-weight:bold;font-style:normal;color:#000000;margin:0 0 5px 0;"><a style="color:#000000;font-size:14px;font-weight:bold;font-style:normal;" href="https://ravnopravnost.gov.rs/politicka-borba-ne-sme-biti-izgovor-za-diskriminaciju/">ПОЛИТИЧКА БОРБА НЕ СМЕ БИТИ ИЗГОВОР ЗА ДИСКРИМИНАЦИЈУ</a></h2><span style="font-family:Verdana;font-size:12px;font-weight:normal;font-style:normal;color:#333333;"> Повереник за заштиту равноправности Милан Антонијевић позива грађане, политичке странке, кандидате и друге учеснике у изборном процесу да институцији Повереника ...</span>
+				<p class="smooth_more"><a href="https://ravnopravnost.gov.rs/politicka-borba-ne-sme-biti-izgovor-za-diskriminaciju/" style="color:#0092E4;font-family:Verdana;font-size:12px;margin-left: 10px;">Read More</a></p>
+			
+				<!-- /smooth_slideri -->
+			</div><div class="smooth_slideri" style="max-width:450px;margin:0px 0px 0px 0px;">
+			<!-- smooth_slideri --><a href="https://ravnopravnost.gov.rs/sastanak-poverenika-sa-novom-direktorkom-unicef-u-srbiji/" title="Састанак повереника са новом директорком УНИЦЕФ у Србији"  ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-18-at-14.25.33.jpeg" alt="" class="lazy lazy-hidden slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /><noscript><img src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-18-at-14.25.33.jpeg" alt="" class="slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /></noscript></a><h2 style="clear:none;line-height:17px;font-family:Trebuchet MS;font-size:14px;font-weight:bold;font-style:normal;color:#000000;margin:0 0 5px 0;"><a style="color:#000000;font-size:14px;font-weight:bold;font-style:normal;" href="https://ravnopravnost.gov.rs/sastanak-poverenika-sa-novom-direktorkom-unicef-u-srbiji/">Састанак повереника са новом директорком УНИЦЕФ у Србији</a></h2><span style="font-family:Verdana;font-size:12px;font-weight:normal;font-style:normal;color:#333333;"> Повереник за заштиту равноправности Милан Антонијевић састао се са новом директорком Канцеларије УНИЦЕФ-а у Србији, Кристином де Бројн, са којом ...</span>
+				<p class="smooth_more"><a href="https://ravnopravnost.gov.rs/sastanak-poverenika-sa-novom-direktorkom-unicef-u-srbiji/" style="color:#0092E4;font-family:Verdana;font-size:12px;margin-left: 10px;">Read More</a></p>
+			
+				<!-- /smooth_slideri -->
+			</div><div class="smooth_slideri" style="max-width:450px;margin:0px 0px 0px 0px;">
+			<!-- smooth_slideri --><a href="https://ravnopravnost.gov.rs/potpisan-sporazum-izmedju-institucije-poverenika-i-lokalnog-ombudsmana-grada-kragujevca/" title="Потписан споразум између институције Повереника и локалног омбудсмана Града Крагујевца"  ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/09/nasl008.png" alt="" class="lazy lazy-hidden slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /><noscript><img src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/09/nasl008.png" alt="" class="slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /></noscript></a><h2 style="clear:none;line-height:17px;font-family:Trebuchet MS;font-size:14px;font-weight:bold;font-style:normal;color:#000000;margin:0 0 5px 0;"><a style="color:#000000;font-size:14px;font-weight:bold;font-style:normal;" href="https://ravnopravnost.gov.rs/potpisan-sporazum-izmedju-institucije-poverenika-i-lokalnog-ombudsmana-grada-kragujevca/">Потписан споразум између институције Повереника и локалног омбудсмана Града Крагујевца</a></h2><span style="font-family:Verdana;font-size:12px;font-weight:normal;font-style:normal;color:#333333;"> Повереник Милан Антонијевић и локални омбудсман Града Крагујевца и општина Кнић, Аранђеловац и Рача Јелена Миливојевић потписали су данас Споразум ...</span>
+				<p class="smooth_more"><a href="https://ravnopravnost.gov.rs/potpisan-sporazum-izmedju-institucije-poverenika-i-lokalnog-ombudsmana-grada-kragujevca/" style="color:#0092E4;font-family:Verdana;font-size:12px;margin-left: 10px;">Read More</a></p>
+			
+				<!-- /smooth_slideri -->
+			</div><div class="smooth_slideri" style="max-width:450px;margin:0px 0px 0px 0px;">
+			<!-- smooth_slideri --><a href="https://ravnopravnost.gov.rs/karavan-mladih-protiv-diskriminacije-krece-kroz-srbiju-vrsnjacki-razgovori-o-diskriminaciji-govoru-mrznje-i-razlicitostima/" title="Караван младих против дискриминације креће кроз Србију: вршњачки разговори о дискриминацији, говору мржње и различитостима"  ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/09/nasl6.png" alt="" class="lazy lazy-hidden slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /><noscript><img src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/09/nasl6.png" alt="" class="slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /></noscript></a><h2 style="clear:none;line-height:17px;font-family:Trebuchet MS;font-size:14px;font-weight:bold;font-style:normal;color:#000000;margin:0 0 5px 0;"><a style="color:#000000;font-size:14px;font-weight:bold;font-style:normal;" href="https://ravnopravnost.gov.rs/karavan-mladih-protiv-diskriminacije-krece-kroz-srbiju-vrsnjacki-razgovori-o-diskriminaciji-govoru-mrznje-i-razlicitostima/">Караван младих против дискриминације креће кроз Србију: вршњачки разговори о дискриминацији, говору мржње и различитостима</a></h2><span style="font-family:Verdana;font-size:12px;font-weight:normal;font-style:normal;color:#333333;"> Из Београда је данас кренуо Караван младих против дискриминације, који ће наредних дана повезати младе из Београда, Аранђеловца, Сјенице, Новог ...</span>
+				<p class="smooth_more"><a href="https://ravnopravnost.gov.rs/karavan-mladih-protiv-diskriminacije-krece-kroz-srbiju-vrsnjacki-razgovori-o-diskriminaciji-govoru-mrznje-i-razlicitostima/" style="color:#0092E4;font-family:Verdana;font-size:12px;margin-left: 10px;">Read More</a></p>
+			
+				<!-- /smooth_slideri -->
+			</div><div class="smooth_slideri" style="max-width:450px;margin:0px 0px 0px 0px;">
+			<!-- smooth_slideri --><a href="https://ravnopravnost.gov.rs/takmicenje-u-simulaciji-sudjenja-osudi-diskriminaciju-2/" title="ТАКМИЧЕЊЕ У СИМУЛAЦИJИ СУЂEЊA „ОСУДИ ДИСКРИМИНАЦИЈУ“"  ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/09/Baner-za-sajt.jpg" alt="" class="lazy lazy-hidden slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /><noscript><img src="https://ravnopravnost.gov.rs/wp-content/uploads/2026/09/Baner-za-sajt.jpg" alt="" class="slider_thumbnail full smooth_slider_thumbnail" width="165" height="" style="float:left;margin:0 10px 0 0px;max-height:120px;border:1px solid #000000;width:165px;" /></noscript></a><h2 style="clear:none;line-height:17px;font-family:Trebuchet MS;font-size:14px;font-weight:bold;font-style:normal;color:#000000;margin:0 0 5px 0;"><a style="color:#000000;font-size:14px;font-weight:bold;font-style:normal;" href="https://ravnopravnost.gov.rs/takmicenje-u-simulaciji-sudjenja-osudi-diskriminaciju-2/">ТАКМИЧЕЊЕ У СИМУЛAЦИJИ СУЂEЊA „ОСУДИ ДИСКРИМИНАЦИЈУ“</a></h2><span style="font-family:Verdana;font-size:12px;font-weight:normal;font-style:normal;color:#333333;">  Пoвeрeник зa зaштиту рaвнoпрaвнoсти пoзивa зaинтeрeсoвaнe студенте и студенткиње oснoвних и мaстeр студиja прaвa у Рeпублици Србиjи дa сe приjaвe нa&nbsp; ТАКМИЧЕЊЕ ...</span>
+				<p class="smooth_more"><a href="https://ravnopravnost.gov.rs/takmicenje-u-simulaciji-sudjenja-osudi-diskriminaciju-2/" style="color:#0092E4;font-family:Verdana;font-size:12px;margin-left: 10px;">Read More</a></p>
+			
+				<!-- /smooth_slideri -->
+			</div></div><div id="smooth_slider_1_nav" class="smooth_nav"></div><div class="sldr_clearlt"></div><div class="sldr_clearrt"></div>
+</div><script type="text/javascript">jQuery("html").addClass("smooth_slider_fouc");jQuery(".smooth_slider_fouc .smooth_slider").hide();</script>
+
+		</div>
+	</div>
+</div></div></div>        </div>
+    </div>
+    <!-- end .container -->
+</section>
+<section  class='gather_sec vc_custom_1469992789433'>
+    <div class="container">
+        <div class="row no-margin vc_row wpb_row ">
+            <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<ul class="box_menu">
+<li class="item-1 same-height-2"><a href="https://ravnopravnost.gov.rs/diskriminacija/sta-je-diskriminacija/">Препознај дискриминацију</a></li>
+</ul>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<ul class="box_menu">
+<li class="item-2 same-height-2"><a href="https://ravnopravnost.gov.rs/diskriminacija/prituzba-zbog-diskriminacije/">Поднеси притужбу</a></li>
+</ul>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<ul class="box_menu">
+<li class="item-3 same-height-2"><a href="https://ravnopravnost.gov.rs/izvestaji/">Годишњи извештај</a></li>
+</ul>
+
+		</div>
+	</div>
+</div></div></div>        </div>
+    </div>
+    <!-- end .container -->
+</section>
+<section  class='gather_sec vc_custom_1469960669156'>
+    <div class="container">
+        <div class="row no-margin vc_row wpb_row ">
+            <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<div class="otw-sidebar otw-sidebar-1 otw-sidebar-vertical"><style>.rpwe-block ul{
+list-style: none !important;
+margin-left: 0 !important;
+padding-left: 0 !important;
+}
+
+.rpwe-block li{
+border-bottom: 1px solid #eee;
+margin-bottom: 10px;
+padding-bottom: 10px;
+list-style-type: none;
+}
+
+.rpwe-block a{
+display: inline !important;
+text-decoration: none;
+}
+
+.rpwe-block h3{
+background: none !important;
+clear: none;
+margin-bottom: 0 !important;
+margin-top: 0 !important;
+font-weight: 400;
+font-size: 1.15em;
+line-height: 1.2em;
+}
+
+.rpwe-thumb{
+border: 1px solid #eee !important;
+box-shadow: none !important;
+margin: 2px 10px 2px 0;
+padding: 3px !important;
+}
+
+.rpwe-summary{
+font-size: 12px;
+margin-bottom:5px;
+}
+
+.rpwe-time{
+color: #bbb;
+font-size: 11px;
+}
+
+.rpwe-comment{
+color: #bbb;
+font-size: 11px;
+padding-left: 5px;
+}
+
+.rpwe-alignleft{
+display: inline;
+float: left;
+}
+
+.rpwe-alignright{
+display: inline;
+float: right;
+}
+
+.rpwe-aligncenter{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.rpwe-clearfix:before,
+.rpwe-clearfix:after{
+content: "";
+display: table !important;
+}
+
+.rpwe-clearfix:after{
+clear: both;
+}
+
+.rpwe-clearfix{
+zoom: 1;
+}
+</style><div class="widget otw-widget-1 widget-first rpwe_widget recent-posts-extended"><h2 class="widgettitle">Упозорења и обавештења</h2>
+<div  class="rpwe-block "><ul class="rpwe-ul"><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a href="https://ravnopravnost.gov.rs/upozorenje-povodom-diskriminacije-na-osnovu-starosnog-doba/" title="УПОЗОРЕЊЕ ПОВОДОМ ДИСКРИМИНАЦИЈЕ НА ОСНОВУ СТАРОСНОГ ДОБА" rel="bookmark">УПОЗОРЕЊЕ ПОВОДОМ ДИСКРИМИНАЦИЈЕ НА ОСНОВУ СТАРОСНОГ ДОБА</a></h3><time class="rpwe-time published" datetime="2026-07-09T19:16:18+02:00">09.07.2026.</time><div class="rpwe-summary">Поводом све учесталијих негативних коментара, увредљивих и дискриминаторних порука на друштвеним мрежама, као и медијских садржаја који су уследили након &hellip;<a href="https://ravnopravnost.gov.rs/upozorenje-povodom-diskriminacije-na-osnovu-starosnog-doba/" class="more-link"> »»»</a></div></li><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a href="https://ravnopravnost.gov.rs/osnovna-skola-djuro-strugar-nije-postupila-po-preporuci-poverenika-za-zastitu-ravnopravnosti/" title="Основна школа „Ђуро Стругар“ није поступила по препоруци Повереника за заштиту равноправности" rel="bookmark">Основна школа „Ђуро Стругар“ није поступила по препоруци Повереника за заштиту равноправности</a></h3><time class="rpwe-time published" datetime="2026-06-30T12:30:05+02:00">30.06.2026.</time><div class="rpwe-summary">Повереник за заштиту равноправности обавештава јавност да Основна школа „Ђуро Стругар“ у Новом Београду није поступила по препоруци да наставницу &hellip;<a href="https://ravnopravnost.gov.rs/osnovna-skola-djuro-strugar-nije-postupila-po-preporuci-poverenika-za-zastitu-ravnopravnosti/" class="more-link"> »»»</a></div></li><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a href="https://ravnopravnost.gov.rs/upozorenje-za-javnost-povodom-neproverenih-tvrdnji-o-kupovini-glasova-pripadnika-romske-nacionalne-zajednice/" title="Упозорење за јавност поводом непроверених тврдњи о куповини гласова припадника ромске националне заједнице" rel="bookmark">Упозорење за јавност поводом непроверених тврдњи о куповини гласова припадника ромске националне заједнице</a></h3><time class="rpwe-time published" datetime="2026-06-16T12:28:55+02:00">16.06.2026.</time><div class="rpwe-summary">Поводом тврдњи о могућим притисцима, уценама и куповини гласова припадника ромске националне заједнице у изборном процесу, важно је да се &hellip;<a href="https://ravnopravnost.gov.rs/upozorenje-za-javnost-povodom-neproverenih-tvrdnji-o-kupovini-glasova-pripadnika-romske-nacionalne-zajednice/" class="more-link"> »»»</a></div></li></ul></div><!-- Generated by http://wordpress.org/plugins/recent-posts-widget-extended/ --></div></div>
+<div class="otw-sidebar otw-sidebar-2 otw-sidebar-vertical"><style>.rpwe-block ul{
+list-style: none !important;
+margin-left: 0 !important;
+padding-left: 0 !important;
+}
+
+.rpwe-block li{
+border-bottom: 1px solid #eee;
+margin-bottom: 10px;
+padding-bottom: 10px;
+list-style-type: none;
+}
+
+.rpwe-block a{
+display: inline !important;
+text-decoration: none;
+}
+
+.rpwe-block h3{
+background: none !important;
+clear: none;
+margin-bottom: 0 !important;
+margin-top: 0 !important;
+font-weight: 400;
+font-size: 1.15em;
+line-height: 1.2em;
+}
+
+.rpwe-thumb{
+border: 1px solid #eee !important;
+box-shadow: none !important;
+margin: 2px 10px 2px 0;
+padding: 3px !important;
+}
+
+.rpwe-summary{
+margin-top:5px;
+font-size: 12px;
+}
+
+.rpwe-time{
+color: #bbb;
+font-size: 11px;
+}
+
+.rpwe-comment{
+color: #bbb;
+font-size: 11px;
+padding-left: 5px;
+}
+
+.rpwe-alignleft{
+display: inline;
+float: left;
+}
+
+.rpwe-alignright{
+display: inline;
+float: right;
+}
+
+.rpwe-aligncenter{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.rpwe-clearfix:before,
+.rpwe-clearfix:after{
+content: "";
+display: table !important;
+}
+
+.rpwe-clearfix:after{
+clear: both;
+}
+
+.rpwe-clearfix{
+zoom: 1;
+}
+</style><div class="widget otw-widget-1 widget-first rpwe_widget recent-posts-extended"><h2 class="widgettitle">Огласна табла</h2>
+<div  class="rpwe-block "><ul class="rpwe-ul"><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a href="https://ravnopravnost.gov.rs/nagradni-konkurs-most-razumevanja-medjugeneracijska-solidarnost-6/" title="НАГРАДНИ КОНКУРС „МОСТ РАЗУМЕВАЊА &#8211; МЕЂУГЕНЕРАЦИЈСКА СОЛИДАРНОСТ“" rel="bookmark">НАГРАДНИ КОНКУРС „МОСТ РАЗУМЕВАЊА &#8211; МЕЂУГЕНЕРАЦИЈСКА СОЛИДАРНОСТ“</a></h3><time class="rpwe-time published" datetime="2026-08-31T14:49:35+02:00">31.08.2026.</time><div class="rpwe-summary">НАГРАДНИ КОНКУРС   „МОСТ РАЗУМЕВАЊА- МЕЂУГЕНЕРАЦИЈСКА СОЛИДАРНОСТ“   &nbsp; Повереник за заштиту равноправности расписује конкурс за најбољи литерарни рад, ликовни &hellip;<a href="https://ravnopravnost.gov.rs/nagradni-konkurs-most-razumevanja-medjugeneracijska-solidarnost-6/" class="more-link">&nbsp;»»»</a></div></li><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a href="https://ravnopravnost.gov.rs/konkurs-za-ucenike-osnovnih-skola-zajedno-i-bezbedno-kroz-detinjstvo/" title="Конкурс за ученике основних школа „Заједно и безбедно кроз детињство“" rel="bookmark">Конкурс за ученике основних школа „Заједно и безбедно кроз детињство“</a></h3><time class="rpwe-time published" datetime="2026-05-07T09:36:50+02:00">07.05.2026.</time><div class="rpwe-summary">На основу Протокола о сарадњи у спровођења пројекта „Заједно и безбедно кроз детињство“ од 01.09.2023. године и Споразума о приступању &hellip;<a href="https://ravnopravnost.gov.rs/konkurs-za-ucenike-osnovnih-skola-zajedno-i-bezbedno-kroz-detinjstvo/" class="more-link">&nbsp;»»»</a></div></li><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a href="https://ravnopravnost.gov.rs/priznanje-za-opstinu-grad-jednakih-mogucnosti/" title="ПРИЗНАЊЕ ЗА ОПШТИНУ/ГРАД ЈЕДНАКИХ МОГУЋНОСТИ" rel="bookmark">ПРИЗНАЊЕ ЗА ОПШТИНУ/ГРАД ЈЕДНАКИХ МОГУЋНОСТИ</a></h3><time class="rpwe-time published" datetime="2026-01-26T16:30:16+01:00">26.01.2026.</time><div class="rpwe-summary">Повереник за заштиту равноправности, као централна државна институција у чијој je надлежности заштита од дискриминације и унапређење равноправности у свим &hellip;<a href="https://ravnopravnost.gov.rs/priznanje-za-opstinu-grad-jednakih-mogucnosti/" class="more-link">&nbsp;»»»</a></div></li></ul></div><!-- Generated by http://wordpress.org/plugins/recent-posts-widget-extended/ --></div></div>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="title widgettitle">Ко смо и шта радимо</h2>
+<p><img class="lazy lazy-hidden margin-right-10 wp-image-63720 size-medium alignleft" title="Poverenik za zaštitu ravnopravnosti" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125-300x220.png" alt="" width="300" height="220" data-lazy-srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125-300x220.png 300w, https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125-768x563.png 768w, https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125.png 800w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" /><noscript><img class="margin-right-10 wp-image-63720 size-medium alignleft" title="Poverenik za zaštitu ravnopravnosti" src="https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125-300x220.png" alt="" width="300" height="220" srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125-300x220.png 300w, https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125-768x563.png 768w, https://ravnopravnost.gov.rs/wp-content/uploads/2025/12/nasl125.png 800w" sizes="(max-width: 300px) 100vw, 300px" /></noscript></p>
+<p style="text-align: justify;"><strong>Пoвeрeник зa зaштиту рaвнoпрaвнoсти</strong> je нeзaвисaн, сaмoстaлaн и спeциjaлизoвaн држaвни oргaн фoрмирaн нa oснoву Зaкoнa o зaбрaни дискриминaциje из 2009. гoдинe.</p>
+<p style="text-align: justify;">Народна Скупштина Републике Србије изабрала је 03. децембра 2025. године Милана Антонијевића за повереника за заштиту равноправности. Нoрмативни oквир рaдa Пoвeрeникa зa зaштиту рaвнoпрaвнoсти чинe Устaв Рeпубликe Србиje, рeлeвaнтни мeђунaрoдни дoкумeнти и oпшти и пoсeбни aнтидискриминaциoни зaкoни Рeпубликe Србиje.  <a href="https://ravnopravnost.gov.rs/ko-smo-i-sta-radimo/">детаљније…</a></p>
+
+		</div>
+	</div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2 class="title widgettitle">Пројекти</h2>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center   has-object-fit-cover">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="https://serbia.unfpa.org/sr/node/107318" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey"><img width="568" height="228" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2022/11/UNFPA-bodyright-predlog-objava-Ib.png" class="lazy lazy-hidden vc_single_image-img attachment-full" alt="" data-lazy-srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2022/11/UNFPA-bodyright-predlog-objava-Ib.png 568w, https://ravnopravnost.gov.rs/wp-content/uploads/2022/11/UNFPA-bodyright-predlog-objava-Ib-300x120.png 300w" data-lazy-sizes="(max-width: 568px) 100vw, 568px" /><noscript><img width="568" height="228" src="https://ravnopravnost.gov.rs/wp-content/uploads/2022/11/UNFPA-bodyright-predlog-objava-Ib.png" class="vc_single_image-img attachment-full" alt="" srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2022/11/UNFPA-bodyright-predlog-objava-Ib.png 568w, https://ravnopravnost.gov.rs/wp-content/uploads/2022/11/UNFPA-bodyright-predlog-objava-Ib-300x120.png 300w" sizes="(max-width: 568px) 100vw, 568px" /></noscript></a>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center   has-object-fit-cover">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="/projekti/projekti-poverenika/redovna-godisnja-konferencija/" target="_self" class="vc_single_image-wrapper   vc_box_border_grey"><img width="400" height="150" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2016/11/redovna-godisnja-konferencija.png" class="lazy lazy-hidden vc_single_image-img attachment-full" alt="Редовна годишња конференција" data-lazy-srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2016/11/redovna-godisnja-konferencija.png 400w, https://ravnopravnost.gov.rs/wp-content/uploads/2016/11/redovna-godisnja-konferencija-300x113.png 300w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" /><noscript><img width="400" height="150" src="https://ravnopravnost.gov.rs/wp-content/uploads/2016/11/redovna-godisnja-konferencija.png" class="vc_single_image-img attachment-full" alt="Редовна годишња конференција" srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2016/11/redovna-godisnja-konferencija.png 400w, https://ravnopravnost.gov.rs/wp-content/uploads/2016/11/redovna-godisnja-konferencija-300x113.png 300w" sizes="(max-width: 400px) 100vw, 400px" /></noscript></a>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center   has-object-fit-cover">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="https://ravnopravnost.gov.rs/godisnja-konferencija-poverenika-za-zastitu-ravnopravnosti/" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey"><img width="400" height="150" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2019/07/baner-nagrada-za-toleranciju-cir.png" class="lazy lazy-hidden vc_single_image-img attachment-full" alt="Годишња медијска награда за толеранцију" data-lazy-srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2019/07/baner-nagrada-za-toleranciju-cir.png 400w, https://ravnopravnost.gov.rs/wp-content/uploads/2019/07/baner-nagrada-za-toleranciju-cir-300x113.png 300w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" /><noscript><img width="400" height="150" src="https://ravnopravnost.gov.rs/wp-content/uploads/2019/07/baner-nagrada-za-toleranciju-cir.png" class="vc_single_image-img attachment-full" alt="Годишња медијска награда за толеранцију" srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2019/07/baner-nagrada-za-toleranciju-cir.png 400w, https://ravnopravnost.gov.rs/wp-content/uploads/2019/07/baner-nagrada-za-toleranciju-cir-300x113.png 300w" sizes="(max-width: 400px) 100vw, 400px" /></noscript></a>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center   has-object-fit-cover">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="https://www.youtube.com/watch?v=9hyafAMIRuA" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey"><img width="800" height="294" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://ravnopravnost.gov.rs/wp-content/uploads/2024/12/Baner1-removebg-preview.png" class="lazy lazy-hidden vc_single_image-img attachment-full" alt="" data-lazy-srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2024/12/Baner1-removebg-preview.png 800w, https://ravnopravnost.gov.rs/wp-content/uploads/2024/12/Baner1-removebg-preview-300x110.png 300w, https://ravnopravnost.gov.rs/wp-content/uploads/2024/12/Baner1-removebg-preview-768x282.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" /><noscript><img width="800" height="294" src="https://ravnopravnost.gov.rs/wp-content/uploads/2024/12/Baner1-removebg-preview.png" class="vc_single_image-img attachment-full" alt="" srcset="https://ravnopravnost.gov.rs/wp-content/uploads/2024/12/Baner1-removebg-preview.png 800w, https://ravnopravnost.gov.rs/wp-content/uploads/2024/12/Baner1-removebg-preview-300x110.png 300w, https://ravnopravnost.gov.rs/wp-content/uploads/2024/12/Baner1-removebg-preview-768x282.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript></a>
+		</figure>
+	</div>
+</div></div></div></div></div></div></div>        </div>
+    </div>
+    <!-- end .container -->
+</section>
+<section  class='gather_sec vc_custom_1469992883428'>
+    <div class="container">
+        <div class="row no-margin vc_row wpb_row ">
+            <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<ul class="box_menu">
+<li class="item-4 same-height"><a href="https://ravnopravnost.gov.rs/informator-o-radu/">Информатор о раду</a></li>
+</ul>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<ul class="box_menu">
+<li class="item-5 same-height"><a href="https://ravnopravnost.gov.rs/slobodan-pristup-informacijama/">Слободан приступ информацијама</a></li>
+</ul>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<ul class="box_menu">
+<li class="item-6 same-height"><a href="https://ravnopravnost.gov.rs/privatnost/">Приватност</a></li>
+</ul>
+
+		</div>
+	</div>
+</div></div></div>        </div>
+    </div>
+    <!-- end .container -->
+</section>
+<section  class='gather_sec vc_custom_1468436717499'>
+    <div class="container">
+        <div class="row no-margin vc_row wpb_row ">
+                    </div>
+    </div>
+    <!-- end .container -->
+</section>
+</div> 	
+	
+ 						    <!--=============== footer ===============-->
+			    <footer class="page-footer">
+			        			            <div class="container">
+			            	<div class="row">
+                           
+			            		<div id="text_icl-8" class="widget footer-widgets widget_text_icl widget-count-3 col-md-4">		<div class="textwidget"> <div class="container" style="margin-bottom:10px;">
+                    <div class="row"><a href="/" class="home"> Насловна</a> | <a href="/kontakt/" class="contact"> Контакт</a> |<a href="/mapa-sajta/" class="sitemap"> Мапа сајта </a></div>
+                    </div>
+<div class="row"><h5>Партнери:</h5>
+<p class="col-md-2"></p>
+<p class="col-md-3">
+<a href="http://www.equineteurope.org/" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey">
+<img class="lazy lazy-loaded" src="/wp-content/themes/gather-child/images/equinet.png" data-lazy-type="image" data-lazy-src="/wp-content/uploads/2016/07/equinet.png" width="200"><noscript><img width="200"  src="/wp-content/uploads/2016/07/equinet.png"/></noscript>
+</a>
+</p>
+<p class="col-md-3">
+<a href="https://www.coe.int/t/dghl/monitoring/ecri/default_en.asp" target="_blank">
+<img class="lazy lazy-loaded" src="/wp-content/uploads/2016/07/ecri-logo.png" data-lazy-type="image" data-lazy-src="/wp-content/uploads/2016/07/ecri-logo.png" width="200"><noscript><img src="/wp-content/uploads/2016/07/ecri-logo.png" width="200" ></noscript>
+</a>
+</p>
+<p class="col-md-3">
+<a href="https://medjugeneracijskasolidarnost.rs/" target="_blank">
+<img class="lazy lazy-loaded" src="/wp-content/uploads/2021/03/baner2-150px.gif" data-lazy-type="image" data-lazy-src="/wp-content/uploads/2021/03/baner2-150px.gif" width="150"><noscript><img src="/wp-content/uploads/2021/03/baner2-150px.gif" width="150" ></noscript>
+</a>
+</p>
+</div></div>
+		</div>			            		
+			            	</div>
+			            </div>
+			        			        			        <div id="text_icl-11" class="widget widget_text_icl">		<div class="textwidget"><p><small>Сви појмови који су на овом сајту употребљени у мушком граматичком роду обухватају мушки и женски род лица на која се односе.</small></p>
+<p><small class="text-muted">© 2016 Повереник за заштиту равноправности. Сва права задржана.</small></p>
+</div>
+		</div>			        <p></p>			    </footer><!-- footer end    -->
+									<a href="#top" class="back_to_top"><img src="https://ravnopravnost.gov.rs/wp-content/uploads/2016/07/back-to-top.png" alt="back to top"></a>
+ 			 				    
+<script type='text/javascript'>
+	//<![CDATA[
+    jQuery(document).ready(function($) { 
+    	$('html').MagicLiquidizerTable({ whichelement: 'table', breakpoint: '780', headerSelector: 'thead td, thead th, tr th', bodyRowSelector: 'tbody tr, tr', table: '1' })
+    })
+	//]]>
+</script> 	
+    <script>
+        window.addEventListener('sfsi_functions_loaded', function() {
+            if (typeof sfsi_plugin_version == 'function') {
+                sfsi_plugin_version(2.55);
+            }
+        });
+
+        function sfsi_processfurther(ref) {
+            var feed_id = 'K0lobjRyejBpY2xXbzNPbHIrNzBESHlNdDBhOGNHWnc4akc0V1grZ2lPcmNPVDNITyszUDBsZ1dHNG9nK0dMeFd4UHovL251Y0hxQmswdmwzRXRneDV4RUpkaUVmMnpRdW5Wd2Fsb2RpNkE5NnJaUWpJK1l2YThRbXBZRi9CSzF8YngrZFNOUklqSGJNQkNzNVFMK0dWWDZaM2hvNThmbXU2TVlWRVBoVmR5TT0=';
+            var feedtype = 8;
+            var email = jQuery(ref).find('input[name="email"]').val();
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if ((email != "Enter your email") && (filter.test(email))) {
+                if (feedtype == "8") {
+                    var url = "https://api.follow.it/subscription-form/" + feed_id + "/" + feedtype;
+                    window.open(url, "popupwindow", "scrollbars=yes,width=1080,height=760");
+                    return true;
+                }
+            } else {
+                alert("Please enter email address");
+                jQuery(ref).find('input[name="email"]').focus();
+                return false;
+            }
+        }
+    </script>
+    <style type="text/css" aria-selected="true">
+        .sfsi_subscribe_Popinner {
+            width: 0px !important;
+
+            height: 0px !important;
+
+            padding: 18px 0px !important;
+
+            background-color:  !important;
+
+        }
+
+        .sfsi_subscribe_Popinner form {
+
+            margin: 0 20px !important;
+
+        }
+
+        .sfsi_subscribe_Popinner h5 {
+
+            font-family:  !important;
+
+            font-style:  !important;
+
+            color:  !important;
+
+            font-size: 0px !important;
+
+            text-align:  !important;
+
+            margin: 0 0 10px !important;
+
+            padding: 0 !important;
+
+        }
+
+        .sfsi_subscription_form_field {
+
+            margin: 5px 0 !important;
+
+            width: 100% !important;
+
+            display: inline-flex;
+
+            display: -webkit-inline-flex;
+
+        }
+
+        .sfsi_subscription_form_field input {
+
+            width: 100% !important;
+
+            padding: 10px 0px !important;
+
+        }
+
+        .sfsi_subscribe_Popinner input[type=email] {
+
+            font-family:  !important;
+
+            font-style:  !important;
+
+            color:  !important;
+
+            font-size: 0px !important;
+
+            text-align:  !important;
+
+        }
+
+        .sfsi_subscribe_Popinner input[type=email]::-webkit-input-placeholder {
+
+            font-family:  !important;
+
+            font-style:  !important;
+
+            color:  !important;
+
+            font-size: 0px !important;
+
+            text-align:  !important;
+
+        }
+
+        .sfsi_subscribe_Popinner input[type=email]:-moz-placeholder {
+            /* Firefox 18- */
+
+            font-family:  !important;
+
+            font-style:  !important;
+
+            color:  !important;
+
+            font-size: 0px !important;
+
+            text-align:  !important;
+
+        }
+
+        .sfsi_subscribe_Popinner input[type=email]::-moz-placeholder {
+            /* Firefox 19+ */
+
+            font-family:  !important;
+
+            font-style:  !important;
+
+            color:  !important;
+
+            font-size: 0px !important;
+
+            text-align:  !important;
+
+        }
+
+        .sfsi_subscribe_Popinner input[type=email]:-ms-input-placeholder {
+
+            font-family:  !important;
+
+            font-style:  !important;
+
+            color:  !important;
+
+            font-size: 0px !important;
+
+            text-align:  !important;
+
+        }
+
+        .sfsi_subscribe_Popinner input[type=submit] {
+
+            font-family:  !important;
+
+            font-style:  !important;
+
+            color:  !important;
+
+            font-size: 0px !important;
+
+            text-align:  !important;
+
+            background-color:  !important;
+
+        }
+
+        .sfsi_shortcode_container {
+            float: left;
+        }
+
+        .sfsi_shortcode_container .norm_row .sfsi_wDiv {
+            position: relative !important;
+        }
+
+        .sfsi_shortcode_container .sfsi_holders {
+            display: none;
+        }
+
+            </style>
+
+        <script type="text/javascript">
+          var pfHeaderImgUrl = '';
+          var pfHeaderTagline = '';
+          var pfdisableClickToDel = '1';
+          var pfImagesSize = 'full-size';
+          var pfImageDisplayStyle = 'right';
+          var pfEncodeImages = '0';
+          var pfDisableEmail = '1';
+          var pfDisablePDF = '1';
+          var pfDisablePrint = '0';
+          var pfCustomCSS = '';
+          var pfPlatform = 'Wordpress';
+        </script>
+        <script async src='https://cdn.printfriendly.com/printfriendly.js'></script>
+      <link rel='stylesheet' id='smooth_default-css'  href='https://ravnopravnost.gov.rs/wp-content/plugins/smooth-slider/css/skins/default/style.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-includes/js/jquery/ui/core.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/ultimate-social-media-icons/js/shuffle/modernizr.custom.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/ultimate-social-media-icons/js/shuffle/jquery.shuffle.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/ultimate-social-media-icons/js/shuffle/random-shuffle-min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sfsi_icon_ajax_object = {"ajax_url":"https:\/\/ravnopravnost.gov.rs\/wp-admin\/admin-ajax.php"};
+var sfsi_icon_ajax_object = {"ajax_url":"https:\/\/ravnopravnost.gov.rs\/wp-admin\/admin-ajax.php","plugin_url":"https:\/\/ravnopravnost.gov.rs\/wp-content\/plugins\/ultimate-social-media-icons\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/ultimate-social-media-icons/js/custom.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var plugins_datas = {"url":"https:\/\/ravnopravnost.gov.rs\/wp-admin\/admin-ajax.php","cd_day":"day","cd_days":"days","cd_hour":"hour","cd_hours":"hours","cd_minute":"minute","cd_minutes":"minutes","cd_second":"second","cd_seconds":"seconds","invalid_date":"Invalid date. Here's an example: 12 Tuesday 2016 17:30:00"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/themes/gather/js/plugins.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/themes/gather/js/plugins/wow.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var vld_msgs = {"required":"This field is required.","remote":"Please fix this field.","email":"Please enter a valid email address.","url":"Please enter a valid URL.","date":"Please enter a valid date.","dateISO":"Please enter a valid date ( ISO )."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/themes/gather/js/plugins/validate.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/themes/gather/js/main.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/quadmenu/assets/frontend/pscrollbar/perfect-scrollbar.jquery.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/quadmenu/assets/frontend/owlcarousel/owl.carousel.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-includes/js/hoverIntent.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var quadmenu = {"nonce":"62deb49ec1","gutter":"20"};
+var ajaxurl = "https:\/\/ravnopravnost.gov.rs\/wp-admin\/admin-ajax.php";
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/quadmenu/assets/frontend/js/quadmenu.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/bj-lazy-load/js/bj-lazy-load.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/smooth-slider/js/smooth.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/smooth-slider/js/dim.js'></script>
+<script type='text/javascript' src='https://ravnopravnost.gov.rs/wp-content/plugins/smooth-slider/js/jquery.touchwipe.js'></script>
+        <!--<link href="http://symbolgames.net/wp-content/themes/gather/style.css" rel="stylesheet">-->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Lato']
+    }
+  });
+</script>-->
+        <!--<script type="text/javascript">           
+   WebFontConfig = {      
+    google: { 
+      families: ['Lato:300,400,700']
+    },
+	timeout: 2000
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+  </script>-->
+	</body>
+</html>

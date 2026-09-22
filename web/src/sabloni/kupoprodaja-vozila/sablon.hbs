@@ -1,0 +1,119 @@
+﻿<div class="ugovor-dokument">
+  <div class="text-center font-bold text-lg mb-6">
+    UGOVOR O KUPOPRODAJI UPOTREBLJAVANOG MOTOROG VOZILA
+  </div>
+
+  <p class="mb-4">
+    Zaključen u {{#if mestoZakljucenja}}{{mestoZakljucenja}}{{else}}________________{{/if}}, 
+    dana {{formatDatum datumZakljucenja}}, između sledećih ugovornih strana:
+  </p>
+
+  <div class="mb-4 pl-4 border-l-2 border-gray-300">
+    <p><strong>1. PRODAVAC:</strong></p>
+    <p>
+      {{#if prodavacImePrezime}}{{prodavacImePrezime}}{{else}}________________________________{{/if}}, 
+      iz mesta {{#if prodavacMesto}}{{prodavacMesto}}{{else}}________________{{/if}}, 
+      ulica i broj {{#if prodavacAdresa}}{{prodavacAdresa}}{{else}}________________________________{{/if}}, 
+      JMBG: {{#if prodavacJmbg}}{{prodavacJmbg}}{{else}}______________{{/if}}, 
+      broj lične karte: {{#if prodavacBrojLk}}{{prodavacBrojLk}}{{else}}________{{/if}}, izdate od strane {{#if prodavacMupLk}}{{prodavacMupLk}}{{else}}________{{/if}} 
+      (u daljem tekstu: <em>Prodavac</em>).
+    </p>
+  </div>
+
+  <div class="mb-6 pl-4 border-l-2 border-gray-300">
+    <p><strong>2. KUPAC:</strong></p>
+    <p>
+      {{#if kupacImePrezime}}{{kupacImePrezime}}{{else}}________________________________{{/if}}, 
+      iz mesta {{#if kupacMesto}}{{kupacMesto}}{{else}}________________{{/if}}, 
+      ulica i broj {{#if kupacAdresa}}{{kupacAdresa}}{{else}}________________________________{{/if}}, 
+      JMBG: {{#if kupacJmbg}}{{kupacJmbg}}{{else}}______________{{/if}}, 
+      broj lične karte: {{#if kupacBrojLk}}{{kupacBrojLk}}{{else}}________{{/if}}, izdate od strane {{#if kupacMupLk}}{{kupacMupLk}}{{else}}________{{/if}} 
+      (u daljem tekstu: <em>Kupac</em>).
+    </p>
+  </div>
+
+  <div class="text-center font-bold mb-2">Član 1. Predmet ugovora</div>
+  <p class="mb-4">
+    Prodavac prodaje, a Kupac kupuje upotrebljavano motorno vozilo sa sledećim identifikacionim podacima:
+  </p>
+  <ul class="mb-4 pl-6 list-disc">
+    <li><strong>Vrsta i marka:</strong> {{#if voziloMarka}}{{voziloMarka}}{{else}}________________{{/if}}</li>
+    <li><strong>Tip / model:</strong> {{#if voziloModel}}{{voziloModel}}{{else}}________________{{/if}}</li>
+    <li><strong>Broj šasije (VIN):</strong> {{#if voziloBrojSasije}}{{voziloBrojSasije}}{{else}}_________________{{/if}}</li>
+    <li><strong>Broj motora:</strong> {{#if voziloBrojMotora}}{{voziloBrojMotora}}{{else}}_________________{{/if}}</li>
+    <li><strong>Godina proizvodnje:</strong> {{#if voziloGodina}}{{voziloGodina}}{{else}}_____{{/if}}. godine</li>
+    <li><strong>Radna zapremina motora:</strong> {{#if voziloKubikaza}}{{voziloKubikaza}}{{else}}_____{{/if}} cm³</li>
+    <li><strong>Snaga motora:</strong> {{#if voziloSnagaKw}}{{voziloSnagaKw}}{{else}}_____{{/if}} kW</li>
+    <li><strong>Registarska oznaka:</strong> {{#if voziloRegistracija}}{{voziloRegistracija}}{{else}}___________{{/if}}</li>
+    <li><strong>Boja vozila:</strong> {{#if voziloBoja}}{{voziloBoja}}{{else}}____________{{/if}}</li>
+  </ul>
+
+  <div class="text-center font-bold mb-2">Član 2. Kupoprodajna cena</div>
+  <p class="mb-4">
+    Ugovorne strane su sporazumno utvrdile prodajnu cenu vozila iz člana 1. ovog ugovora u iznosu od 
+    <strong>{{formatIznos cenaIznos}} {{cenaValuta}}</strong> 
+    (slovima: <em>{{slovima cenaIznos cenaValuta}}</em>).
+  </p>
+  <p class="mb-4">
+    {{#if (eq nacinPlacanja 'gotovina')}}
+    Kupac je ugovorenu kupoprodajnu cenu isplatio Prodavcu u celosti u gotovom novcu na dan potpisivanja ovog ugovora, što Prodavac potvrđuje svojim potpisom na ovom ugovoru i izdaje punovažnu priznanicu.
+    {{else if (eq nacinPlacanja 'racun')}}
+    Kupac će ugovorenu kupoprodajnu cenu uplatiti na tekući račun Prodavca broj {{#if prodavacTekuciRacun}}{{prodavacTekuciRacun}}{{else}}_________________________{{/if}} u roku od {{#if rokPlacanjaDana}}{{rokPlacanjaDana}}{{else}}3{{/if}} dana od dana overe ovog ugovora.
+    {{else}}
+    Kupac je ugovorenu kupoprodajnu cenu isplatio Prodavcu u celosti u gotovom novcu pre overe ovog ugovora, što Prodavac potvrđuje svojim potpisom.
+    {{/if}}
+  </p>
+
+  <div class="text-center font-bold mb-2">Član 3. Stanje vozila i primopredaja</div>
+  <p class="mb-4">
+    Kupac izjavljuje da je pre potpisivanja ovog ugovora izvršio detaljan vizuelni i tehnički pregled vozila, da mu je stanje vozila u potpunosti poznato i da ga kupuje u viđenom i isprobanom stanju, bez prava na naknadne reklamacije koje se odnose na vidljive nedostatke.
+  </p>
+  <p class="mb-4">
+    Prodavac predaje Kupcu vozilo u posed, zajedno sa ključevima i saobraćajnom dozvolom, na dan potpisivanja i overe ovog ugovora. Svi rizici, kao i eventualna odgovornost za prekršaje i štetu pričinjenu upotrebom vozila, prelaze na Kupca od momenta preuzimanja vozila.
+  </p>
+
+  <div class="text-center font-bold mb-2">Član 4. Garancija pravne valjanosti</div>
+  <p class="mb-4">
+    Prodavac garantuje pod punom materijalnom i krivičnom odgovornošću da je isključivi vlasnik vozila koje je predmet ovog ugovora, da vozilo nije opterećeno nikakvim teretima, zalogama, zabranama otuđenja niti pravima trećih lica, kao i da vozilo nije predmet sudskog ili upravnog spora.
+  </p>
+
+  <div class="text-center font-bold mb-2">Član 5. Prenos vlasništva i troškovi</div>
+  <p class="mb-4">
+    Ugovorne strane su saglasne da troškove overe ovog ugovora kod javnog beležnika, porez na prenos apsolutnih prava i troškove izdavanja nove saobraćajne dozvole i registarskih tablica snosi 
+    {{#if (eq troskoveSnosi 'prodavac')}}Prodavac{{else}}Kupac{{/if}}.
+  </p>
+  <p class="mb-4">
+    Kupac se obavezuje da u roku od <strong>30 dana</strong> od dana potpisivanja ovog ugovora izvrši prijavu poreske obaveze, plati porez na prenos apsolutnih prava i podnese zahtev kod nadležnog organa unutrašnjih poslova radi promene vlasništva i izdavanja saobraćajne dozvole na svoje ime.
+  </p>
+
+  {{#if posebneOdredbe}}
+  <div class="text-center font-bold mb-2">Član 6. Posebne odredbe</div>
+  <p class="mb-4">
+    {{posebneOdredbe}}
+  </p>
+  {{/if}}
+
+  <div class="text-center font-bold mb-2">Član {{#if posebneOdredbe}}7{{else}}6{{/if}}. Završne odredbe</div>
+  <p class="mb-4">
+    Za sve što nije izričito regulisano ovim ugovorom primenjivaće se odgovarajuće odredbe Zakona o obligacionim odnosima Republike Srbije.
+  </p>
+  <p class="mb-4">
+    Ugovorne strane su saglasne da će sve eventualne sporove koji proisteknu iz ovog ugovora rešavati mirnim putem i sporazumno, a u suprotnom ugovaraju nadležnost stvarno nadležnog suda prema sedištu/prebivalištu Prodavca.
+  </p>
+  <p class="mb-8">
+    Ovaj ugovor je sačinjen u 4 (četiri) istovetna primerka, od kojih po 1 (jedan) primerak zadržava svaka ugovorna strana, 1 (jedan) primerak zadržava javni beležnik, a 1 (jedan) primerak je namenjen nadležnom poreskom organu / organu unutrašnjih poslova.
+  </p>
+
+  <div class="grid grid-cols-2 gap-8 mt-12 pt-8">
+    <div class="text-center">
+      <div class="mb-10">PRODAVAC:</div>
+      <div class="border-b border-black w-3/4 mx-auto mb-2"></div>
+      <div class="text-sm">({{prodavacImePrezime}})</div>
+    </div>
+    <div class="text-center">
+      <div class="mb-10">KUPAC:</div>
+      <div class="border-b border-black w-3/4 mx-auto mb-2"></div>
+      <div class="text-sm">({{kupacImePrezime}})</div>
+    </div>
+  </div>
+</div>
