@@ -4,7 +4,7 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { 
   Folder, FileText, Download, Search, ChevronRight, 
-  ArrowLeft, Building2, Shield, Layers, Filter
+  ArrowLeft, Building2, Shield, Layers, Edit3
 } from 'lucide-react';
 import allCategories from '@/data/katalog-obrazaca.json';
 
@@ -12,12 +12,9 @@ export default function ObrasciKatalogPage() {
   const [pretraga, setPretraga] = useState('');
   const [izabranaKategorija, setIzabranaKategorija] = useState<string | null>(null);
 
-  // Filtrirane kategorije i obrasci
   const filtriraniPodaci = useMemo(() => {
     const q = pretraga.toLowerCase().trim();
-    if (!q) {
-      return allCategories;
-    }
+    if (!q) return allCategories;
     return allCategories
       .map((kat: any) => {
         const odgovaraNazivKategorije = kat.name.toLowerCase().includes(q);
@@ -73,13 +70,12 @@ export default function ObrasciKatalogPage() {
             67 kategorija • 2.294 zvanična obrasca
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-            Katalog preuzetih besplatnih i državnih obrazaca
+            Katalog svih preuzetih i državnih obrazaca
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto">
-            Svi preuzeti obrasci sa Paragraf.rs, MUP-a, Poreske uprave i organa javne vlasti. Pronađite obrazac po nazivu ili pretražite kategorije.
+            Izaberite opciju: popunite obrazac online u aplikaciji sa automatskim ispisom ili preuzmite čist, prazan originalni fajl.
           </p>
 
-          {/* Search bar */}
           <div className="relative max-w-2xl mx-auto mt-6">
             <Search className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
             <input
@@ -96,11 +92,10 @@ export default function ObrasciKatalogPage() {
         </div>
       </div>
 
-      {/* Glavni sadržaj */}
+      {/* Sadržaj */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         
         {izabranaKategorija && aktivnaKategorijaObj ? (
-          /* Prikaz pojedinačne kategorije */
           <div className="space-y-6">
             <div className="flex items-center justify-between">
               <button
@@ -111,7 +106,7 @@ export default function ObrasciKatalogPage() {
                 <span>Sve kategorije</span>
               </button>
               <div className="text-xs text-slate-500">
-                Ukupno obrazaca u kategoriji: <strong>{aktivnaKategorijaObj.items.length}</strong>
+                Ukupno obrazaca: <strong>{aktivnaKategorijaObj.items.length}</strong>
               </div>
             </div>
 
@@ -122,7 +117,7 @@ export default function ObrasciKatalogPage() {
                 </div>
                 <div>
                   <h2 className="text-xl font-bold text-slate-900">{aktivnaKategorijaObj.name}</h2>
-                  <p className="text-xs text-slate-500">Direktno preuzimanje originalnih fajlova</p>
+                  <p className="text-xs text-slate-500">Izaberite popunjavanje ili preuzimanje praznog obrasca</p>
                 </div>
               </div>
 
@@ -130,14 +125,14 @@ export default function ObrasciKatalogPage() {
                 {aktivnaKategorijaObj.items.map((item: any, idx: number) => (
                   <div
                     key={idx}
-                    className="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/80 px-3 rounded-lg transition-colors"
+                    className="py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-slate-50/80 px-3 rounded-xl transition-colors"
                   >
                     <div className="flex items-start gap-3">
-                      <FileText className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                      <FileText className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                       <div>
-                        <div className="text-xs font-bold text-slate-900 leading-snug">{item.title}</div>
-                        <div className="text-[11px] text-slate-500 mt-0.5 flex items-center gap-2">
-                          <span className="font-mono bg-slate-100 px-1.5 py-0.5 rounded text-slate-600">
+                        <div className="text-xs sm:text-sm font-bold text-slate-900 leading-snug">{item.title}</div>
+                        <div className="text-[11px] text-slate-500 mt-1 flex items-center gap-2">
+                          <span className="font-mono bg-slate-100 px-1.5 py-0.5 rounded text-slate-600 font-semibold">
                             {item.file.split('.').pop()?.toUpperCase()}
                           </span>
                           <span>Izvor: {item.source}</span>
@@ -145,20 +140,31 @@ export default function ObrasciKatalogPage() {
                       </div>
                     </div>
 
-                    <a
-                      href={`/api/obrasci/preuzmi?izvor=${item.source}&kategorija=${encodeURIComponent(aktivnaKategorijaObj.name)}&fajl=${encodeURIComponent(item.file)}`}
-                      className="inline-flex items-center justify-center gap-1.5 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-700 font-semibold text-xs px-3.5 py-2 rounded-lg transition-all shrink-0"
-                    >
-                      <Download className="w-3.5 h-3.5" />
-                      <span>Preuzmi</span>
-                    </a>
+                    {/* Dve opcije za svaki obrazac: Popuni ili Preuzmi prazan */}
+                    <div className="flex items-center gap-2 shrink-0 self-end md:self-auto">
+                      <Link
+                        href={`/obrasci/popuni?naziv=${encodeURIComponent(item.title)}&kategorija=${encodeURIComponent(aktivnaKategorijaObj.name)}&fajl=${encodeURIComponent(item.file)}&izvor=${item.source}`}
+                        className="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs px-3.5 py-2 rounded-lg transition-colors shadow-xs"
+                      >
+                        <Edit3 className="w-3.5 h-3.5" />
+                        <span>Popuni online</span>
+                      </Link>
+
+                      <a
+                        href={`/api/obrasci/preuzmi?izvor=${item.source}&kategorija=${encodeURIComponent(aktivnaKategorijaObj.name)}&fajl=${encodeURIComponent(item.file)}`}
+                        className="inline-flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs px-3 py-2 rounded-lg transition-colors border border-slate-200"
+                        title="Preuzmite prazan originalni obrazac"
+                      >
+                        <Download className="w-3.5 h-3.5" />
+                        <span className="hidden sm:inline">Prazan</span>
+                      </a>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
           </div>
         ) : (
-          /* Prikaz kartica svih kategorija */
           <div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {filtriraniPodaci.map((kat: any) => (
