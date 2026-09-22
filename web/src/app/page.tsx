@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ShieldCheck, Sparkles, Clock, Zap, ArrowRight, Search } from "lucide-react";
+import { ShieldCheck, Sparkles, Clock, Zap, ArrowRight, Search, Car, FileText, Home as HomeIcon, Briefcase, Plane, Coins } from "lucide-react";
 import { HomeAiAsistent } from "@/components/home/HomeAiAsistent";
 import { KategorijeCombobox } from "@/components/home/KategorijeCombobox";
 import katalog from "@/data/katalog-obrazaca.json";
@@ -110,15 +110,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* POVERENJE / LOGO TRAKA */}
+      {/* NAJČEŠĆE KORIŠĆENI OBRASCI */}
       <section className="w-full">
         <div className="max-w-[1224px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <h2 className="text-center text-[20px] leading-7 font-semibold tracking-normal" style={{ color: "rgba(248,244,238,0.45)" }}>
-            Pouzdano i usklađeno sa zakonima Republike Srbije
+          <h2 className="text-center text-[20px] leading-7 font-semibold tracking-normal" style={{ color: "rgba(248,244,238,0.55)" }}>
+            Najčešće korišćeni obrasci
           </h2>
-          <div className="mt-6 grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} data-placeholder="logo" className="h-8 rounded-md shimmer" />
+          <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            {[
+              { icon: <Car className="w-4 h-4" />, label: "Kupoprodaja vozila", href: "/ugovori/kupoprodaja-vozila" },
+              { icon: <FileText className="w-4 h-4" />, label: "Punomoćje", href: "/obrasci?q=punomo" },
+              { icon: <HomeIcon className="w-4 h-4" />, label: "Ugovor o zakupu", href: "/obrasci?q=zakup" },
+              { icon: <Briefcase className="w-4 h-4" />, label: "Ugovor o radu", href: "/obrasci?q=ugovor%20o%20radu" },
+              { icon: <Plane className="w-4 h-4" />, label: "Putovanje deteta", href: "/obrasci?q=putovanje" },
+              { icon: <Coins className="w-4 h-4" />, label: "Ugovor o pozajmici", href: "/obrasci?q=pozajmica" },
+            ].map((o) => (
+              <Link key={o.label} href={o.href} className="flex items-center gap-2 px-3 py-3 rounded-xl text-xs font-semibold transition-all hover:opacity-90 backdrop-blur-sm" style={{ backgroundColor: "rgba(20,46,33,0.45)", color: "#F8F4EE", border: "1px solid rgba(201,168,76,0.30)" }}>
+                <span style={{ color: "#C9A84C" }} className="shrink-0">{o.icon}</span>
+                <span className="truncate">{o.label}</span>
+              </Link>
             ))}
           </div>
         </div>
