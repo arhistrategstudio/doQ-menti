@@ -5,8 +5,7 @@
 
 ## Sledeći korak
 
-**Faza 2.5 & 2.6** – Izrada stranice i forme za „Ugovor o kupoprodaji vozila“ sa živim pregledom (React/Next.js UI) i `lib/pdf` generatorskim modulom za serverski PDF.
-(Napomena za git: inicijalni commit je napravljen lokalno na grani `main`. Za `git push origin main` potrebna je autentifikacija / push).
+**Faza 3.1 & 1.3** – Izrada sledećeg MVP šablona „Punomoćje” (Faza 3.1) i/ili prvi deploy na Vercel (Faza 1.3).
 
 ## Plan po fazama
 
@@ -30,8 +29,8 @@
 - [x] 2.2 `lib/pismo` – latinica → ćirilica, izuzeci, polja bez preslovljavanja + testovi (PROŠLI)
 - [x] 2.3 `lib/validacija` – JMBG, VIN, PIB, matični broj + testovi (PROŠLI)
 - [x] 2.4 `lib/sabloni` – popunjavanje Handlebars šablona, prazna polja kao linije + testovi (PROŠLI)
-- [ ] 2.5 Šablon „Ugovor o kupoprodaji vozila“: forma + živi pregled + izbor pisma + vodeni žig
-- [ ] 2.6 `lib/pdf` – PDF na serveru (za sada bez plaćanja, samo lokalno za test)
+- [x] 2.5 Šablon „Ugovor o kupoprodaji vozila“: forma + živi pregled + izbor pisma + vodeni žig (PROŠLO)
+- [x] 2.6 `lib/pdf` – PDF na serveru preko pdfmake + API ruta `/api/pdf/kupoprodaja-vozila` (PROŠLO)
 
 ### Faza 3 – Ostali MVP šabloni + SEO
 - [ ] 3.1 Punomoćje
@@ -65,6 +64,7 @@
 
 ## Dnevnik (najnovije gore)
 
+- **22.09.2026** – Završena Faza 2.5 i 2.6: Izrađen `lib/pdf` generatorski modul sa punom podrškom za srpske karaktere (latinica i ćirilica) i vodenim žigom, kreirana serverska API ruta `/api/pdf/kupoprodaja-vozila`, implementirana kompletna interaktivna stranica sa formularom, validacijom polja (JMBG, VIN, tablice) i živim pregledom dokumenta u realnom vremenu (`/ugovori/kupoprodaja-vozila`), kao i nova moderna početna strana (`/`). `npm run build` uspešno generiše sve rute.
 - **22.09.2026** – Prošli svi unit testovi motora dokumenata (`lib/slovima`, `lib/pismo`, `lib/validacija`, `lib/sabloni`). Prošao Next.js `npm run build` bez grešaka. Napravljen inicijalni Git commit sa celim projektom na grani `main` (repozitorijum `arhistrategstudio/doQ-menti`).
 - **22.09.2026** – Preuzeti SVI besplatni obrasci sa sajta Paragraf.rs (svih 72 kategorije, ukupno 2.027 preuzetih fajlova u .doc, .docx, .pdf i .xls formatima) i sačuvani u `docs/obrasci-paragraf/` sa kreiranim indeksima `KATALOG_OBRAZACA.md` i `katalog_preuzetih_obrazaca.json`. Takođe preuzeti i sortirani zvanični obrasci organa (Poverenik, Ombudsman, Poverenik za zaštitu ravnopravnosti, MUP i matične knjige) u `docs/obrasci-mup-drzavni/`.
 - **21.09.2026** – Zaseban korak pre Faze 1.1: preuzeti pravi popunjivi obrasci sa sajtova organa. MUP (2 saglasnosti vlasnika za prebivalište/boravište, izjava o upravljanju vozilom, izjava-saglasnost za upravni postupak, zahtev za kaznenu evidenciju), Poreska uprava (PPI-4), gradska uprava (zahtevi za izvode MKR/MKV/MKU i uverenje o državljanstvu). Ukupno 13 fajlova + registar `docs/euprava/obrasci/INDEX.md`. MUP stranice portala vraćaju 503, ali direktni linkovi ka fajlovima rade (zamka zabeležena dole). Lična karta/pasoš/prijava prebivališta se NE nude kao PDF (samo šalter/e-formular).
