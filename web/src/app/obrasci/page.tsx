@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
@@ -39,23 +39,24 @@ export default function ObrasciKatalogPage() {
   }, [izabranaKategorija]);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 pb-20">
+    <div className="min-h-screen pb-20" style={{ backgroundColor: "#F8F4EE", color: "#1C1C1E" }}>
       {/* Header */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
+      <header className="sticky top-0 z-30 border-b" style={{ backgroundColor: "#1A3A2A", borderColor: "rgba(201,168,76,0.2)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <Link href="/" className="font-extrabold text-xl tracking-tight text-blue-600 flex items-center gap-1.5">
-              <span>do<span className="text-indigo-600">Q</span>-menti</span>
+          <div className="flex items-center gap-2">
+            <Link href="/" className="font-extrabold text-xl tracking-tight" style={{ color: "#F8F4EE" }}>
+              do<span style={{ color: "#C9A84C" }}>Q</span>-menti
             </Link>
-            <span className="text-slate-300">/</span>
-            <span className="text-xs sm:text-sm font-semibold text-slate-700">
+            <span style={{ color: "rgba(248,244,238,0.3)" }}>/</span>
+            <span className="text-xs sm:text-sm font-medium truncate max-w-[180px] sm:max-w-md" style={{ color: "rgba(248,244,238,0.7)" }}>
               Katalog svih obrazaca (2.294)
             </span>
           </div>
 
           <Link
             href="/"
-            className="text-xs font-semibold text-slate-600 hover:text-blue-600 transition-colors"
+            className="text-xs font-semibold transition-colors hover:opacity-80"
+            style={{ color: "#C9A84C" }}
           >
             ← Nazad na početnu
           </Link>
@@ -63,21 +64,24 @@ export default function ObrasciKatalogPage() {
       </header>
 
       {/* Hero i Pretraga */}
-      <div className="bg-gradient-to-b from-blue-50/70 to-transparent py-10 px-4 sm:px-6 border-b border-slate-200/70">
+      <div className="py-10 px-4 sm:px-6 border-b" style={{ backgroundColor: "#FFFFFF", borderColor: "#E2D9CB" }}>
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold">
-            <Layers className="w-3.5 h-3.5 text-blue-600" />
+          <div
+            className="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-semibold uppercase tracking-wider"
+            style={{ backgroundColor: "rgba(26,58,42,0.08)", color: "#1A3A2A", border: "1px solid rgba(26,58,42,0.15)" }}
+          >
+            <Layers className="w-3.5 h-3.5" />
             67 kategorija • 2.294 zvanična obrasca
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
+          <h1 className="text-2xl sm:text-3xl font-bold" style={{ color: "#1A3A2A" }}>
             Katalog svih preuzetih i državnih obrazaca
           </h1>
-          <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto">
+          <p className="text-xs sm:text-sm max-w-2xl mx-auto" style={{ color: "#5C6B5E" }}>
             Izaberite opciju: popunite obrazac online u aplikaciji sa automatskim ispisom ili preuzmite čist, prazan originalni fajl.
           </p>
 
           <div className="relative max-w-2xl mx-auto mt-6">
-            <Search className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
+            <Search className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#8A9A8C" }} />
             <input
               type="text"
               value={pretraga}
@@ -86,7 +90,8 @@ export default function ObrasciKatalogPage() {
                 setIzabranaKategorija(null);
               }}
               placeholder="Pretražite obrazac po nazivu (npr. ugovor o radu, PPI-4, prebivalište, saglasnost...)"
-              className="w-full text-sm pl-12 pr-4 py-3.5 bg-white rounded-2xl border border-slate-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-hidden"
+              className="w-full text-sm pl-12 pr-4 py-3.5 rounded-2xl border focus:ring-2 focus:outline-hidden transition-all"
+              style={{ backgroundColor: "#F8F4EE", borderColor: "#E2D9CB", color: "#1C1C1E", outlineColor: "#C9A84C" }}
             />
           </div>
         </div>

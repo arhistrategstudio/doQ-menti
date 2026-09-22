@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
@@ -209,38 +209,40 @@ export default function KupoprodajaVozilaPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 pb-20">
+    <div className="min-h-screen pb-20" style={{ backgroundColor: "#F8F4EE", color: "#1C1C1E" }}>
       {/* Header */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
+      <header className="sticky top-0 z-30 border-b" style={{ backgroundColor: "#1A3A2A", borderColor: "rgba(201,168,76,0.2)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <Link href="/" className="font-extrabold text-xl tracking-tight text-blue-600 flex items-center gap-1.5">
-              <span>do<span className="text-indigo-600">Q</span>-menti</span>
+          <div className="flex items-center gap-2">
+            <Link href="/" className="font-extrabold text-xl tracking-tight" style={{ color: "#F8F4EE" }}>
+              do<span style={{ color: "#C9A84C" }}>Q</span>-menti
             </Link>
-            <span className="text-slate-300">/</span>
-            <span className="text-xs sm:text-sm font-semibold text-slate-700 truncate max-w-[180px] sm:max-w-md">
+            <span style={{ color: "rgba(248,244,238,0.3)" }}>/</span>
+            <span className="text-xs sm:text-sm font-medium truncate max-w-[180px] sm:max-w-md" style={{ color: "rgba(248,244,238,0.7)" }}>
               Kupoprodaja vozila
             </span>
           </div>
 
           <div className="flex items-center gap-3">
             {/* Pismo toggle */}
-            <div className="inline-flex items-center p-1 bg-slate-100 rounded-lg border border-slate-200 text-xs font-medium">
+            <div className="inline-flex items-center p-1 rounded-lg text-xs font-medium" style={{ backgroundColor: "rgba(248,244,238,0.1)", border: "1px solid rgba(248,244,238,0.15)" }}>
               <button
                 type="button"
                 onClick={() => setPismo('latinica')}
-                className={`px-2.5 py-1 rounded-md transition-colors ${
-                  pismo === 'latinica' ? 'bg-white text-blue-600 shadow-xs font-bold' : 'text-slate-600 hover:text-slate-900'
-                }`}
+                className="px-2.5 py-1 rounded-md transition-colors"
+                style={pismo === 'latinica'
+                  ? { backgroundColor: "#C9A84C", color: "#1A3A2A", fontWeight: 700 }
+                  : { color: "rgba(248,244,238,0.65)" }}
               >
                 Latinica
               </button>
               <button
                 type="button"
                 onClick={() => setPismo('cirilica')}
-                className={`px-2.5 py-1 rounded-md transition-colors ${
-                  pismo === 'cirilica' ? 'bg-white text-blue-600 shadow-xs font-bold' : 'text-slate-600 hover:text-slate-900'
-                }`}
+                className="px-2.5 py-1 rounded-md transition-colors"
+                style={pismo === 'cirilica'
+                  ? { backgroundColor: "#C9A84C", color: "#1A3A2A", fontWeight: 700 }
+                  : { color: "rgba(248,244,238,0.65)" }}
               >
                 Ћирилица
               </button>
@@ -248,7 +250,8 @@ export default function KupoprodajaVozilaPage() {
 
             <button
               onClick={() => setOtvorenPlacanjeModal(true)}
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium text-xs sm:text-sm px-4 py-2 rounded-lg shadow-sm transition-all"
+              className="inline-flex items-center gap-2 font-bold text-xs sm:text-sm px-4 py-2 rounded-lg transition-all"
+              style={{ backgroundColor: "#C9A84C", color: "#1A3A2A" }}
             >
               <Download className="w-4 h-4" />
               <span>Preuzmi PDF (149 RSD)</span>
@@ -257,34 +260,46 @@ export default function KupoprodajaVozilaPage() {
         </div>
       </header>
 
-      {/* Hero opis */}
-      <div className="bg-gradient-to-b from-blue-50/50 to-transparent border-b border-slate-200/60 py-8 px-4 sm:px-6">
+      {/* Hero opis + Tab Switcher */}
+      <div className="border-b py-6 px-4 sm:px-6" style={{ backgroundColor: "#FFFFFF", borderColor: "#E2D9CB" }}>
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold mb-2">
-                <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
+              <div
+                className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-xs font-semibold mb-2 uppercase tracking-wider"
+                style={{ backgroundColor: "rgba(26,58,42,0.08)", color: "#1A3A2A", border: "1px solid rgba(26,58,42,0.15)" }}
+              >
+                <ShieldCheck className="w-3.5 h-3.5" />
                 Pravno usklađeno (Zakon o obligacionim odnosima)
               </div>
-              <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">
+              <h1 className="text-2xl sm:text-3xl font-bold" style={{ color: "#1A3A2A" }}>
                 {SADRZAJ_KUPOPRODAJA_VOZILA.naziv}
               </h1>
-              <p className="text-slate-600 text-sm mt-1 max-w-3xl">
+              <p className="text-sm mt-1 max-w-3xl" style={{ color: "#5C6B5E" }}>
                 {SADRZAJ_KUPOPRODAJA_VOZILA.kratakOpis} Rok za prenos vlasništva i porez je 30 dana.
               </p>
             </div>
 
             {/* Mobile Tab Switcher */}
-            <div className="flex lg:hidden bg-slate-200/80 p-1 rounded-lg text-xs font-medium">
+            <div
+              className="flex lg:hidden p-1 rounded-lg text-xs font-medium"
+              style={{ backgroundColor: "#F0EBE2", border: "1px solid #E2D9CB" }}
+            >
               <button
                 onClick={() => setAktivniTab('forma')}
-                className={`flex-1 py-1.5 px-4 rounded-md ${aktivniTab === 'forma' ? 'bg-white shadow-xs font-bold text-blue-600' : 'text-slate-700'}`}
+                className="flex-1 py-2 px-4 rounded-md transition-all font-semibold"
+                style={aktivniTab === 'forma'
+                  ? { backgroundColor: "#1A3A2A", color: "#F8F4EE" }
+                  : { color: "#5C6B5E" }}
               >
                 Formular
               </button>
               <button
                 onClick={() => setAktivniTab('pregled')}
-                className={`flex-1 py-1.5 px-4 rounded-md ${aktivniTab === 'pregled' ? 'bg-white shadow-xs font-bold text-blue-600' : 'text-slate-700'}`}
+                className="flex-1 py-2 px-4 rounded-md transition-all font-semibold"
+                style={aktivniTab === 'pregled'
+                  ? { backgroundColor: "#1A3A2A", color: "#F8F4EE" }
+                  : { color: "#5C6B5E" }}
               >
                 Živi pregled
               </button>
