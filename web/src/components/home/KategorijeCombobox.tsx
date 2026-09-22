@@ -42,8 +42,8 @@ export function KategorijeCombobox({ kategorije }: { kategorije: Kategorija[] })
           onChange={(e) => { setQuery(e.target.value); setOpen(true); }}
           onFocus={() => setOpen(true)}
           placeholder="Izaberi ili pretraži kategoriju…"
-          className="w-full text-sm pl-12 pr-10 py-4 rounded-xl border focus:outline-none focus:ring-2 transition-all shadow-sm"
-          style={{ backgroundColor: "#FFFFFF", color: "#1C1C1E", borderColor: "#E2D9CB", outlineColor: "#C9A84C" }}
+          className="w-full text-sm pl-12 pr-10 py-4 rounded-xl border focus:outline-none focus:ring-2 transition-all shadow-sm placeholder:text-[#AEBAAE] backdrop-blur-sm"
+          style={{ backgroundColor: "rgba(20,46,33,0.55)", color: "#F8F4EE", borderColor: "rgba(201,168,76,0.30)", outlineColor: "#C9A84C" }}
         />
         <ChevronDown
           onClick={() => setOpen((v) => !v)}
@@ -53,12 +53,12 @@ export function KategorijeCombobox({ kategorije }: { kategorije: Kategorija[] })
       </div>
 
       {open && (
-        <div className="absolute z-30 mt-2 w-full rounded-xl border shadow-lg overflow-auto" style={{ backgroundColor: "#FFFFFF", borderColor: "#E2D9CB", maxHeight: "300px" }}>
+        <div className="absolute z-30 mt-2 w-full rounded-xl border shadow-lg overflow-auto" style={{ backgroundColor: "rgba(15,35,25,0.97)", borderColor: "rgba(201,168,76,0.25)", maxHeight: "300px" }}>
           {filtered.length === 0 ? (
             <div className="px-4 py-3 text-sm" style={{ color: "#8A9A8C" }}>Nema rezultata za „{query}"</div>
           ) : (
             filtered.map((kat) => (
-              <Link key={kat.name} href={href(kat.name)} className="flex items-center justify-between gap-3 px-4 py-3 text-sm transition-colors hover:bg-[#F0E9DC]" style={{ color: "#1A3A2A" }}>
+              <Link key={kat.name} href={href(kat.name)} className="flex items-center justify-between gap-3 px-4 py-3 text-sm transition-colors hover:bg-[rgba(255,255,255,0.06)]" style={{ color: "#F8F4EE" }}>
                 <span className="truncate font-medium">{kat.name}</span>
                 <span className="text-xs shrink-0" style={{ color: "#8A9A8C" }}>{kat.count}</span>
               </Link>
@@ -69,9 +69,9 @@ export function KategorijeCombobox({ kategorije }: { kategorije: Kategorija[] })
 
       <div className="mt-4 grid grid-cols-2 gap-2">
         {cipovi.map((kat) => (
-          <Link key={kat.name} href={href(kat.name)} className="w-full inline-flex items-center justify-between gap-2 px-3 py-2 rounded-lg text-xs font-semibold transition-all hover:opacity-90" style={{ backgroundColor: "rgba(201,168,76,0.2)", color: "#1A3A2A", border: "1px solid rgba(201,168,76,0.45)" }}>
+          <Link key={kat.name} href={href(kat.name)} className="w-full inline-flex items-center justify-between gap-2 px-3 py-2 rounded-lg text-xs font-semibold transition-all hover:opacity-90" style={{ backgroundColor: "rgba(201,168,76,0.16)", color: "#F8F4EE", border: "1px solid rgba(201,168,76,0.40)" }}>
             <span className="truncate">{kat.name}</span>
-            <span className="shrink-0" style={{ color: "#7A6A3A" }}>{kat.count}</span>
+            <span className="shrink-0" style={{ color: "#C9A84C" }}>{kat.count}</span>
           </Link>
         ))}
       </div>

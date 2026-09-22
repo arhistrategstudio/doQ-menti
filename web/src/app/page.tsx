@@ -17,9 +17,9 @@ export default function Home() {
 
       {/* HEADER */}
       <header className="sticky top-0 z-40 border-b backdrop-blur-md" style={{ backgroundColor: "rgba(26,58,42,0.55)", borderColor: "rgba(201,168,76,0.15)" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 sm:h-28 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 font-extrabold text-3xl sm:text-4xl tracking-tight" style={{ color: "#F8F4EE" }}>
-            <img src="/logo.png" alt="Logo" className="h-16 sm:h-20 w-auto object-contain" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-28 sm:h-36 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 font-extrabold text-4xl sm:text-5xl tracking-tight" style={{ color: "#F8F4EE" }}>
+            <img src="/logo.png" alt="Logo" className="h-20 sm:h-28 w-auto object-contain" />
             <span>do<span style={{ color: "#C9A84C" }}>Q</span>-menti</span>
           </Link>
           <nav className="flex items-center gap-3 sm:gap-5">
@@ -58,14 +58,14 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
 
           {/* LEVI PANEL: pretraga + kategorije */}
-          <div className="rounded-2xl p-6 sm:p-8 flex flex-col shadow-xl" style={{ backgroundColor: "#F8F4EE", border: "1px solid rgba(201,168,76,0.35)" }}>
-            <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#1A3A2A" }}>Pronađi dokument</h2>
-            <p className="mt-1.5 text-sm" style={{ color: "#5C6B5E" }}>{brojKategorija} kategorija · {ukupnoObrazaca.toLocaleString("sr-RS")} obrasca i ugovora</p>
+          <div className="flex flex-col">
+            <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#F8F4EE" }}>Pronađi dokument</h2>
+            <p className="mt-1.5 text-sm" style={{ color: "rgba(248,244,238,0.72)" }}>{brojKategorija} kategorija · {ukupnoObrazaca.toLocaleString("sr-RS")} obrasca i ugovora</p>
             <div className="mt-3 h-px w-16" style={{ backgroundColor: "#C9A84C" }} />
 
             <form action="/obrasci" method="GET" className="mt-6 relative">
               <Search className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2" style={{ color: "#8A9A8C" }} />
-              <input type="text" name="q" placeholder="Pretražite obrasce (npr. ugovor o zakupu, punomoćje...)" className="w-full text-sm pl-12 pr-24 py-4 rounded-xl border focus:ring-2 focus:outline-none transition-all shadow-sm" style={{ backgroundColor: "#FFFFFF", color: "#1C1C1E", borderColor: "#E2D9CB", outlineColor: "#C9A84C" }} />
+              <input type="text" name="q" placeholder="Pretražite obrasce (npr. ugovor o zakupu, punomoćje...)" className="w-full text-sm pl-12 pr-24 py-4 rounded-xl border focus:ring-2 focus:outline-none transition-all shadow-sm placeholder:text-[#AEBAAE] backdrop-blur-sm" style={{ backgroundColor: "rgba(20,46,33,0.55)", color: "#F8F4EE", borderColor: "rgba(201,168,76,0.30)", outlineColor: "#C9A84C" }} />
               <button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-sm" style={{ backgroundColor: "#C9A84C", color: "#1A3A2A" }}>Traži</button>
             </form>
 
@@ -75,9 +75,9 @@ export default function Home() {
           </div>
 
           {/* DESNI PANEL: popunjavanje podataka */}
-          <div className="rounded-2xl p-6 sm:p-8 flex flex-col shadow-xl" style={{ backgroundColor: "#F8F4EE", border: "1px solid rgba(201,168,76,0.35)" }}>
-            <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#1A3A2A" }}>Popunite svoje podatke</h2>
-            <p className="mt-1.5 text-sm" style={{ color: "#5C6B5E" }}>Unesite jednom — AI ubaci podatke u svaki dokument.</p>
+          <div className="flex flex-col">
+            <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#F8F4EE" }}>Popunite svoje podatke</h2>
+            <p className="mt-1.5 text-sm" style={{ color: "rgba(248,244,238,0.72)" }}>Unesite jednom — AI ubaci podatke u svaki dokument.</p>
             <div className="mt-3 h-px w-16" style={{ backgroundColor: "#C9A84C" }} />
             <div className="mt-6">
               <HomeAiAsistent />
