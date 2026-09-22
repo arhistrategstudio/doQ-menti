@@ -5,7 +5,8 @@
 
 ## Sledeći korak
 
-**Faza 1.1** – GitHub repo `arhistrategstudio/dokumenti` i git u ovom folderu (Claude Code, prompt iz poslednjeg odgovora u chatu). Zaseban korak „preuzimanje obrazaca organa“ je ZAVRŠEN.
+**Faza 2.5 & 2.6** – Izrada stranice i forme za „Ugovor o kupoprodaji vozila“ sa živim pregledom (React/Next.js UI) i `lib/pdf` generatorskim modulom za serverski PDF.
+(Napomena za git: inicijalni commit je napravljen lokalno na grani `main`. Za `git push origin main` potrebna je autentifikacija / push).
 
 ## Plan po fazama
 
@@ -20,15 +21,15 @@
 - [ ] 0.7 Advokat: pregled 5 MVP šablona + pitanja iz specifikacije sekcija 10
 
 ### Faza 1 – Osnova projekta
-- [ ] 1.1 GitHub repo `arhistrategstudio/dokumenti`, git u ovom folderu
-- [ ] 1.2 Next.js + TypeScript + Tailwind u folderu `web/`
+- [x] 1.1 GitHub repo `arhistrategstudio/doQ-menti`, git u ovom folderu i inicijalni commit
+- [x] 1.2 Next.js + TypeScript + Tailwind u folderu `web/` (build i typecheck prošli)
 - [ ] 1.3 Prvi deploy na Vercel (prazna početna strana radi na internetu)
 
 ### Faza 2 – Motor dokumenata (bez plaćanja, bez AI)
-- [ ] 2.1 `lib/slovima` – broj u reči (dinari/evri) + testovi
-- [ ] 2.2 `lib/pismo` – latinica → ćirilica, izuzeci, polja bez preslovljavanja + testovi
-- [ ] 2.3 `lib/validacija` – JMBG, VIN, PIB, matični broj + testovi
-- [ ] 2.4 `lib/sabloni` – popunjavanje Handlebars šablona, prazna polja kao linije
+- [x] 2.1 `lib/slovima` – broj u reči (dinari/evri) + testovi (PROŠLI)
+- [x] 2.2 `lib/pismo` – latinica → ćirilica, izuzeci, polja bez preslovljavanja + testovi (PROŠLI)
+- [x] 2.3 `lib/validacija` – JMBG, VIN, PIB, matični broj + testovi (PROŠLI)
+- [x] 2.4 `lib/sabloni` – popunjavanje Handlebars šablona, prazna polja kao linije + testovi (PROŠLI)
 - [ ] 2.5 Šablon „Ugovor o kupoprodaji vozila“: forma + živi pregled + izbor pisma + vodeni žig
 - [ ] 2.6 `lib/pdf` – PDF na serveru (za sada bez plaćanja, samo lokalno za test)
 
@@ -64,6 +65,7 @@
 
 ## Dnevnik (najnovije gore)
 
+- **22.09.2026** – Prošli svi unit testovi motora dokumenata (`lib/slovima`, `lib/pismo`, `lib/validacija`, `lib/sabloni`). Prošao Next.js `npm run build` bez grešaka. Napravljen inicijalni Git commit sa celim projektom na grani `main` (repozitorijum `arhistrategstudio/doQ-menti`).
 - **22.09.2026** – Preuzeti SVI besplatni obrasci sa sajta Paragraf.rs (svih 72 kategorije, ukupno 2.027 preuzetih fajlova u .doc, .docx, .pdf i .xls formatima) i sačuvani u `docs/obrasci-paragraf/` sa kreiranim indeksima `KATALOG_OBRAZACA.md` i `katalog_preuzetih_obrazaca.json`. Takođe preuzeti i sortirani zvanični obrasci organa (Poverenik, Ombudsman, Poverenik za zaštitu ravnopravnosti, MUP i matične knjige) u `docs/obrasci-mup-drzavni/`.
 - **21.09.2026** – Zaseban korak pre Faze 1.1: preuzeti pravi popunjivi obrasci sa sajtova organa. MUP (2 saglasnosti vlasnika za prebivalište/boravište, izjava o upravljanju vozilom, izjava-saglasnost za upravni postupak, zahtev za kaznenu evidenciju), Poreska uprava (PPI-4), gradska uprava (zahtevi za izvode MKR/MKV/MKU i uverenje o državljanstvu). Ukupno 13 fajlova + registar `docs/euprava/obrasci/INDEX.md`. MUP stranice portala vraćaju 503, ali direktni linkovi ka fajlovima rade (zamka zabeležena dole). Lična karta/pasoš/prijava prebivališta se NE nude kao PDF (samo šalter/e-formular).
 - **21.09.2026** – Dušan odobrio: stack, cenu 149/199 RSD, saglasnost vlasnika stana za prijavu prebivališta ulazi u obim, i da SVE usluge eUprave idu u aplikaciju. Preuzeto sa eUprave: 339 stranica → 121 jedinstvena usluga u `docs/euprava/usluge-euprava.json` (+ `katalog-euprava.md`), 3 PDF-a u `docs/euprava/obrasci/` (2 linka na eUpravi ne rade). Ažuriran CLAUDE.md (sekcije 2 i 4).
