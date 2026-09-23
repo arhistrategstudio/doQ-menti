@@ -1,68 +1,80 @@
 import { NextRequest, NextResponse } from 'next/server';
+import Anthropic from '@anthropic-ai/sdk';
+
+export const runtime = 'nodejs';
+
+const MODEL = process.env.ANTHROPIC_MODEL || 'claude-3-5-haiku-latest';
+const DISCLAIMER = 'Automatski predlog — nije pravni savet. Proverite pre upotrebe.';
+
+const SISTEM = `Ti si asistent za sastavljanje pravnih dokumenata za Republiku Srbiju.
+Pišeš jasnim, formalnim srpskim jezikom, u pravnom stilu.
+STROGA PRAVILA:
+- NE izmišljaj konkretne članove zakona, brojeve/nazive propisa, rokove ni sudsku praksu. Ako nešto ne znaš pouzdano, ne navodi.
+- Ne daješ pravni savet niti garancije; samo pomažeš u formulaciji teksta.
+- Piši isključivo u traženom pismu (latinica ili ćirilica).
+- Budi konkretan i kratak, bez uvoda i objašnjenja — vrati samo traženi sadržaj.`;
+
+async function pozovi(prompt: string, maxTokens = 800): Promise<string> {
+  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+  const r = await client.messages.create({
+    model: MODEL,
+    max_tokens: maxTokens,
+    system: SISTEM,
+    messages: [{ role: 'user', content: prompt }],
+  });
+  return (r.content as Array<{ type: string; text?: string }>)
+    .filter((b) => b.type === 'text')
+    .map((b) => b.text || '')
+    .join('\n')
+    .trim();
+}
 
 export async function POST(req: NextRequest) {
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return NextResponse.json(
+      { error: 'AI trenutno nije konfigurisan (nedostaje API ključ).' },
+      { status: 503 }
+    );
+  }
   try {
-    const { tip, unos, kontekst } = await req.json();
+    const { tip, unos, kontekst, pismo } = await req.json();
+    const pismoTekst = pismo === 'cirilica' ? 'ćirilica' : 'latinica';
+    const dok = kontekst || 'opšti dokument';
 
-    // 1. Predlog posebnih odredbi (prilagodjen po dokumentu)
     if (tip === 'predlog_odredbi') {
-      const nazivDokumenta = (kontekst || '').toLowerCase();
-      let predlozi = [];
-
-      if (nazivDokumenta.includes('vozil') || nazivDokumenta.includes('auto')) {
-        predlozi = [
-          'Uz vozilo se predaju 4 zimske gume, originalna servisna knjižica i 2 fabrička ključa.',
-          'Kupac je upoznat sa manjim oštećenjem i prihvata vozilo u tom stanju.',
-          'Prodavac se obavezuje da u roku od 3 radna dana izmiri porez i odjavi tablice.',
-        ];
-      } else if (nazivDokumenta.includes('zakup') || nazivDokumenta.includes('stan')) {
-        predlozi = [
-          'Zakupac se obavezuje da plaća komunalije najkasnije do 15. u mesecu.',
-          'Depozit u visini jedne mesečne zakupnine će biti vraćen po isteku ugovora ukoliko nema oštećenja.',
-        ];
-      } else if (nazivDokumenta.includes('rad') || nazivDokumenta.includes('zaposlen')) {
-        predlozi = [
-          'Zaposleni ima pravo na godišnji odmor u trajanju od najmanje 20 radnih dana.',
-          'Probni rad se ugovara u trajanju od maksimalno 3 meseca.',
-        ];
-      } else if (nazivDokumenta.includes('punomoć') || nazivDokumenta.includes('ovlašćenje')) {
-         predlozi = [
-          'Ovo punomoćje se izdaje na period od godinu dana i važi do izričitog opoziva.',
-          'Punomoćnik je ovlašćen da u moje ime preduzima sve radnje pred nadležnim državnim organima.',
-        ];
-      } else if (nazivDokumenta.includes('zahtev') || nazivDokumenta.includes('molba')) {
-         predlozi = [
-          'Molim vas da ovaj zahtev rešite u zakonskom roku po hitnom postupku usled neodložnih obaveza.',
-          'Uz ovaj zahtev prilažem i kopiju važeće lične karte, kao i dokaz o uplati takse.',
-        ];
-      } else {
-        predlozi = [
-          'Navedene odredbe i uslovi ostaju na snazi do ispunjenja svih obaveza ugovornih strana.',
-          'Sve eventualne sporove ugovorne strane će rešavati mirnim putem.',
-        ];
-      }
-
-      return NextResponse.json({ predlozi });
+      const text = await pozovi(
+        `Dokument: "${dok}". Predloži 3 do 5 čestih, korisnih posebnih odredbi/klauzula za ovaj dokument. Pismo: ${pismoTekst}. Vrati SAMO listu — svaka odredba u jednom redu, bez numeracije i bez dodatnog teksta.`,
+        600
+      );
+      const predlozi = text
+        .split('\n')
+        .map((s) => s.replace(/^[-•\d.)\s]+/, '').trim())
+        .filter(Boolean)
+        .slice(0, 5);
+      return NextResponse.json({ predlozi, disclaimer: DISCLAIMER });
     }
 
-    // 2. Strukturisanje slobodnog teksta posebnih odredbi
     if (tip === 'strukturisi_odredbe') {
-      if (!unos || unos.trim() === '') {
-        return NextResponse.json({ formatiranTekst: '' });
-      }
-      
-      const cistUnos = unos.trim();
-      let formatiranTekst = `Ugovorne strane su se izričito saglasile sa sledećim posebnim uslovima: ${cistUnos}. Ovo je obavezujući deo dogovora.`;
-      
-      if (kontekst?.toLowerCase().includes('zahtev')) {
-         formatiranTekst = `Poštovani, ovim putem ističem sledeće: ${cistUnos}. S poštovanjem.`;
-      }
-      
-      return NextResponse.json({ formatiranTekst });
+      if (!unos || !unos.trim())
+        return NextResponse.json({ error: 'Nema teksta za doradu.' }, { status: 400 });
+      const formatiranTekst = await pozovi(
+        `Dokument: "${dok}". Korisnik je uneo grub tekst. Pravno i jezički doteraj ga u formalan srpski pravni stil. Zadrži smisao i SVE činjenice koje je korisnik naveo; NE dodaji nove činjenice ni zakonske odredbe. Pismo: ${pismoTekst}. Vrati SAMO dorađen tekst.\n\nTEKST:\n${unos}`,
+        1000
+      );
+      return NextResponse.json({ formatiranTekst, disclaimer: DISCLAIMER });
     }
 
-    return NextResponse.json({ poruka: 'AI Asistencija je spremna' });
-  } catch (err: any) {
-    return NextResponse.json({ error: 'Greška u AI modulu' }, { status: 500 });
+    if (tip === 'obrazlozenje') {
+      const formatiranTekst = await pozovi(
+        `Dokument: "${dok}". Na osnovu sledećih činjenica napiši obrazloženje/tekst zahteva u formalnom srpskom pravnom stilu. NE izmišljaj činjenice ni zakonske odredbe. Pismo: ${pismoTekst}. Vrati SAMO tekst obrazloženja.\n\nČINJENICE:\n${unos || ''}`,
+        1000
+      );
+      return NextResponse.json({ formatiranTekst, disclaimer: DISCLAIMER });
+    }
+
+    return NextResponse.json({ error: 'Nepoznat tip zahteva.' }, { status: 400 });
+  } catch (e) {
+    console.error('AI greška', e);
+    return NextResponse.json({ error: 'Greška pri komunikaciji sa AI servisom.' }, { status: 500 });
   }
 }

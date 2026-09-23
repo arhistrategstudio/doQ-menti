@@ -303,6 +303,7 @@ function PopuniObrazacContent() {
                 trenutniUnos={formData.obrazlozenje}
                 onPrimeni={(tekst) => setFormData(prev => ({...prev, obrazlozenje: tekst}))}
                 kontekst={naziv}
+                pismo={pismo}
               />
             </div>
 
