@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
 
     const safeFilename = `${(nazivObrasca || 'Obrazac').replace(/[^a-zA-Z0-9_\u0400-\u04FF]/g, '_').slice(0, 40)}.pdf`;
 
-    return new NextResponse(pdfBuffer as any, {
+    return new NextResponse(new Uint8Array(pdfBuffer), {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',
@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
         'Content-Length': String(pdfBuffer.length),
       },
     });
-  } catch (error: any) {
+  } catch (error) {
     console.error('Greška pri generisanju univerzalnog PDF-a:', error);
     return NextResponse.json({ error: 'Greška pri generisanju obrasca' }, { status: 500 });
   }

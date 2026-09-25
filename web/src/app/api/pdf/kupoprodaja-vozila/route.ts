@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
       ? 'Ugovor_o_kupoprodaji_vozila_cirilica.pdf'
       : 'Ugovor_o_kupoprodaji_vozila.pdf';
 
-    return new NextResponse(pdfBuffer as any, {
+    return new NextResponse(new Uint8Array(pdfBuffer), {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',
@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
         'Content-Length': String(pdfBuffer.length),
       },
     });
-  } catch (error: any) {
+  } catch (error) {
     console.error('Greška pri generisanju PDF-a:', error);
     return NextResponse.json(
       { error: 'Greška na serveru pri generisanju dokumenta' },

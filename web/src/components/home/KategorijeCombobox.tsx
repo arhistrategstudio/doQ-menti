@@ -64,7 +64,7 @@ export function KategorijeCombobox({ kategorije }: { kategorije: Kategorija[] })
       {open && (
         <div className="absolute z-30 mt-2 w-full rounded-xl border shadow-lg overflow-auto" style={{ backgroundColor: "rgba(15,35,25,0.97)", borderColor: "rgba(201,168,76,0.25)", maxHeight: "300px" }}>
           {filtered.length === 0 ? (
-            <div className="px-4 py-3 text-sm" style={{ color: "#8A9A8C" }}>Nema rezultata za „{query}"</div>
+            <div className="px-4 py-3 text-sm" style={{ color: "#8A9A8C" }}>Nema rezultata za „{query}“</div>
           ) : (
             filtered.map((kat) => (
               <Link key={kat.name} href={href(kat.name)} className="flex items-center justify-between gap-3 px-4 py-3 text-sm transition-colors hover:bg-[rgba(255,255,255,0.06)]" style={{ color: "#F8F4EE" }}>

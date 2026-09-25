@@ -21,6 +21,8 @@ export function HomeAiAsistent() {
     const sacuvaniPodaci = localStorage.getItem('doq_korisnik_osnovno');
     if (sacuvaniPodaci) {
       try {
+        // Podaci iz localStorage su dostupni tek na klijentu, pa se učitavaju posle prvog rendera.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setPodaci(JSON.parse(sacuvaniPodaci));
         setSacuvano(true);
       } catch (e) {
@@ -59,7 +61,7 @@ export function HomeAiAsistent() {
             </div>
             <div>
               <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C9A84C] uppercase tracking-wider">
-                <span>Pametni AI Auto-Fill Asistent</span>
+                <span>Auto-Fill profil</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-[#F8F4EE]">
                 Unesite osnovne podatke jednom — koristite za sve obrasce
@@ -77,7 +79,7 @@ export function HomeAiAsistent() {
         </div>
 
         <p className="text-xs sm:text-sm text-slate-300 mb-6 max-w-2xl leading-relaxed">
-          Privatnost na prvom mestu: podaci se čuvaju isključivo lokalno u vašem pregledaču (bez JMBG-a) i automatski popunjavaju svaki ugovor ili obrazac koji otvorite. Nakon unosa kliknite na "Sačuvaj profil".
+          Privatnost na prvom mestu: podaci se čuvaju isključivo lokalno u vašem pregledaču (bez JMBG-a) i automatski popunjavaju svaki ugovor ili obrazac koji otvorite. Nakon unosa kliknite na „Sačuvaj profil“.
         </p>
 
         {/* Polja za unos */}

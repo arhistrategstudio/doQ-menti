@@ -255,7 +255,7 @@ export default function KupoprodajaVozilaPage() {
               style={{ backgroundColor: "#C9A84C", color: "#1A3A2A" }}
             >
               <Download className="w-4 h-4" />
-              <span>Preuzmi PDF (149 RSD)</span>
+              <span>Preuzmi PDF</span>
             </button>
           </div>
         </div>
