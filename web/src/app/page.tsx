@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ShieldCheck, Sparkles, Clock, Zap, ArrowRight, Search, FileText, Home as HomeIcon, Briefcase, Plane, Coins } from "lucide-react";
+import { ShieldCheck, Sparkles, Clock, ArrowRight, Search, FileText, Home as HomeIcon, Briefcase, Plane, Coins } from "lucide-react";
 import { HomeAiAsistent } from "@/components/home/HomeAiAsistent";
 import { KategorijeCombobox } from "@/components/home/KategorijeCombobox";
 import katalog from "@/data/katalog-obrazaca.json";
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 lg:pt-32 pb-8 sm:pb-10 text-center">
           <div className="inline-flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-full text-sm font-normal mb-6 float-slow" style={{ backgroundColor: "rgba(201,168,76,0.15)", color: "#C9A84C", border: "1px solid rgba(201,168,76,0.35)" }}>
             <ShieldCheck className="w-3.5 h-3.5" />
-            Usklađeno sa zakonima Republike Srbije
+            Obrasci i ugovori za Republiku Srbiju
           </div>
           <h1 className="text-[2.25rem] sm:text-[3rem] lg:text-[3.75rem] font-semibold tracking-normal leading-[1.05]" style={{ color: "#F8F4EE" }}>
             Pravni dokumenti i obrasci
@@ -77,7 +77,7 @@ export default function Home() {
           {/* DESNI PANEL: popunjavanje podataka */}
           <div className="flex flex-col">
             <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#F8F4EE" }}>Popunite svoje podatke</h2>
-            <p className="mt-1.5 text-sm" style={{ color: "rgba(248,244,238,0.72)" }}>Unesite jednom — AI ubaci podatke u svaki dokument.</p>
+            <p className="mt-1.5 text-sm" style={{ color: "rgba(248,244,238,0.72)" }}>Unesite jednom — podaci se automatski ubacuju u svaki obrazac.</p>
             <div className="mt-3 h-px w-16" style={{ backgroundColor: "#C9A84C" }} />
             <div className="mt-6">
               <HomeAiAsistent />
@@ -87,12 +87,11 @@ export default function Home() {
         </div>
 
         {/* Prednosti */}
-        <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
           {[
             { icon: <Clock className="w-4 h-4" />, title: "Brzo i bez čekanja", sub: "Spreman za štampu odmah" },
-            { icon: <ShieldCheck className="w-4 h-4" />, title: "Pravna sigurnost", sub: "Po Zakonu o obligacijama" },
+            { icon: <ShieldCheck className="w-4 h-4" />, title: "Latinica i ćirilica", sub: "Izbor pisma za svaki dokument" },
             { icon: <Sparkles className="w-4 h-4" />, title: "Pametni Auto-Fill", sub: "Unesite jednom, koristite svuda" },
-            { icon: <Zap className="w-4 h-4" />, title: "3 načina plaćanja", sub: "IPS QR · Kartice · SMS" },
           ].map((item, i) => (
             <div key={item.title} className="flex flex-col items-start p-3 rounded-lg text-left float-slow" style={{ backgroundColor: "rgba(248,244,238,0.07)", border: "1px solid rgba(248,244,238,0.12)", animationDelay: `${i * 0.6}s` }}>
               <div style={{ color: "#C9A84C" }} className="mb-1.5">{item.icon}</div>
@@ -143,12 +142,10 @@ export default function Home() {
             <Link href="/pravno#privatnost" className="hover:opacity-80 transition-opacity" style={{ color: "#C9A84C" }}>Politika privatnosti</Link>
             <Link href="/pravno#placanje" className="hover:opacity-80 transition-opacity" style={{ color: "#C9A84C" }}>Plaćanje i reklamacije</Link>
             <Link href="/pravno#kolacici" className="hover:opacity-80 transition-opacity" style={{ color: "#C9A84C" }}>Kolačići</Link>
-            <span>Pravno usklađeno sa zakonima RS</span>
-            <span>IPS QR · Kartično · SMS plaćanje</span>
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-4 text-[11px] leading-relaxed" style={{ color: "rgba(248,244,238,0.4)" }}>
-          Pružalac usluge: [naziv privrednog subjekta] · MB [•] · PIB [•] · [sedište] · kontakt: [email]. Cene su iskazane u dinarima (RSD) sa uključenim PDV-om. Plaćanjem prihvatate Uslove korišćenja i Politiku privatnosti; reklamacije i pravo na odustanak opisani su u odeljku „Plaćanje i reklamacije".
+          Pružalac usluge: [naziv privrednog subjekta] · MB [•] · PIB [•] · [sedište] · kontakt: [email]. Cene su iskazane u dinarima (RSD) sa uključenim PDV-om. Plaćanjem prihvatate Uslove korišćenja i Politiku privatnosti; reklamacije i pravo na odustanak opisani su u odeljku „Plaćanje i reklamacije“.
         </div>
       </footer>
     </div>

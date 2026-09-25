@@ -1,5 +1,4 @@
 ﻿import path from 'path';
-// @ts-ignore
 import pdfmake from 'pdfmake';
 import type { TDocumentDefinitions } from 'pdfmake/interfaces';
 import { presloviTekst, presloviObjekat, Pismo } from '../pismo';
@@ -21,7 +20,7 @@ try {
 export async function generisiUniverzalniObrazacPdf(
   nazivObrasca: string,
   kategorija: string,
-  podaci: {
+  siroviPodaci: {
     podnosilacIme: string;
     podnosilacMesto: string;
     podnosilacAdresa: string;
@@ -38,6 +37,7 @@ export async function generisiUniverzalniObrazacPdf(
 ): Promise<Buffer> {
   const pismo = opcije.pismo || 'latinica';
   const t = (lat: string, cir: string) => (pismo === 'cirilica' ? cir : lat);
+  const podaci = presloviObjekat(siroviPodaci, pismo);
 
   const docDefinition: TDocumentDefinitions = {
     pageSize: 'A4',

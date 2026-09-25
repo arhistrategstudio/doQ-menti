@@ -40,7 +40,7 @@ export function SablonPreview({ previewHtml, pismo, generisemPdf, onPreuzmiPdf }
 
       <div className="mt-4 bg-blue-50 border border-blue-200 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
         <div className="text-xs text-blue-900">
-          <span className="font-bold">Cena generisanja:</span> 149 RSD
+          <span className="font-bold">Cena generisanja:</span> besplatno (test verzija)
           <p className="text-blue-700">Preuzimate originalan PDF spreman za štampu i notara.</p>
         </div>
         <button

@@ -6,16 +6,16 @@ import { validirajJMBG, validirajVIN, validirajRegistarskuOznaku } from '@/lib/v
 import { AiAsistentOdredbe } from '@/components/ai/AiAsistentOdredbe';
 
 interface Props {
-  formData: any;
+  formData: Record<string, string | number>;
   onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => void;
   onPosebneOdredbeChange?: (tekst: string) => void;
 }
 
 export function FormaPolja({ formData, onChange, onPosebneOdredbeChange }: Props) {
-  const jmbgProdavacOk = !formData.prodavacJmbg || validirajJMBG(formData.prodavacJmbg);
-  const jmbgKupacOk = !formData.kupacJmbg || validirajJMBG(formData.kupacJmbg);
-  const vinOk = !formData.voziloBrojSasije || validirajVIN(formData.voziloBrojSasije);
-  const regOk = !formData.voziloRegistracija || validirajRegistarskuOznaku(formData.voziloRegistracija);
+  const jmbgProdavacOk = !formData.prodavacJmbg || validirajJMBG(String(formData.prodavacJmbg));
+  const jmbgKupacOk = !formData.kupacJmbg || validirajJMBG(String(formData.kupacJmbg));
+  const vinOk = !formData.voziloBrojSasije || validirajVIN(String(formData.voziloBrojSasije));
+  const regOk = !formData.voziloRegistracija || validirajRegistarskuOznaku(String(formData.voziloRegistracija));
 
   return (
     <div className="space-y-6">
@@ -458,7 +458,7 @@ export function FormaPolja({ formData, onChange, onPosebneOdredbeChange }: Props
 
           {/* AI Asistent za odredbe */}
           <AiAsistentOdredbe
-            trenutniUnos={formData.posebneOdredbe}
+            trenutniUnos={String(formData.posebneOdredbe ?? "")}
             onPrimeni={(noviTekst) => {
               if (onPosebneOdredbeChange) {
                 onPosebneOdredbeChange(noviTekst);

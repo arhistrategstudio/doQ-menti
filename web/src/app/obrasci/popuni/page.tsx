@@ -43,6 +43,8 @@ function PopuniObrazacContent() {
     if (sacuvani) {
       try {
         const profil = JSON.parse(sacuvani);
+        // Podaci iz localStorage su dostupni tek na klijentu, pa se učitavaju posle prvog rendera.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setFormData((prev) => ({
           ...prev,
           podnosilacIme: profil.imePrezime || prev.podnosilacIme,
@@ -174,7 +176,7 @@ function PopuniObrazacContent() {
         <button
           onClick={() => setAktivniTab('formular')}
           className={`flex-1 py-3 text-sm font-bold text-center border-b-2 transition-colors ${
-            aktivniTab === 'formular' ? 'border-[#C9A84C] text-[#1A3A2A]' : 'border-transparent text-[rgba(248,244,238,0.6)]'
+            aktivniTab === 'formular' ? 'border-[#C9A84C] text-[#C9A84C]' : 'border-transparent text-[rgba(248,244,238,0.6)]'
           }`}
         >
           Formular
@@ -182,7 +184,7 @@ function PopuniObrazacContent() {
         <button
           onClick={() => setAktivniTab('pregled')}
           className={`flex-1 py-3 text-sm font-bold text-center border-b-2 transition-colors ${
-            aktivniTab === 'pregled' ? 'border-[#C9A84C] text-[#1A3A2A]' : 'border-transparent text-[rgba(248,244,238,0.6)]'
+            aktivniTab === 'pregled' ? 'border-[#C9A84C] text-[#C9A84C]' : 'border-transparent text-[rgba(248,244,238,0.6)]'
           }`}
         >
           Originalni dokument
@@ -271,6 +273,18 @@ function PopuniObrazacContent() {
                   className="w-full text-sm px-3 py-2 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
                 />
               </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-[rgba(248,244,238,0.85)] mb-1">Email adresa</label>
+                <input
+                  type="email"
+                  name="podnosilacEmail"
+                  value={formData.podnosilacEmail}
+                  onChange={handleChange}
+                  placeholder="petar@email.rs"
+                  className="w-full text-sm px-3 py-2 border border-[rgba(201,168,76,0.30)] bg-[rgba(20,46,33,0.55)] text-[#F8F4EE] placeholder:text-[#AEBAAE] rounded-lg focus:ring-2 focus:ring-[#C9A84C] focus:outline-hidden"
+                />
+              </div>
             </div>
           </div>
 
@@ -333,7 +347,7 @@ function PopuniObrazacContent() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#C9A84C] hover:bg-[#D5B65F] text-[#1A3A2A] font-bold text-sm px-6 py-3 rounded-xl shadow-md transition-all"
               >
                 <Download className="w-4 h-4" />
-                <span>{generisem ? 'Generisanje...' : 'Preuzmi popunjen PDF (149 RSD)'}</span>
+                <span>{generisem ? 'Generisanje...' : 'Preuzmi popunjen PDF'}</span>
               </button>
             </div>
           </div>

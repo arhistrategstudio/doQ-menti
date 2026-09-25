@@ -1,51 +1,57 @@
 'use client';
 
-import React, { useState, useMemo, Suspense, useEffect } from 'react';
+import React, { useState, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { 
   Folder, FileText, Download, Search, ChevronRight, 
   ArrowLeft, Building2, Shield, Layers, Edit3
 } from 'lucide-react';
-import allCategories from '@/data/katalog-obrazaca.json';
+import katalog from '@/data/katalog-obrazaca.json';
+
+type Kat = { name: string; count: number; items: { title: string; file: string; source: string }[] };
+
+// Deo stavki (MUP, Poverenik) u katalogu nema naslov — koristi se naziv fajla bez ekstenzije.
+const allCategories: Kat[] = (katalog as { name: string; count: number; items: { title?: string; file: string; source: string }[] }[]).map((k) => ({
+  ...k,
+  items: k.items.map((i) => ({ ...i, title: i.title || i.file.replace(/\.[^.]+$/, '') })),
+}));
+
+const UKUPNO = allCategories.reduce((s, k) => s + k.items.length, 0);
 
 function ObrasciSadrzaj() {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
+  const initialKategorija = searchParams.get('kategorija');
   
   const [pretraga, setPretraga] = useState(initialQuery);
-  const [izabranaKategorija, setIzabranaKategorija] = useState<string | null>(null);
+  const [izabranaKategorija, setIzabranaKategorija] = useState<string | null>(initialKategorija);
 
-  useEffect(() => {
-    if (initialQuery) {
-      setPretraga(initialQuery);
-    }
-  }, [initialQuery]);
 
   const filtriraniPodaci = useMemo(() => {
     const q = pretraga.toLowerCase().trim();
     if (!q) return allCategories;
     return allCategories
-      .map((kat: any) => {
+      .map((kat: Kat) => {
         const odgovaraNazivKategorije = kat.name.toLowerCase().includes(q);
-        const filtriraniObrasci = kat.items.filter((item: any) =>
+        const filtriraniObrasci = kat.items.filter((item: Kat['items'][number]) =>
           item.title.toLowerCase().includes(q) || item.file.toLowerCase().includes(q)
         );
         if (odgovaraNazivKategorije || filtriraniObrasci.length > 0) {
           return {
             ...kat,
-            count: filtriraniObrasci.length,
+            count: filtriraniObrasci.length > 0 ? filtriraniObrasci.length : kat.items.length,
             items: filtriraniObrasci.length > 0 ? filtriraniObrasci : kat.items,
           };
         }
         return null;
       })
-      .filter(Boolean);
+      .filter((k): k is Kat => k !== null);
   }, [pretraga]);
 
   const aktivnaKategorijaObj = useMemo(() => {
     if (!izabranaKategorija) return null;
-    return allCategories.find((k: any) => k.name === izabranaKategorija) || null;
+    return allCategories.find((k: Kat) => k.name === izabranaKategorija) || null;
   }, [izabranaKategorija]);
 
   return (
@@ -62,7 +68,7 @@ function ObrasciSadrzaj() {
             </Link>
             <span style={{ color: "rgba(248,244,238,0.3)" }}>/</span>
             <span className="text-xs sm:text-sm font-medium truncate max-w-[180px] sm:max-w-md" style={{ color: "rgba(248,244,238,0.7)" }}>
-              Katalog svih obrazaca (2.294)
+              Katalog svih obrazaca ({UKUPNO.toLocaleString('sr-RS')})
             </span>
           </div>
 
@@ -84,7 +90,7 @@ function ObrasciSadrzaj() {
             style={{ backgroundColor: "rgba(201,168,76,0.15)", color: "#C9A84C", border: "1px solid rgba(201,168,76,0.35)" }}
           >
             <Layers className="w-3.5 h-3.5" />
-            67 kategorija • 2.294 zvanična obrasca
+            {allCategories.length} kategorija • {UKUPNO.toLocaleString('sr-RS')} obrazaca
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold" style={{ color: "#F8F4EE" }}>
             Katalog svih preuzetih i državnih obrazaca
@@ -140,7 +146,7 @@ function ObrasciSadrzaj() {
               </div>
 
               <div className="divide-y divide-[rgba(248,244,238,0.10)]">
-                {aktivnaKategorijaObj.items.map((item: any, idx: number) => (
+                {aktivnaKategorijaObj.items.map((item: Kat['items'][number], idx: number) => (
                   <div
                     key={idx}
                     className="py-4 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-[rgba(248,244,238,0.06)] px-3 rounded-xl transition-colors"
@@ -186,7 +192,7 @@ function ObrasciSadrzaj() {
         ) : (
           <div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {filtriraniPodaci.map((kat: any) => (
+              {filtriraniPodaci.map((kat: Kat) => (
                 <div
                   key={kat.name}
                   onClick={() => setIzabranaKategorija(kat.name)}

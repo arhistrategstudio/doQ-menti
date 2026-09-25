@@ -1,5 +1,4 @@
 import path from 'path';
-// @ts-ignore
 import pdfmake from 'pdfmake';
 import type { TDocumentDefinitions } from 'pdfmake/interfaces';
 import { brojSlovima } from '../slovima';
@@ -53,9 +52,9 @@ function formatirajIznos(iznos?: number | string): string {
   }).format(num);
 }
 
-function kupacTekst(podaci: any, pismo: Pismo): string {
+function kupacTekst(podaci: KupoprodajaVozilaData, pismo: Pismo): string {
   const t = (lat: string, cir: string) => (pismo === 'cirilica' ? cir : lat);
-  return `${podaci.kupacImePrezime || '________________________________'}${t(', iz mesta ', ', из места ')}${podaci.kupacMesto || '________________'}${t(', adresa ', ', адреса ')}${podaci.kupacAdresa || '________________________________'}, JMBG: ${podaci.kupacJmbg || '_____________'}${t(', br. lične karte: ', ', бр. лиčne karte: ')}${podaci.kupacBrojLk || '________'}${t(', izdate od ', ', издате од ')}${podaci.kupacMupLk || '________________'}${t(' (u daljem tekstu: Kupac).', ' (у даљем тексту: Купац).')}`;
+  return `${podaci.kupacImePrezime || '________________________________'}${t(', iz mesta ', ', из места ')}${podaci.kupacMesto || '________________'}${t(', adresa ', ', адреса ')}${podaci.kupacAdresa || '________________________________'}, JMBG: ${podaci.kupacJmbg || '_____________'}${t(', br. lične karte: ', ', бр. личне карте: ')}${podaci.kupacBrojLk || '________'}${t(', izdate od ', ', издате од ')}${podaci.kupacMupLk || '________________'}${t(' (u daljem tekstu: Kupac).', ' (у даљем тексту: Купац).')}`;
 }
 
 export async function generisiPdfKupoprodajaVozila(
@@ -155,7 +154,7 @@ export async function generisiPdfKupoprodajaVozila(
                       podaci.prodavacAdresa || '________________________________',
                       ', JMBG: ',
                       { text: podaci.prodavacJmbg || '_____________', bold: true },
-                      t(', br. lične karte: ', ', бр. лиčne karte: '),
+                      t(', br. lične karte: ', ', бр. личне карте: '),
                       podaci.prodavacBrojLk || '________',
                       t(', izdate od ', ', издате од '),
                       podaci.prodavacMupLk || '________________',

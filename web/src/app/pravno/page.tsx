@@ -48,7 +48,7 @@ export default function PravnoPage() {
         </Odeljak>
 
         <Odeljak id="placanje" naslov="Plaćanje, reklamacije i pravo na odustanak">
-          <p>Cene su u dinarima (RSD) sa uključenim PDV-om (ako je obveznik PDV-a). Načini plaćanja: IPS QR, kartično, SMS.</p>
+          <p>Cene su u dinarima (RSD) sa uključenim PDV-om (ako je obveznik PDV-a). Plaćanje još nije aktivno (test verzija).</p>
           <p>Reklamacije se podnose na [email] u roku od [•] dana; odgovor u zakonskom roku. Za digitalni sadržaj isporučen odmah, pravo na odustanak može biti isključeno u skladu sa Zakonom o zaštiti potrošača uz izričitu saglasnost korisnika — [potvrditi formulaciju s advokatom].</p>
           <p>[Politika povraćaja sredstava i uslovi.]</p>
         </Odeljak>

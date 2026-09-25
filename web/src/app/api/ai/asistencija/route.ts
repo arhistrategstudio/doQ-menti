@@ -3,7 +3,7 @@ import Anthropic from '@anthropic-ai/sdk';
 
 export const runtime = 'nodejs';
 
-const MODEL = process.env.ANTHROPIC_MODEL || 'claude-3-5-haiku-latest';
+const MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5';
 const DISCLAIMER = 'Automatski predlog — nije pravni savet. Proverite pre upotrebe.';
 
 const SISTEM = `Ti si asistent za sastavljanje pravnih dokumenata za Republiku Srbiju.
@@ -13,6 +13,17 @@ STROGA PRAVILA:
 - Ne daješ pravni savet niti garancije; samo pomažeš u formulaciji teksta.
 - Piši isključivo u traženom pismu (latinica ili ćirilica).
 - Budi konkretan i kratak, bez uvoda i objašnjenja — vrati samo traženi sadržaj.`;
+
+// Osnovna zaštita od zloupotrebe: max 10 zahteva po IP adresi u minuti (po instanci servera).
+const LIMIT = 10;
+const zahtevi = new Map<string, number[]>();
+function prekoracen(ip: string): boolean {
+  const sada = Date.now();
+  const niz = (zahtevi.get(ip) || []).filter((t) => sada - t < 60_000);
+  niz.push(sada);
+  zahtevi.set(ip, niz);
+  return niz.length > LIMIT;
+}
 
 async function pozovi(prompt: string, maxTokens = 800): Promise<string> {
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
@@ -36,8 +47,15 @@ export async function POST(req: NextRequest) {
       { status: 503 }
     );
   }
+  const ip = req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'nepoznat';
+  if (prekoracen(ip)) {
+    return NextResponse.json({ error: 'Previše zahteva. Pokušajte ponovo za minut.' }, { status: 429 });
+  }
   try {
     const { tip, unos, kontekst, pismo } = await req.json();
+    if ((typeof unos === 'string' && unos.length > 4000) || (typeof kontekst === 'string' && kontekst.length > 300)) {
+      return NextResponse.json({ error: 'Tekst je predugačak.' }, { status: 400 });
+    }
     const pismoTekst = pismo === 'cirilica' ? 'ćirilica' : 'latinica';
     const dok = kontekst || 'opšti dokument';
 

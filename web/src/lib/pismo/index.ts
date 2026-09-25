@@ -99,7 +99,7 @@ const PODRAZUMEVANA_POLJA_BEZ_PRESLOVLJAVANJA = [
   'prodavacbrojlk', 'kupacbrojlk', 'prodavactekuciracun'
 ];
 
-export function presloviObjekat<T extends Record<string, any>>(
+export function presloviObjekat<T extends Record<string, unknown>>(
   podaci: T,
   ciljnoPismo: Pismo,
   poljaBezPreslovljavanja: string[] = PODRAZUMEVANA_POLJA_BEZ_PRESLOVLJAVANJA
@@ -112,7 +112,7 @@ export function presloviObjekat<T extends Record<string, any>>(
     poljaBezPreslovljavanja.map((p) => p.toLowerCase())
   );
 
-  const noviPodaci: Record<string, any> = {};
+  const noviPodaci: Record<string, unknown> = {};
 
   for (const [kljuc, vrednost] of Object.entries(podaci)) {
     const normKljuc = kljuc.toLowerCase();
@@ -124,7 +124,7 @@ export function presloviObjekat<T extends Record<string, any>>(
     } else if (typeof vrednost === 'string') {
       noviPodaci[kljuc] = presloviTekst(vrednost, ciljnoPismo);
     } else if (typeof vrednost === 'object' && vrednost !== null && !Array.isArray(vrednost)) {
-      noviPodaci[kljuc] = presloviObjekat(vrednost, ciljnoPismo, poljaBezPreslovljavanja);
+      noviPodaci[kljuc] = presloviObjekat(vrednost as Record<string, unknown>, ciljnoPismo, poljaBezPreslovljavanja);
     } else if (Array.isArray(vrednost)) {
       noviPodaci[kljuc] = vrednost.map((item) =>
         typeof item === 'string' ? presloviTekst(item, ciljnoPismo) : item
