@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { 
@@ -10,6 +10,7 @@ import {
 import { Pismo } from '@/lib/pismo';
 import { AiAsistentOdredbe } from '@/components/ai/AiAsistentOdredbe';
 import { PlacanjeModal } from '@/components/placanje/PlacanjeModal';
+import { PdfPopunjiviPrikaz, type PdfPopunjiviHandle } from '@/components/obrasci/PdfPopunjiviPrikaz';
 
 function PopuniObrazacContent() {
   const searchParams = useSearchParams();
@@ -22,6 +23,11 @@ function PopuniObrazacContent() {
   const [generisem, setGenerisem] = useState(false);
   const [otvorenPlacanjeModal, setOtvorenPlacanjeModal] = useState(false);
   const [aktivniTab, setAktivniTab] = useState<'formular' | 'pregled'>('formular');
+  // null = još se učitava; true = original ima polja i popunjava se direktno u dokumentu
+  const [imaPolja, setImaPolja] = useState<boolean | null>(null);
+  const [greskaPrikaza, setGreskaPrikaza] = useState(false);
+  const pdfRef = useRef<PdfPopunjiviHandle>(null);
+  const jePdf = fajl.toLowerCase().endsWith('.pdf');
 
   const [formData, setFormData] = useState({
     podnosilacIme: '',
@@ -89,6 +95,38 @@ function PopuniObrazacContent() {
       const a = document.createElement('a');
       a.href = url;
       a.download = `${naziv.slice(0, 30)}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (e) {
+      console.error(e);
+      alert('Došlo je do greške.');
+    } finally {
+      setGenerisem(false);
+      setOtvorenPlacanjeModal(false);
+    }
+  };
+
+  // Upisuje vrednosti u ORIGINALNI PDF na serveru — preuzeti dokument izgleda isto kao original.
+  const preuzmiPopunjenOriginal = async () => {
+    try {
+      setGenerisem(true);
+      const vrednosti = (await pdfRef.current?.vrednosti()) || {};
+      const res = await fetch('/api/obrasci/popuni-original', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ izvor, kategorija, fajl, vrednosti }),
+      });
+      if (!res.ok) {
+        alert('Greška pri popunjavanju obrasca.');
+        return;
+      }
+      const blob = await res.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${fajl.replace(/\.pdf$/i, '')}_popunjen.pdf`;
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -172,6 +210,7 @@ function PopuniObrazacContent() {
       </div>
 
       {/* Mobile Tabovi */}
+      {imaPolja !== true && (
       <div className="sm:hidden flex border-b border-[#C9A84C]/20 bg-[rgba(20,46,33,0.85)] backdrop-blur-md sticky top-16 z-20">
         <button
           onClick={() => setAktivniTab('formular')}
@@ -190,13 +229,14 @@ function PopuniObrazacContent() {
           Originalni dokument
         </button>
       </div>
+      )}
 
       {/* Glavni radni prostor */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-6 pb-24">
         <div className="flex flex-col sm:flex-row gap-6">
           
           {/* LEVA STRANA: Forma */}
-          <div className={`w-full sm:w-1/2 lg:w-5/12 space-y-6 ${aktivniTab === 'formular' ? 'block' : 'hidden sm:block'}`}>
+          <div className={`w-full sm:w-1/2 lg:w-5/12 space-y-6 ${imaPolja === true ? 'hidden' : aktivniTab === 'formular' ? 'block' : 'hidden sm:block'}`}>
           
           {/* Sekcija 1: Organ */}
           <div>
@@ -355,13 +395,22 @@ function PopuniObrazacContent() {
           </div>
 
           {/* DESNA STRANA: Prikaz originalnog dokumenta */}
-          <div className={`w-full sm:w-1/2 lg:w-7/12 ${aktivniTab === 'pregled' ? 'block' : 'hidden sm:block'}`}>
+          <div className={imaPolja === true ? 'w-full' : `w-full sm:w-1/2 lg:w-7/12 ${aktivniTab === 'pregled' ? 'block' : 'hidden sm:block'}`}>
             <div className="bg-[rgba(20,46,33,0.45)] backdrop-blur-sm rounded-xl border border-[rgba(201,168,76,0.25)] shadow-lg overflow-hidden h-[800px] flex flex-col">
               <div className="bg-[rgba(20,46,33,0.6)] px-4 py-3 border-b border-[rgba(201,168,76,0.2)] flex items-center justify-between">
                 <div className="flex items-center gap-2 text-sm font-bold text-[rgba(248,244,238,0.85)]">
                   <FileText className="w-4 h-4 text-[#C9A84C]" />
-                  <span>Originalni izgled dokumenta</span>
+                  <span>{imaPolja === true ? 'Popunite polja direktno u dokumentu' : 'Originalni izgled dokumenta'}</span>
                 </div>
+                {imaPolja === true && (
+                  <button
+                    onClick={() => setOtvorenPlacanjeModal(true)}
+                    disabled={generisem}
+                    className="inline-flex items-center gap-1.5 bg-[#C9A84C] hover:bg-[#D5B65F] text-[#1A3A2A] font-bold text-xs px-3 py-1.5 rounded-lg"
+                  >
+                    <Download className="w-3.5 h-3.5" /> {generisem ? 'Generisanje...' : 'Preuzmi popunjen PDF'}
+                  </button>
+                )}
                 {fajl && (
                   <a
                     href={`${pdfUrl}&download=1`}
@@ -373,17 +422,20 @@ function PopuniObrazacContent() {
                 )}
               </div>
               <div className="flex-1 bg-[rgba(10,18,13,0.35)] relative">
-                {fajl && fajl.toLowerCase().endsWith(".pdf") ? (
-                  <iframe 
-                    src={pdfUrl + '#toolbar=0&navpanes=0'} 
-                    className="w-full h-full border-none"
-                    title="Prikaz originalnog dokumenta"
+                {jePdf && !greskaPrikaza ? (
+                  <PdfPopunjiviPrikaz
+                    ref={pdfRef}
+                    url={pdfUrl}
+                    onUcitano={setImaPolja}
+                    onGreska={() => setGreskaPrikaza(true)}
                   />
                 ) : (
                   <div className="flex flex-col items-center justify-center h-full text-center gap-4 p-6" style={{ color: "rgba(248,244,238,0.7)" }}>
                     <FileText className="w-10 h-10" style={{ color: "#C9A84C" }} />
                     <div className="text-sm max-w-xs">
-                      {fajl
+                      {greskaPrikaza
+                        ? 'Prikaz dokumenta nije uspeo. Skinite prazan original ili popunite formu levo.'
+                        : fajl
                         ? `Ovaj obrazac je u formatu ${fajl.split('.').pop()?.toUpperCase()} i ne moze da se prikaze u pregledu. Popunite formu levo pa preuzmite gotov PDF, ili skinite prazan original.`
                         : "Prikaz originalnog dokumenta nije dostupan."}
                     </div>
@@ -406,7 +458,7 @@ function PopuniObrazacContent() {
           dokumentNaziv={naziv}
           iznosRsd={149}
           onZatvori={() => setOtvorenPlacanjeModal(false)}
-          onZavrseno={preuzmiPopunjenPdf}
+          onZavrseno={imaPolja === true ? preuzmiPopunjenOriginal : preuzmiPopunjenPdf}
         />
       )}
     </div>
